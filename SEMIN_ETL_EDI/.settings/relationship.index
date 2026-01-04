@@ -1,0 +1,51 @@
+[ {
+  "baseItem" : {
+    "id" : "_iLifoOmiEfCypr7gW0btdA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "SEMIN_ETL_EDI:_WlW0wOmkEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_lc5QwOmkEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_qyoRQOmiEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_xp8uYOmiEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_xp8uYOmiEfCypr7gW0btdA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "SEMIN_ETL_EDI:_4JWlUOmjEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_Cnra0OmjEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_TVHBcOmjEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_c7cpkOmjEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_t_icsOmjEfCypr7gW0btdA",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+} ]
