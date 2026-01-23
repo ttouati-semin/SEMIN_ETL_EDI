@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_jlzXICTyEfCNzeboE91SRw" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_jlzXISTyEfCNzeboE91SRw" comment="" name="smtp_receiver" prompt="smtp_receiver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_jlzXIiTyEfCNzeboE91SRw" comment="" name="smtp_receiver_cc" prompt="smtp_receiver_cc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_jlzXIyTyEfCNzeboE91SRw" comment="" name="smtp_sender" prompt="smtp_sender?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_jlzXJCTyEfCNzeboE91SRw" confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter xmi:id="_jlzXJSTyEfCNzeboE91SRw" comment="" name="smtp_receiver" prompt="smtp_receiver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_jlzXJiTyEfCNzeboE91SRw" comment="" name="smtp_receiver_cc" prompt="smtp_receiver_cc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_jlzXJyTyEfCNzeboE91SRw" comment="" name="smtp_sender" prompt="smtp_sender?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

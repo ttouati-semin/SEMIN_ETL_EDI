@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_-CJzoG0_EfChkvInqLRHZA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ntRm4G1AEfChkvInqLRHZA" comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+  <contextParameter xmi:id="_ntRm4W1AEfChkvInqLRHZA" comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+  <contextParameter xmi:id="_ntRm4m1AEfChkvInqLRHZA" comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="24"/>
+  <contextParameter xmi:id="_03rUMG1XEfChkvInqLRHZA" comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+</talendfile:ContextType>

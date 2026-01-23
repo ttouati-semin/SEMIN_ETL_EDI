@@ -1,0 +1,29 @@
+{
+  "itemId" : "_Vua6AOKDEfCBWawNnQ4E_w",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_c_yqUG1dEfChkvInqLRHZA",
+    "parameterList" : [ {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Navision_Host"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Navision_User"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Navision_Schema"
+    }, {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Navision_BDD"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Navision_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Navision_Port"
+    }, {
+      "id" : "_YVVuYOKCEfCBWawNnQ4E_w",
+      "name" : "Navision_Password"
+    } ]
+  } ]
+}

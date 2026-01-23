@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_TolQ4LiTEe-W-dL5fDhv3g" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_TolQ4biTEe-W-dL5fDhv3g" comment="" name="Azure_Account_Name" prompt="Azure_Account_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_TolQ4riTEe-W-dL5fDhv3g" comment="" name="Azure_SAS" prompt="Azure_SAS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_TolQ47iTEe-W-dL5fDhv3g" comment="" name="Azure_Container_Name" prompt="Azure_Container_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_TolQ5LiTEe-W-dL5fDhv3g" comment="" name="Azure_Local_Folder" prompt="Azure_Local_Folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_rX9YYBrMEfCjtsB6USVc1g" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_rX9_cBrMEfCjtsB6USVc1g" comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties"/>
+    <contextParameter xmi:id="_zNCEMG0_EfChkvInqLRHZA" comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/Projet_BI"/>
+    <contextParameter xmi:id="_zNCEMW0_EfChkvInqLRHZA" comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Logs/Operations_EDI.log"/>
+    <contextParameter xmi:id="_zNCEMm0_EfChkvInqLRHZA" comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_zNCEM20_EfChkvInqLRHZA" comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_zNCENG0_EfChkvInqLRHZA" comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Rejets_EDI/"/>
+    <contextParameter xmi:id="_DJ7sIG1IEfChkvInqLRHZA" comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Tests_EDI/"/>
+    <contextParameter xmi:id="_T1e8EG1LEfChkvInqLRHZA" comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log"/>
+    <contextParameter xmi:id="__PzgIHE9EfC7B4UAtUnYhQ" comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/Schemas_/EDI"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_rX9_cRrMEfCjtsB6USVc1g" confirmationNeeded="false" hide="true" name="PROD">
+    <contextParameter xmi:id="_rX9_chrMEfCjtsB6USVc1g" comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_zNCENW0_EfChkvInqLRHZA" comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_zNCENm0_EfChkvInqLRHZA" comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_zNCEN20_EfChkvInqLRHZA" comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value=""/>
+    <contextParameter xmi:id="_zNCEOG0_EfChkvInqLRHZA" comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value=""/>
+    <contextParameter xmi:id="_zNCEOW0_EfChkvInqLRHZA" comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_DJ7sIW1IEfChkvInqLRHZA" comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_T1e8EW1LEfChkvInqLRHZA" comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="__PzgIXE9EfC7B4UAtUnYhQ" comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

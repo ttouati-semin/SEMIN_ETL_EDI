@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_yoIvEGloEfC_po8-nai2bg" name="semin_sql1" id="_kdyJMGloEfC_po8-nai2bg" label="semin_sql1" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://ULYSSE\NAVISION:1433;DatabaseName=SEMIN;" dbVersionString="MSSQL_PROP" Port="1433" Username="SQLTalend" Password="enc:system.encryption.key.v1:aNZ4onGHNa91d02/MQIquy1sGTys8FMhGfabCW2cabKM34xiQRa9Iw==" ServerName="ULYSSE\NAVISION" DatasourceName="" FileFieldName="" SID="SEMIN" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+  <taggedValue xmi:id="_yoIvEWloEfC_po8-nai2bg" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_yoiXsGloEfC_po8-nai2bg" tag="package filter" value=""/>
+  <taggedValue xmi:id="_yoiXsWloEfC_po8-nai2bg" tag="Status" value=""/>
+  <taggedValue xmi:id="_yoiXsmloEfC_po8-nai2bg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_yoiXs2loEfC_po8-nai2bg" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_yoiXtGloEfC_po8-nai2bg" tag="Description" value=""/>
+  <taggedValue xmi:id="_yoiXtWloEfC_po8-nai2bg" tag="Author" value=""/>
+  <taggedValue xmi:id="_yoiXtmloEfC_po8-nai2bg" tag="otherParameter"/>
+  <parameters xmi:id="_yoIvEmloEfC_po8-nai2bg" key="CONN_PARA_KEY_USERNAME" value="SQLTalend"/>
+</TalendMetadata:DatabaseConnection>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GFnjAO_SEfCtA9TQCOJNgQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_iGZP0PDHEfCVb8Wd2XudEA" comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP0fDHEfCVb8Wd2XudEA" comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP0vDHEfCVb8Wd2XudEA" comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP0_DHEfCVb8Wd2XudEA" comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP1PDHEfCVb8Wd2XudEA" comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP1fDHEfCVb8Wd2XudEA" comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP1vDHEfCVb8Wd2XudEA" comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP1_DHEfCVb8Wd2XudEA" comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP2PDHEfCVb8Wd2XudEA" comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP2fDHEfCVb8Wd2XudEA" comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP2vDHEfCVb8Wd2XudEA" comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP2_DHEfCVb8Wd2XudEA" comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP3PDHEfCVb8Wd2XudEA" comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP3fDHEfCVb8Wd2XudEA" comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP3vDHEfCVb8Wd2XudEA" comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_iGZP3_DHEfCVb8Wd2XudEA" comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP4PDHEfCVb8Wd2XudEA" comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP4fDHEfCVb8Wd2XudEA" comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP4vDHEfCVb8Wd2XudEA" comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP4_DHEfCVb8Wd2XudEA" comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP5PDHEfCVb8Wd2XudEA" comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_iGZP5fDHEfCVb8Wd2XudEA" comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP5vDHEfCVb8Wd2XudEA" comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iGZP5_DHEfCVb8Wd2XudEA" comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_yJs6YPDSEfCVb8Wd2XudEA" comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
