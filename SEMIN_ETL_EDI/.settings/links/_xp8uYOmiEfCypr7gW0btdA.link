@@ -1,0 +1,83 @@
+{
+  "itemId" : "_xp8uYOmiEfCypr7gW0btdA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_GFaHoO_SEfCtA9TQCOJNgQ",
+    "parameterList" : [ {
+      "id" : "_iGZP4vDHEfCVb8Wd2XudEA",
+      "name" : "p_CANAL_CIBLE"
+    }, {
+      "id" : "_iGZP3PDHEfCVb8Wd2XudEA",
+      "name" : "p_CANAL_SOURCE"
+    }, {
+      "id" : "_iGZP2PDHEfCVb8Wd2XudEA",
+      "name" : "p_CHEMIN_ARCHIVE"
+    }, {
+      "id" : "_iGZP1_DHEfCVb8Wd2XudEA",
+      "name" : "p_CHEMIN_CIBLE"
+    }, {
+      "id" : "_iGZP2fDHEfCVb8Wd2XudEA",
+      "name" : "p_CHEMIN_ERREUR"
+    }, {
+      "id" : "_iGZP1vDHEfCVb8Wd2XudEA",
+      "name" : "p_CHEMIN_SOURCE"
+    }, {
+      "id" : "_iGZP1fDHEfCVb8Wd2XudEA",
+      "name" : "p_CODE_CONNEXION_CIBLE"
+    }, {
+      "id" : "_iGZP1PDHEfCVb8Wd2XudEA",
+      "name" : "p_CODE_CONNEXION_SOURCE"
+    }, {
+      "id" : "_iGZP0PDHEfCVb8Wd2XudEA",
+      "name" : "p_CODE_ENTITE"
+    }, {
+      "id" : "_iGZP0fDHEfCVb8Wd2XudEA",
+      "name" : "p_CODE_PARTENAIRE"
+    }, {
+      "id" : "_iGZP0vDHEfCVb8Wd2XudEA",
+      "name" : "p_CODE_TYPE_FLUX"
+    }, {
+      "id" : "_iGZP2vDHEfCVb8Wd2XudEA",
+      "name" : "p_DUREE_RETENTION_ANNEES"
+    }, {
+      "id" : "_iGZP2_DHEfCVb8Wd2XudEA",
+      "name" : "p_EMAIL_CONTACT"
+    }, {
+      "id" : "_iGZP4_DHEfCVb8Wd2XudEA",
+      "name" : "p_HOST_CIBLE"
+    }, {
+      "id" : "_iGZP3fDHEfCVb8Wd2XudEA",
+      "name" : "p_HOST_SOURCE"
+    }, {
+      "id" : "_yJs6YPDSEfCVb8Wd2XudEA",
+      "name" : "p_MASQUE_FICHIER_SOURCE"
+    }, {
+      "id" : "_iGZP5vDHEfCVb8Wd2XudEA",
+      "name" : "p_PASSWORD_CIBLE"
+    }, {
+      "id" : "_iGZP4PDHEfCVb8Wd2XudEA",
+      "name" : "p_PASSWORD_SOURCE"
+    }, {
+      "id" : "_iGZP5PDHEfCVb8Wd2XudEA",
+      "name" : "p_PORT_CIBLE"
+    }, {
+      "id" : "_iGZP3vDHEfCVb8Wd2XudEA",
+      "name" : "p_PORT_SOURCE"
+    }, {
+      "id" : "_iGZP5_DHEfCVb8Wd2XudEA",
+      "name" : "p_RACINE_CIBLE"
+    }, {
+      "id" : "_iGZP4fDHEfCVb8Wd2XudEA",
+      "name" : "p_RACINE_SOURCE"
+    }, {
+      "id" : "_iGZP0_DHEfCVb8Wd2XudEA",
+      "name" : "p_SENS_FLUX"
+    }, {
+      "id" : "_iGZP5fDHEfCVb8Wd2XudEA",
+      "name" : "p_USER_CIBLE"
+    }, {
+      "id" : "_iGZP3_DHEfCVb8Wd2XudEA",
+      "name" : "p_USER_SOURCE"
+    } ]
+  } ]
+}

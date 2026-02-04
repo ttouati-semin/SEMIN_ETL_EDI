@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B4PDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B4fDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B4vDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B4_DSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B5PDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B5fDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B5vDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B5_DSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B6PDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B6fDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B6vDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B6_DSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B7PDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B7fDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B7vDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B7_DSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B8PDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B8fDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_3L5B8vDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_3L5B8_DSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B9PDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B9fDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B9vDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B9_DSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_3L5B-PDSEfCVb8Wd2XudEA"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="120" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -101,6 +127,7 @@
   </parameters>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_EDI_SCAN_SOURCE"/>
@@ -128,37 +155,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_EDI_TRANSFER_FICHIER"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_TVHBcOmjEfCypr7gW0btdA"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
-    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
-    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
-    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
-    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
-    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRunJob_2"/>
-  </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_EDI_PARSE_MESSAGE"/>
@@ -188,6 +187,7 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="720">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_EDI_ROUTAGE"/>
@@ -217,6 +217,7 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="920">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_EDI_ARCHIVAGE"/>
@@ -244,25 +245,67 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_5"/>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="-40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;========================================&quot;);&#xD;&#xA;System.out.println(&quot; PRAMS DE CONTEXTE - JOB_EDI_TRAITEMENT_FLUX&quot;);&#xD;&#xA;System.out.println(&quot;========================================&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_CODE_ENTITE              = &quot; + context.p_CODE_ENTITE);&#xD;&#xA;System.out.println(&quot;p_CODE_PARTENAIRE          = &quot; + context.p_CODE_PARTENAIRE);&#xD;&#xA;System.out.println(&quot;p_CODE_TYPE_FLUX           = &quot; + context.p_CODE_TYPE_FLUX);&#xD;&#xA;System.out.println(&quot;p_SENS_FLUX                = &quot; + context.p_SENS_FLUX);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_CODE_CONNEXION_SOURCE    = &quot; + context.p_CODE_CONNEXION_SOURCE);&#xD;&#xA;System.out.println(&quot;p_CODE_CONNEXION_CIBLE     = &quot; + context.p_CODE_CONNEXION_CIBLE);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_CHEMIN_SOURCE            = &quot; + context.p_CHEMIN_SOURCE);&#xD;&#xA;System.out.println(&quot;p_MASQUE_FICHIER_SOURCE            = &quot; + context.p_MASQUE_FICHIER_SOURCE);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_CHEMIN_CIBLE             = &quot; + context.p_CHEMIN_CIBLE);&#xD;&#xA;System.out.println(&quot;p_CHEMIN_ARCHIVE           = &quot; + context.p_CHEMIN_ARCHIVE);&#xD;&#xA;System.out.println(&quot;p_CHEMIN_ERREUR            = &quot; + context.p_CHEMIN_ERREUR);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_DUREE_RETENTION_ANNEES   = &quot; + context.p_DUREE_RETENTION_ANNEES);&#xD;&#xA;System.out.println(&quot;p_EMAIL_CONTACT            = &quot; + context.p_EMAIL_CONTACT);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_CANAL_SOURCE             = &quot; + context.p_CANAL_SOURCE);&#xD;&#xA;System.out.println(&quot;p_HOST_SOURCE              = &quot; + context.p_HOST_SOURCE);&#xD;&#xA;System.out.println(&quot;p_PORT_SOURCE              = &quot; + context.p_PORT_SOURCE);&#xD;&#xA;System.out.println(&quot;p_USER_SOURCE              = &quot; + context.p_USER_SOURCE);&#xD;&#xA;System.out.println(&quot;p_PASSWORD_SOURCE          = &quot; + context.p_PASSWORD_SOURCE);&#xD;&#xA;System.out.println(&quot;p_RACINE_SOURCE             = &quot; + context.p_RACINE_SOURCE);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;p_CANAL_CIBLE              = &quot; + context.p_CANAL_CIBLE);&#xD;&#xA;System.out.println(&quot;p_HOST_CIBLE               = &quot; + context.p_HOST_CIBLE);&#xD;&#xA;System.out.println(&quot;p_PORT_CIBLE               = &quot; + context.p_PORT_CIBLE);&#xD;&#xA;System.out.println(&quot;p_USER_CIBLE               = &quot; + context.p_USER_CIBLE);&#xD;&#xA;System.out.println(&quot;p_PASSWORD_CIBLE           = &quot; + context.p_PASSWORD_CIBLE);&#xD;&#xA;System.out.println(&quot;p_RACINE_CIBLE              = &quot; + context.p_RACINE_CIBLE);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;========================================&quot;);&#xD;&#xA;System.out.println(&quot; FIN DEBUG CONTEXTE&quot;);&#xD;&#xA;System.out.println(&quot;========================================&quot;);&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_EDI_TRANSFER_FICHIER"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_TVHBcOmjEfCypr7gW0btdA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="-40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
-  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tRunJob_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_5">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
@@ -279,6 +322,22 @@
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
 </talendfile:ProcessType>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_hPucALiTEe-W-dL5fDhv3g" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_hPucAbiTEe-W-dL5fDhv3g" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucAriTEe-W-dL5fDhv3g" comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucA7iTEe-W-dL5fDhv3g" comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucBLiTEe-W-dL5fDhv3g" comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucBbiTEe-W-dL5fDhv3g" comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucBriTEe-W-dL5fDhv3g" comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucB7iTEe-W-dL5fDhv3g" comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_hPucCLiTEe-W-dL5fDhv3g" comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#xD;&#xA;"/>
+    <contextParameter xmi:id="_cBsjMGYyEfCIQuZeKmJtYQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="__jHNQGYyEfCIQuZeKmJtYQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tgoX4GY1EfCIQuZeKmJtYQ" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_tgoX4WY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX4mY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX42Y1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Corpora@te!SE25"/>
+    <contextParameter xmi:id="_tgoX5GY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX5WY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX5mY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX52Y1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX6GY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#xD;&#xA;"/>
+    <contextParameter xmi:id="_tgoX6WY1EfCIQuZeKmJtYQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN01"/>
+    <contextParameter xmi:id="_tgoX6mY1EfCIQuZeKmJtYQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\snowflake_keystore.P12"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_tgoX62Y1EfCIQuZeKmJtYQ" confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter xmi:id="_tgoX7GY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX7WY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX7mY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX72Y1EfCIQuZeKmJtYQ" comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX8GY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX8WY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX8mY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX82Y1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#xD;&#xA;"/>
+    <contextParameter xmi:id="_tgoX9GY1EfCIQuZeKmJtYQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tgoX9WY1EfCIQuZeKmJtYQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

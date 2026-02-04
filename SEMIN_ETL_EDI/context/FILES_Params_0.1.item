@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_nSJRcLiTEe-W-dL5fDhv3g" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_foPO4LiVEe-W-dL5fDhv3g" comment="" name="Local_DIRECTORY_FILE_AZURE_PATH" prompt="Local_DIRECTORY_FILE_AZURE_PATH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_vEjB0BtvEfCFm5KRTxd34w" comment="" name="Local_DIRECTORY_FILE_REJECTS" prompt="Local_DIRECTORY_FILE_REJECTS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ZASOgBtxEfCFm5KRTxd34w" comment="" name="Local_DIRECTORY_FILE_ARCHIVE" prompt="Local_DIRECTORY_FILE_ARCHIVE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_b7PdkBuOEfCFm5KRTxd34w" comment="" name="Local_DIRECTORY_FILE_INTER_PATH" prompt="Local_DIRECTORY_FILE_INTER_PATH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

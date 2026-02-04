@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_O_JyQFKsEeyg7PF6M0KqtA" confirmationNeeded="false" name="Production">
+  <contextParameter xmi:id="_O_JyQVKsEeyg7PF6M0KqtA" comment="" name="connection_smtptelenco_smtp" prompt="connection_smtptelenco_smtp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="smtp.office365.com"/>
+  <contextParameter xmi:id="_O_JyQlKsEeyg7PF6M0KqtA" comment="" name="connection_smtptelenco_port" prompt="connection_smtptelenco_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="587"/>
+  <contextParameter xmi:id="_O_JyQ1KsEeyg7PF6M0KqtA" comment="" name="connection_smtptelenco_username" prompt="connection_smtptelenco_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noreply.d365@telenco.com"/>
+  <contextParameter xmi:id="_O_JyRFKsEeyg7PF6M0KqtA" comment="" name="connection_smtptelenco_password" prompt="connection_smtptelenco_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5vHe%5sC#^73wH@X"/>
+</talendfile:ContextType>
