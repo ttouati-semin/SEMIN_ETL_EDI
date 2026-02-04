@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_pViq0GfSEfCBuNJB4XxZEw" name="test" id="_-5ei0GfREfCBuNJB4XxZEw" label="test" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://Ulysse\Navision:1433;DatabaseName=SEMIN;integratedSecurity=true" dbVersionString="MSSQL_PROP" Port="1433" Username="zzzETLTalend" Password="enc:system.encryption.key.v1:IW0nBPn/FyMBC21eUOf9cum0GnHtF09WTdS17D9n8iG56kFV04G1Wg==" ServerName="Ulysse\Navision" DatasourceName="" FileFieldName="" SID="SEMIN" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="integratedSecurity=true" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+  <taggedValue xmi:id="_pW25cGfSEfCBuNJB4XxZEw" tag="Is Conn Need Reload" value="true"/>
+  <taggedValue xmi:id="_pbI8gGfSEfCBuNJB4XxZEw" tag="package filter" value=""/>
+  <taggedValue xmi:id="_pgKmcGfSEfCBuNJB4XxZEw" tag="Status" value=""/>
+  <taggedValue xmi:id="_pgKmcWfSEfCBuNJB4XxZEw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_pgKmcmfSEfCBuNJB4XxZEw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_pgKmc2fSEfCBuNJB4XxZEw" tag="Description" value=""/>
+  <taggedValue xmi:id="_pgKmdGfSEfCBuNJB4XxZEw" tag="Author" value=""/>
+  <taggedValue xmi:id="_pgKmdWfSEfCBuNJB4XxZEw" tag="otherParameter"/>
+  <parameters xmi:id="_pW25cWfSEfCBuNJB4XxZEw" key="CONN_PARA_KEY_USERNAME" value="zzzETLTalend"/>
+  <parameters xmi:id="_c1jxcGiVEfCG4o6SDRKpmA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+</TalendMetadata:DatabaseConnection>
