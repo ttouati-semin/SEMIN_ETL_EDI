@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_wRXEcBCqEfG4ub9pBTGXuQ" confirmationNeeded="false" hide="false" name="DEVELOPPEMENT">
+    <contextParameter xmi:id="_wRXEcRCqEfG4ub9pBTGXuQ" comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://wondertex.odoo.com"/>
+    <contextParameter xmi:id="_wRXEchCqEfG4ub9pBTGXuQ" comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="wondertex"/>
+    <contextParameter xmi:id="_wRXEcxCqEfG4ub9pBTGXuQ" comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="paul.dieudonne@semin.com"/>
+    <contextParameter xmi:id="_wRXEdBCqEfG4ub9pBTGXuQ" comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad"/>
+    <contextParameter xmi:id="_wRXEdRCqEfG4ub9pBTGXuQ" comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="200"/>
+    <contextParameter xmi:id="_wRXEdhCqEfG4ub9pBTGXuQ" comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wRXEdxCqEfG4ub9pBTGXuQ" confirmationNeeded="false" hide="false" name="PRODUCTION">
+    <contextParameter xmi:id="_wRXEeBCqEfG4ub9pBTGXuQ" comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://wondertex.odoo.com"/>
+    <contextParameter xmi:id="_wRXEeRCqEfG4ub9pBTGXuQ" comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="wondertex"/>
+    <contextParameter xmi:id="_wRXEehCqEfG4ub9pBTGXuQ" comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="paul.dieudonne@semin.com"/>
+    <contextParameter xmi:id="_wRXEexCqEfG4ub9pBTGXuQ" comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad"/>
+    <contextParameter xmi:id="_wRXEfBCqEfG4ub9pBTGXuQ" comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="200"/>
+    <contextParameter xmi:id="_wRXEfRCqEfG4ub9pBTGXuQ" comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wRXEfhCqEfG4ub9pBTGXuQ" confirmationNeeded="false" hide="false" name="RECETTE">
+    <contextParameter xmi:id="_wRXEfxCqEfG4ub9pBTGXuQ" comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://wondertex.odoo.com"/>
+    <contextParameter xmi:id="_wRXEgBCqEfG4ub9pBTGXuQ" comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="wondertex"/>
+    <contextParameter xmi:id="_wRXEgRCqEfG4ub9pBTGXuQ" comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="paul.dieudonne@semin.com"/>
+    <contextParameter xmi:id="_wRXEghCqEfG4ub9pBTGXuQ" comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad"/>
+    <contextParameter xmi:id="_wRXEgxCqEfG4ub9pBTGXuQ" comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="200"/>
+    <contextParameter xmi:id="_wRXEhBCqEfG4ub9pBTGXuQ" comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO"/>
+  </talendfile:ContextType>
+</xmi:XMI>

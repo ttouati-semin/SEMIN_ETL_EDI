@@ -10,6 +10,9 @@
     <contextParameter xmi:id="_ojBeR-_FEfCtA9TQCOJNgQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
     <contextParameter xmi:id="_ojBeSO_FEfCtA9TQCOJNgQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\snowflake_keystore.p12"/>
     <contextParameter xmi:id="_ojBeSe_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN01"/>
+    <contextParameter xmi:id="_10njgBPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
+    <contextParameter xmi:id="_10njgRPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="BRONZE"/>
+    <contextParameter xmi:id="_KROxoBPeEfGHjLe3oPnj5g" comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_ODOO"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_ojBeSu_FEfCtA9TQCOJNgQ" confirmationNeeded="false" hide="false" name="PROD">
     <contextParameter xmi:id="_ojBeS-_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QMKZKFX-HG22197"/>
@@ -21,6 +24,9 @@
     <contextParameter xmi:id="_ojBeUe_FEfCtA9TQCOJNgQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
     <contextParameter xmi:id="_ojBeUu_FEfCtA9TQCOJNgQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\snowflake_keystore.p12"/>
     <contextParameter xmi:id="_ojBeU-_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN01"/>
+    <contextParameter xmi:id="_10njghPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
+    <contextParameter xmi:id="_10njgxPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="BRONZE"/>
+    <contextParameter xmi:id="_KROxoRPeEfGHjLe3oPnj5g" comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_ODOO"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_ojBeVO_FEfCtA9TQCOJNgQ" confirmationNeeded="false" hide="false" name="REC">
     <contextParameter xmi:id="_ojBeVe_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QMKZKFX-HG22197"/>
@@ -32,5 +38,8 @@
     <contextParameter xmi:id="_ojBeW-_FEfCtA9TQCOJNgQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
     <contextParameter xmi:id="_ojBeXO_FEfCtA9TQCOJNgQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\snowflake_keystore.p12"/>
     <contextParameter xmi:id="_ojBeXe_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN01"/>
+    <contextParameter xmi:id="_10njhBPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
+    <contextParameter xmi:id="_10njhRPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="BRONZE"/>
+    <contextParameter xmi:id="_KROxohPeEfGHjLe3oPnj5g" comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_ODOO"/>
   </talendfile:ContextType>
 </xmi:XMI>

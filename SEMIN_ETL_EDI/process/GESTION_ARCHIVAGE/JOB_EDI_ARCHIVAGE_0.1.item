@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WoA48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WoQ48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wog48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wow48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WpA48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WpQ48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wpg48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wpw48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WqA48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WqQ48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wqg48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wqw48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WrA48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WrQ48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wrg48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wrw48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WsA48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WsQ48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_8_9Wsg48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_8_9Wsw48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WtA48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WtQ48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wtg48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9Wtw48EfG1BtycP00g5g"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_8_9WuA48EfG1BtycP00g5g"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -97,4 +125,125 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="log.warn(&quot;Début d archivage         = &quot; + context.p_CHEMIN_ARCHIVE);&#xD;&#xA;log.warn(&quot;Répertoire source         = &quot; + context.p_CHEMIN_SOURCE);&#xD;&#xA;globalMap.put(&quot;NB_FILES&quot;, 0);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.p_CHEMIN_SOURCE"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;*&quot;" id="0"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="true"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="&#xD;&#xA;log.warn(&quot;Début d'archivage du fichier : &quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;)) + &quot; dans le répertoire : &quot;+ context.p_CHEMIN_ARCHIVE);&#xD;&#xA;globalMap.put(&quot;NB_FILES&quot;, ((Integer)globalMap.get(&quot;NB_FILES&quot;)) + 1);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tFileArchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileArchive_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEDIRECTORY&quot;))"/>
+    <elementParameter field="FILE" name="SOURCE_FILE" value="&quot;D:/WS_Tools_Taha/SEMIN_ETL_V0/source.csv&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SUB_DIRECTROY" value="false"/>
+    <elementParameter field="FILE" name="TARGET" value="context.p_CHEMIN_ARCHIVE+ &quot;\\&quot;+ ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)).replaceAll(&quot;\\.[^.]+$&quot;, &quot;&quot;)+ &quot;_&quot;+ TalendDate.formatDate(&quot;yyyyMMdd_HH_mm_SS&quot;, TalendDate.getCurrentDate())+ &quot;.zip&quot;"/>
+    <elementParameter field="CHECK" name="MKDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ARCHIVE_FORMAT" value="zip"/>
+    <elementParameter field="CLOSED_LIST" name="LEVEL" value="4"/>
+    <elementParameter field="CHECK" name="ALL_FILES" value="true"/>
+    <elementParameter field="TABLE" name="MASK" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="OVERWRITE" value="true"/>
+    <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" value="ENC_METHOD_STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" value="AES_STRENGTH_256" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:9gyGiosVBFGCEf6DMm+MihvRAtCXsxf2wbmaLEaX" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED"/>
+    <elementParameter field="CHECK" name="USE_SYNC_FLUSH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileArchive_1"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:/WS_Tools_Taha/SEMIN_ETL_V0/delete_folder&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;D:/WS_Tools_Taha/SEMIN_ETL_V0/delete_folder or delete_file&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#xA;&quot;File (or path) deleted.&quot;&#xA;&quot;No file (or path) deleted.&quot;&#xA;&quot;File (or path) does not exist or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="&#xD;&#xA;log.warn(&quot;Suppression du fichier = &quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;)));&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileArchive_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Integer) globalMap.get(&quot;NB_FILES&quot;)>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileArchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileArchive_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileArchive_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
 </talendfile:ProcessType>

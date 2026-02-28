@@ -54,22 +54,16 @@
     "contextName" : "PROD",
     "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
     "parameterList" : [ {
-      "id" : "_NZ3cJnv0EfCCZ8EYmrLolQ",
-      "name" : "Snowflake_Warehouse_Bronze"
-    }, {
-      "id" : "_NZ3cJXv0EfCCZ8EYmrLolQ",
-      "name" : "Snowflake_Schema_Bronze"
-    }, {
-      "id" : "_NZ3cI3v0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeTe_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_MDP"
     }, {
-      "id" : "_NZ3cIXv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeS-_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_Account"
     }, {
-      "id" : "_NZ3cJHv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeTu_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_BDD"
     }, {
-      "id" : "_NZ3cInv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeTO_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_User"
     } ]
   }, {
@@ -154,22 +148,16 @@
     "contextName" : "DEV",
     "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
     "parameterList" : [ {
-      "id" : "_NZ3cJnv0EfCCZ8EYmrLolQ",
-      "name" : "Snowflake_Warehouse_Bronze"
-    }, {
-      "id" : "_NZ3cJXv0EfCCZ8EYmrLolQ",
-      "name" : "Snowflake_Schema_Bronze"
-    }, {
-      "id" : "_NZ3cI3v0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeQ-_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_MDP"
     }, {
-      "id" : "_NZ3cIXv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeQe_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_Account"
     }, {
-      "id" : "_NZ3cJHv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeRO_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_BDD"
     }, {
-      "id" : "_NZ3cInv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeQu_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_User"
     } ]
   }, {
@@ -204,28 +192,28 @@
     "contextName" : "Default",
     "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
     "parameterList" : [ {
-      "id" : "_rX9_cBrMEfCjtsB6USVc1g",
+      "id" : "_rX9_chrMEfCjtsB6USVc1g",
       "name" : "File_Context"
     }, {
-      "id" : "_zNCEMW0_EfChkvInqLRHZA",
+      "id" : "_zNCENm0_EfChkvInqLRHZA",
       "name" : "File_Logs_Bronze"
     }, {
-      "id" : "_T1e8EG1LEfChkvInqLRHZA",
+      "id" : "_T1e8EW1LEfChkvInqLRHZA",
       "name" : "File_Logs_Exec"
     }, {
-      "id" : "_zNCENG0_EfChkvInqLRHZA",
+      "id" : "_zNCEOW0_EfChkvInqLRHZA",
       "name" : "Folder_Rejets"
     }, {
-      "id" : "_zNCEMG0_EfChkvInqLRHZA",
+      "id" : "_zNCENW0_EfChkvInqLRHZA",
       "name" : "Folder_Root_PRJ"
     }, {
-      "id" : "_DJ7sIG1IEfChkvInqLRHZA",
+      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
       "name" : "Folder_Tests"
     }, {
-      "id" : "_zNCEMm0_EfChkvInqLRHZA",
+      "id" : "_zNCEN20_EfChkvInqLRHZA",
       "name" : "Param_Context_File_G"
     }, {
-      "id" : "_zNCEM20_EfChkvInqLRHZA",
+      "id" : "_zNCEOG0_EfChkvInqLRHZA",
       "name" : "Param_Display_G"
     } ]
   }, {
@@ -254,22 +242,16 @@
     "contextName" : "Default",
     "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
     "parameterList" : [ {
-      "id" : "_NZ3cJnv0EfCCZ8EYmrLolQ",
-      "name" : "Snowflake_Warehouse_Bronze"
-    }, {
-      "id" : "_NZ3cJXv0EfCCZ8EYmrLolQ",
-      "name" : "Snowflake_Schema_Bronze"
-    }, {
-      "id" : "_NZ3cI3v0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeQ-_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_MDP"
     }, {
-      "id" : "_NZ3cIXv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeQe_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_Account"
     }, {
-      "id" : "_NZ3cJHv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeRO_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_BDD"
     }, {
-      "id" : "_NZ3cInv0EfCCZ8EYmrLolQ",
+      "id" : "_ojBeQu_FEfCtA9TQCOJNgQ",
       "name" : "Snowflake_User"
     } ]
   }, {

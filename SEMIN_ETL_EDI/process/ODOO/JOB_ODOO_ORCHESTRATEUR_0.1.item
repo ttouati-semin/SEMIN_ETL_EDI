@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCjkBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCjkRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCjkhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCjkxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCjlBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCjlRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCjlhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCjlxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCjmBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCjmRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCjmhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCjmxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCjnBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCjnRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCjnhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCjnxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCjoBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCjoRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCjohS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCjoxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCjpBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCjpRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCjphS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCjpxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCjqBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCjqRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCjqhS3EfGHjLe3oPnj5g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="REC">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCjqxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCjrBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCjrRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCjrhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCjrxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCjsBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCjsRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCjshS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCjsxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCjtBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCjtRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCjthS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCjtxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCjuBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCjuRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCjuhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCjuxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCjvBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCjvRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCjvhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCjvxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCjwBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCjwRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCjwhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCjwxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCjxBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCjxRS3EfGHjLe3oPnj5g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCjxhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCjxxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCjyBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCjyRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCjyhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCjyxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCjzBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCjzRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCjzhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCjzxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCj0BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCj0RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCj0hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCj0xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCj1BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCj1RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCj1hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCj1xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCj2BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCj2RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCj2hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCj2xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCj3BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCj3RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCj3hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCj3xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCj4BS3EfGHjLe3oPnj5g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEVELOPPEMENT">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCj4RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCj4hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCj4xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCj5BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCj5RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCj5hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCj5xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCj6BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCj6RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCj6hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCj6xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCj7BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCj7RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCj7hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCj7xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCj8BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCj8RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCj8hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCj8xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCj9BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCj9RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCj9hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCj9xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCj-BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCj-RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCj-hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCj-xS3EfGHjLe3oPnj5g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCj_BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCj_RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCj_hS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCj_xS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCkABS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCkARS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCkAhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCkAxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCkBBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCkBRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCkBhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCkBxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCkCBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCkCRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCkChS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCkCxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCkDBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCkDRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCkDhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCkDxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCkEBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCkERS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCkEhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCkExS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCkFBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCkFRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCkFhS3EfGHjLe3oPnj5g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="RECETTE">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCkFxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCkGBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCkGRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCkGhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCkGxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCkHBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCkHRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCkHhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCkHxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCkIBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCkIRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCkIhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCkIxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCkJBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCkJRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCkJhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCkJxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCkKBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCkKRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCkKhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCkKxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCkLBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCkLRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCkLhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCkLxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCkMBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCkMRS3EfGHjLe3oPnj5g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="PRODUCTION">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCkMhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCkMxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCkNBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCkNRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_1pCkNhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_1pCkNxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_1pCkOBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCkORS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_1pCkOhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCkOxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_1pCkPBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_1pCkPRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_EDI_SEMIN" internalId="_1pCkPhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_1pCkPxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_ODOO" internalId="_1pCkQBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_1pCkQRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_1pCkQhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="BRONZE" internalId="_1pCkQxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_1pCkRBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCkRRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_1pCkRhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_api_key" prompt="odoo_api_key?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="5c278a67fb4cf1ddf0b0d83e975f31471c81efad" internalId="_1pCkRxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_db" prompt="odoo_db?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="wondertex" internalId="_1pCkSBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_login" prompt="odoo_login?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="paul.dieudonne@semin.com" internalId="_1pCkSRS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_1pCkShS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_1pCkSxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCkTBS3EfGHjLe3oPnj5g"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:zTHKIDpb7UcSjKk72+Iq7vqB9umeLh3R2XehnIOc" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace_AOM/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wW4ufdvd0mL/oiHt2ca7nJ3bF9AHXGhy5F+oJbAE" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_COMPANIES"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_lFbgwBSKEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_CURRENCIES"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_jLX2kBSEEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_EXTRACT_ARTICLES"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_MsHz0BPrEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="720">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_EXTRACT_CLIENTS"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_agOD8AznEfG-hbG3IaVDkw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_PRODUCT_CATEGORIES"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_MML1oBSSEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_LISTE_DE_PRIX"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_RiKUsBP2EfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODOO_SALE_ORDERS"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_XQ0GEBSlEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_7"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODDOO_SALE_ORDER_LINES"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_3iOJMBSrEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_8"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1720">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_9" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="JOB_ODOO_ACCOUNT_MOVES"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PRODUCTION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="SEMIN_ETL_EDI:_YJZIUBSvEfGHjLe3oPnj5g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_9"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tRunJob_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_5" offsetLabelX="0" offsetLabelY="0" source="tRunJob_5" target="tRunJob_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_6" offsetLabelX="0" offsetLabelY="0" source="tRunJob_6" target="tRunJob_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tRunJob_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_8" offsetLabelX="0" offsetLabelY="0" source="tRunJob_8" target="tRunJob_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>

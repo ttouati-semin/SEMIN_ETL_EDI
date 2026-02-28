@@ -2,14 +2,14 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="DEV" jobType="Standard">
     <context confirmationNeeded="false" hide="false" name="PROD">
-      <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_4xU1YG1OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_4xU1YW1OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_4xU1Ym1OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_4xU1Y21OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_4xU1ZG1OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_4xU1ZW1OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="" internalId="_4xU1Zm1OEfChkvInqLRHZA"/>
-      <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="" internalId="_4xU1Z21OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_4xU1YG1OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_4xU1YW1OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_4xU1Ym1OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_4xU1Y21OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_4xU1ZG1OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_4xU1ZW1OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_4xU1Zm1OEfChkvInqLRHZA"/>
+      <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_4xU1Z21OEfChkvInqLRHZA"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="DEV">
       <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_4xU1aG1OEfChkvInqLRHZA"/>

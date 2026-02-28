@@ -5,6 +5,6 @@
   <contextParameter xmi:id="_qjCM4m1dEfChkvInqLRHZA" comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
   <contextParameter xmi:id="_qjCM421dEfChkvInqLRHZA" comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN"/>
   <contextParameter xmi:id="_hq9SwG16EfChkvInqLRHZA" comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true"/>
-  <contextParameter xmi:id="_hq9SwW16EfChkvInqLRHZA" comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_hq9SwW16EfChkvInqLRHZA" comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
   <contextParameter xmi:id="_YVVuYOKCEfCBWawNnQ4E_w" comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:mqiCmNP3IpbGQLiNfOFWJHcP07PfdvHxK0vZXQpi2up4/kJN3JYsVw=="/>
 </talendfile:ContextType>
