@@ -37,6 +37,9 @@
       "id" : "_iGZP0vDHEfCVb8Wd2XudEA",
       "name" : "p_CODE_TYPE_FLUX"
     }, {
+      "id" : "_XygvQDPxEfGtlKlqqEy94w",
+      "name" : "p_DELETE_SRC_FILES"
+    }, {
       "id" : "_iGZP2vDHEfCVb8Wd2XudEA",
       "name" : "p_DUREE_RETENTION_ANNEES"
     }, {

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/EXPORTS_BUITEX</deletedFolders>
   <deletedItems id="_ApF8UOmlEfCypr7gW0btdA" path="" type="PROCESS"/>
+  <deletedItems id="_NAF6YC2iEfGjqZuY_ZZWug" path="EXPORTS_BUITEX" type="PROCESS"/>
+  <deletedItems id="_ZCPZcC2pEfGXSOw8tsddQA" path="EXPORTS_BUITEX" type="PROCESS"/>
+  <deletedItems id="_0ZrVQDP3EfGtlKlqqEy94w" path="SCAN_ET_ROUTAGE" type="PROCESS"/>
 </recyclebin:RecycleBin>

@@ -25,4 +25,5 @@
   <contextParameter xmi:id="_iGZP5vDHEfCVb8Wd2XudEA" comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_iGZP5_DHEfCVb8Wd2XudEA" comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_yJs6YPDSEfCVb8Wd2XudEA" comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_XygvQDPxEfGtlKlqqEy94w" comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
 </talendfile:ContextType>

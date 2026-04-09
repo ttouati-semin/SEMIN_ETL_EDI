@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ncPDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ncfDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ncvDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nc_DSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ndPDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ndfDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ndvDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nd_DSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nePDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nefDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nevDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ne_DSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nfPDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nffDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nfvDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nf_DSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ngPDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2ngfDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_6e2ngvDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_6e2ng_DSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nhPDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nhfDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nhvDSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2nh_DSEfCVb8Wd2XudEA"/>
-    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_6e2niPDSEfCVb8Wd2XudEA"/>
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLkDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLkTP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLkjP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLkzP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLlDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLlTP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLljP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLlzP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLmDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLmTP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLmjP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLmzP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLnDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLnTP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLnjP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLnzP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLoDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLoTP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLojP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_1RQLozP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_1RQLpDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLpTP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLpjP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLpzP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLqDP5EfGtlKlqqEy94w"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_1RQLqTP5EfGtlKlqqEy94w"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -132,7 +133,7 @@
     <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD"/>
     <elementParameter field="TEXT" name="USER" value="context.p_USER_SOURCE"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:w7ZJLejPys0i/khtFs2arf1LqJmD9YWO4S7Hg+xLKmadOYGnyKNaa/0yWcD+KezU1yKVRjU="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.p_PASSWORD_SOURCE"/>
     <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="SFTP" value="false"/>
     <elementParameter field="CHECK" name="FTPS" value="false"/>
@@ -174,7 +175,7 @@
     <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD"/>
     <elementParameter field="TEXT" name="USER" value="context.p_USER_CIBLE"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SLw3XqXG5HDZArruteNAh5HPrdu5X/vEGVrWkfJfi2xB/cQuhCq3BRhKzgChSt8icRe/ug=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.p_PASSWORD_CIBLE"/>
     <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="SFTP" value="false"/>
     <elementParameter field="CHECK" name="FTPS" value="false"/>
@@ -328,7 +329,7 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="80">
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_2" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -340,7 +341,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="80">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1640" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&#xD;&#xA;&#x9;&#x9;  &quot;TRANSFERT TERMINE POUR MASQUE = &quot; + context.p_MASQUE_FICHIER_SOURCE&#xD;&#xA;&#x9;&#x9;);&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -562,10 +563,57 @@
     <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
+  <node componentName="tFTPDelete" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPDelete_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:TVcfoeMwvNKyiSEj+Q2y4FkLCUk2si0P50fBU3dFvcnvhn0/5NhQ" show="false"/>
+    <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:4PNSgDnRM1M4yaE7pqm0GJg/E2XBUD10bOXCdInz5cKGw92P" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:GCUKG58VZRwGzziG2nGIJT4jwRUNmSCpFzqeuJBLvWjJh5+2" show="false"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.p_CHEMIN_SOURCE"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.p_MASQUE_FICHIER_SOURCE" id="0"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="TARGET_TYPE" value="FILE"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:F689r4Lnxd/4k0hk0dhbkz7E3FHix2cTdWQrRZLy" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPDelete_1"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tFTPConnection_1">
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="-12" offsetLabelY="0" outputId="1" source="tJava_1" target="tFTPConnection_1">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.p_CANAL_SOURCE.equals(&quot;FTP&quot;)"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
@@ -595,8 +643,9 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tFTPClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tFTPClose_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tFTPDelete_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.p_DELETE_SRC_FILES.equals(&quot;O&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If11" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPClose_1" offsetLabelX="0" offsetLabelY="0" source="tFTPClose_1" target="tJava_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
@@ -629,6 +678,9 @@
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_3" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_3" target="tJava_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk11" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFTPDelete_1" target="tFTPClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk16" show="false"/>
   </connection>
   <note opaque="true" posX="560" posY="-40" sizeHeight="80" sizeWidth="520" text="Cas 1 : source FTP / cible FILE_SYSTEM">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="192;192;192"/>
@@ -748,6 +800,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPDelete_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>

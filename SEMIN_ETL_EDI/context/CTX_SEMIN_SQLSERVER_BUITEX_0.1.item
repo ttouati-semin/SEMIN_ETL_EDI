@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_c_8bUG1dEfChkvInqLRHZA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_qjCM4G1dEfChkvInqLRHZA" comment="" name="Buitex_Host" prompt="Buitex_Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.69.14"/>
+  <contextParameter xmi:id="_qjCM4W1dEfChkvInqLRHZA" comment="" name="Buitex_User" prompt="Buitex_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="User_SQL_BDD_Talend_SEMIN"/>
+  <contextParameter xmi:id="_qjCM4m1dEfChkvInqLRHZA" comment="" name="Buitex_Schema" prompt="Buitex_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_qjCM421dEfChkvInqLRHZA" comment="" name="Buitex_BDD" prompt="Buitex_BDD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="BUITEX_INDUSTRIES"/>
+  <contextParameter xmi:id="_hq9SwG16EfChkvInqLRHZA" comment="" name="Buitex_JDBC" prompt="Buitex_JDBC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="instanceName=SAGE100;encrypt=false;trustServerCertificate=true"/>
+  <contextParameter xmi:id="_hq9SwW16EfChkvInqLRHZA" comment="" name="Buitex_Port" prompt="Buitex_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_YkFjAC2XEfGqx9YHxNUT1Q" comment="" name="Buitex_pwd" prompt="Buitex_pwd?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="rG@%U0JoNr9a0m"/>
+</talendfile:ContextType>

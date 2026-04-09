@@ -1046,7 +1046,7 @@
     <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:G/QBvdWxcyaYtT+hzQY/LRSEtkBkJTJsw0LDeyHt"/>
     <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" value="PKCS12"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" value="context.Keystore_path"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:m48giQB3c3DLb1r2dqk81wx/DFlk3UgygpbXSAdNy7rV8GBfqaxky+jhhovUcJTXKCIQaEY="/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="context.Keystore_password"/>
     <elementParameter field="CHECK" name="VERIFY_NAME" value="false"/>
     <elementParameter field="CHECK" name="USE_SSLCONTEXT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1060,7 +1060,7 @@
     <elementParameter field="TEXT" name="configuration.account" value="context.Snowflake_Account"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="KEY_PAIR"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.userId" value="context.Snowflake_User"/>
-    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="enc:system.encryption.key.v1:QcTX1HFmuPmS7/sjWOoS9FuiuNJwFfYJfqw9c/zJK2+R2q7UKAEIXA6Qqf9UfqNYRg==" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.password" value="context.Snowflake_MDP" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.keyAlias" value="&quot;snowflake_key&quot;"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.clientId" value="&quot;&quot;" show="false"/>

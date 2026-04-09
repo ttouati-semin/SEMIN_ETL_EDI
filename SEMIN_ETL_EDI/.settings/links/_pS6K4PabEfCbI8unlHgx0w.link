@@ -80,6 +80,31 @@
     } ]
   }, {
     "contextName" : "PROD",
+    "repoId" : "_BaH90C2XEfGqx9YHxNUT1Q",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Buitex_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Buitex_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Buitex_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Buitex_Port"
+    }, {
+      "id" : "_YkFjAC2XEfGqx9YHxNUT1Q",
+      "name" : "Buitex_pwd"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Buitex_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Buitex_User"
+    } ]
+  }, {
+    "contextName" : "PROD",
     "repoId" : "_hPgZkLiTEe-W-dL5fDhv3g",
     "parameterList" : [ {
       "id" : "_tgoX9GY1EfCIQuZeKmJtYQ",
@@ -183,6 +208,31 @@
     }, {
       "id" : "_qjCM4W1dEfChkvInqLRHZA",
       "name" : "Navision_User"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_BaH90C2XEfGqx9YHxNUT1Q",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Buitex_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Buitex_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Buitex_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Buitex_Port"
+    }, {
+      "id" : "_YkFjAC2XEfGqx9YHxNUT1Q",
+      "name" : "Buitex_pwd"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Buitex_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Buitex_User"
     } ]
   }, {
     "contextName" : "DEV",
@@ -292,6 +342,31 @@
     } ]
   }, {
     "contextName" : "Default",
+    "repoId" : "_BaH90C2XEfGqx9YHxNUT1Q",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Buitex_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Buitex_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Buitex_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Buitex_Port"
+    }, {
+      "id" : "_YkFjAC2XEfGqx9YHxNUT1Q",
+      "name" : "Buitex_pwd"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Buitex_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Buitex_User"
+    } ]
+  }, {
+    "contextName" : "Default",
     "repoId" : "_hPgZkLiTEe-W-dL5fDhv3g",
     "parameterList" : [ {
       "id" : "_cBsjMGYyEfCIQuZeKmJtYQ",
@@ -395,6 +470,31 @@
     }, {
       "id" : "_qjCM4W1dEfChkvInqLRHZA",
       "name" : "Navision_User"
+    } ]
+  }, {
+    "contextName" : "REC",
+    "repoId" : "_BaH90C2XEfGqx9YHxNUT1Q",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Buitex_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Buitex_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Buitex_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Buitex_Port"
+    }, {
+      "id" : "_YkFjAC2XEfGqx9YHxNUT1Q",
+      "name" : "Buitex_pwd"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Buitex_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Buitex_User"
     } ]
   }, {
     "contextName" : "REC",

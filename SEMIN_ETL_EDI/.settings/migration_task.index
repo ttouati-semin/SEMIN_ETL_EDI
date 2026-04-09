@@ -205,6 +205,11 @@
     "version" : "8.0.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.dataprep.migration.UseDynamicColumnsLabelsMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.designer.dbmap.migration.DBMapSplitTableConstraintFiltersMigrationTask",
     "breaks" : "5.1.2",
     "version" : "5.6.0",
@@ -2023,6 +2028,16 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.RestorePasswordContextInProjectSettingsMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.RestorePasswordContextValue4ProcessItemMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.ReviewPigLoadLayout",
     "breaks" : "6.1.0",
     "version" : "6.1.0",
@@ -2580,6 +2595,11 @@
     "version" : "8.0.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.studio.components.tck.dataqualityRule.migration.ChangeComponentVersionTask",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.studio.components.tck.jdbc.migration.GenericJDBCConnectionToTacokitJDBCMigrationTask",
     "breaks" : "8.0.0",
     "version" : "8.0.1",
@@ -2598,6 +2618,10 @@
     "id" : "org.talend.testcontainer.core.ui.migration.TestCaseRoutinesMigrationTask",
     "breaks" : "6.1.1",
     "version" : "7.2.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.transform.views.migrationTask",
+    "version" : "8.0.1",
     "status" : "noimpact"
   } ]
 }
