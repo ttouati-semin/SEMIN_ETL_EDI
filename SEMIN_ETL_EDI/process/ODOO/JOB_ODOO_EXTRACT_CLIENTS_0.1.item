@@ -540,6 +540,18 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="property_product_pricelist_name" id="165"/>
       <elementValue elementRef="QUERY" value="&quot;struct/member[name='property_product_pricelist']/value/array/data/value[2]/string&quot;" id="166"/>
       <elementValue elementRef="NODECHECK" value="false" id="167"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="buyer_id_id" id="168"/>
+      <elementValue elementRef="QUERY" value="&quot;struct/member[name='buyer_id']/value/array/data/value[1]/* | struct/member[name='buyer_id']/value/boolean&quot;" id="169"/>
+      <elementValue elementRef="NODECHECK" value="false" id="170"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="buyer_id_name" id="171"/>
+      <elementValue elementRef="QUERY" value="&quot;struct/member[name='buyer_id']/value/array/data/value[2]/string&quot;" id="172"/>
+      <elementValue elementRef="NODECHECK" value="false" id="173"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="industry_id_id" id="174"/>
+      <elementValue elementRef="QUERY" value="&quot;struct/member[name='industry_id']/value/array/data/value[1]/*&quot;" id="175"/>
+      <elementValue elementRef="NODECHECK" value="false" id="176"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="industry_id_name" id="177"/>
+      <elementValue elementRef="QUERY" value="&quot;struct/member[name='industry_id']/value/array/data/value[2]/string&quot;" id="178"/>
+      <elementValue elementRef="NODECHECK" value="false" id="179"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -606,6 +618,10 @@
       <column comment="" key="false" length="-1" name="country_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -664,6 +680,10 @@
       <column comment="" key="false" length="-1" name="country_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -795,12 +815,20 @@
       <elementValue elementRef="LENGTH" value="10" id="109"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="property_product_pricelist_name" id="110"/>
       <elementValue elementRef="LENGTH" value="10" id="111"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorXMLField" id="112"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="buyer_id_id" id="112"/>
       <elementValue elementRef="LENGTH" value="10" id="113"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode" id="114"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="buyer_id_name" id="114"/>
       <elementValue elementRef="LENGTH" value="10" id="115"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="116"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="industry_id_id" id="116"/>
       <elementValue elementRef="LENGTH" value="10" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="industry_id_name" id="118"/>
+      <elementValue elementRef="LENGTH" value="10" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorXMLField" id="120"/>
+      <elementValue elementRef="LENGTH" value="10" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode" id="122"/>
+      <elementValue elementRef="LENGTH" value="10" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="124"/>
+      <elementValue elementRef="LENGTH" value="10" id="125"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -862,6 +890,10 @@
       <column comment="" key="false" length="-1" name="country_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -929,6 +961,10 @@
       <column comment="" key="false" length="-1" name="country_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="520">
@@ -1002,12 +1038,16 @@
       <column comment="" key="false" length="-1" name="country_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="MAX_ID" name="MAX_ID">
       <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfOUT_CLEAN">
         <mapperTableEntries name="id" expression="row3.id" type="id_Integer" nullable="true"/>
@@ -1066,6 +1106,10 @@
         <mapperTableEntries name="country_id_name" expression="row3.country_id_name" type="id_String" nullable="true"/>
         <mapperTableEntries name="property_product_pricelist_id" expression="row3.property_product_pricelist_id" type="id_String" nullable="true"/>
         <mapperTableEntries name="property_product_pricelist_name" expression="row3.property_product_pricelist_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="buyer_id_id" expression="row3.buyer_id_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="buyer_id_name" expression="row3.buyer_id_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="industry_id_id" expression="row3.industry_id_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="industry_id_name" expression="row3.industry_id_name" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="MAX_ID" activateCondensedTool="true">
         <mapperTableEntries name="id" expression="row3.id" type="id_Integer" nullable="true"/>
@@ -1127,6 +1171,10 @@
         <mapperTableEntries name="country_id_name" type="id_String" nullable="true"/>
         <mapperTableEntries name="property_product_pricelist_id" type="id_String" nullable="true"/>
         <mapperTableEntries name="property_product_pricelist_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="buyer_id_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="buyer_id_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="industry_id_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="industry_id_name" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1248,6 +1296,10 @@
       <column comment="" key="false" length="-1" name="country_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="property_product_pricelist_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="buyer_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="industry_id_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
@@ -1452,7 +1504,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="int lastId = (Integer)globalMap.get(&quot;last_id&quot;);&#xD;&#xA;int pageSize = (Integer)globalMap.get(&quot;page_size&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;lastId : &quot;+lastId+ &quot; pageSize : &quot; +pageSize);&#xD;&#xA;&#xD;&#xA;String xml =&#xD;&#xA;&quot;&lt;?xml version=\&quot;1.0\&quot;?>\n&quot; +&#xD;&#xA;&quot;&lt;methodCall>\n&quot; +&#xD;&#xA;&quot;  &lt;methodName>execute_kw&lt;/methodName>\n&quot; +&#xD;&#xA;&quot;  &lt;params>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>wondertex&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;int>2&lt;/int>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>&quot;+context.odoo_api_key+&quot;&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>res.partner&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>search_read&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;    &lt;param>\n&quot; +&#xD;&#xA;&quot;      &lt;value>\n&quot; +&#xD;&#xA;&quot;        &lt;array>\n&quot; +&#xD;&#xA;&quot;          &lt;data>\n&quot; +&#xD;&#xA;&quot;            &lt;value>\n&quot; +&#xD;&#xA;&quot;              &lt;array>\n&quot; +&#xD;&#xA;&quot;                &lt;data>\n&quot; +&#xD;&#xA;&quot;                  &lt;value>\n&quot; +&#xD;&#xA;&quot;                    &lt;array>\n&quot; +&#xD;&#xA;&quot;                      &lt;data>\n&quot; +&#xD;&#xA;&quot;                        &lt;value>&lt;string>id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                        &lt;value>&lt;string>&amp;gt;&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                        &lt;value>&lt;int>&quot;+ lastId +&quot;&lt;/int>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                      &lt;/data>\n&quot; +&#xD;&#xA;&quot;                    &lt;/array>\n&quot; +&#xD;&#xA;&quot;                  &lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;/data>\n&quot; +&#xD;&#xA;&quot;              &lt;/array>\n&quot; +&#xD;&#xA;&quot;            &lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/data>\n&quot; +&#xD;&#xA;&quot;        &lt;/array>\n&quot; +&#xD;&#xA;&quot;      &lt;/value>\n&quot; +&#xD;&#xA;&quot;    &lt;/param>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;    &lt;param>\n&quot; +&#xD;&#xA;&quot;      &lt;value>\n&quot; +&#xD;&#xA;&quot;        &lt;struct>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;          &lt;member>\n&quot; +&#xD;&#xA;&quot;            &lt;name>fields&lt;/name>\n&quot; +&#xD;&#xA;&quot;            &lt;value>\n&quot; +&#xD;&#xA;&quot;              &lt;array>&lt;data>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;                &lt;value>&lt;string>id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>name&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>display_name&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>complete_name&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>ref&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>active&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>type&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>type_address_label&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>is_company&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>company_type&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>employee&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>function&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>lang&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>tz&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>tz_offset&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>street&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>street2&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>zip&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>city&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>state_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>country_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>country_code&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>contact_address&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>contact_address_complete&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>contact_address_inline&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>email&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>email_normalized&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>phone&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>phone_sanitized&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>customer_rank&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>supplier_rank&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>credit&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>debit&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>total_invoiced&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>total_due&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>total_overdue&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>currency_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>property_account_payable_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>property_account_receivable_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>activity_user_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>create_uid&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>create_date&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>write_uid&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>write_date&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>category_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>child_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>message_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>invoice_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>bank_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>property_product_pricelist&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>company_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>vat&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;              &lt;/data>&lt;/array>\n&quot; +&#xD;&#xA;&quot;            &lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/member>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;          &lt;member>\n&quot; +&#xD;&#xA;&quot;            &lt;name>limit&lt;/name>\n&quot; +&#xD;&#xA;&quot;            &lt;value>&lt;int>&quot;+ pageSize +&quot;&lt;/int>&lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/member>\n&quot; +&#xD;&#xA;&quot;          &lt;member>\n&quot; +&#xD;&#xA;&quot;            &lt;name>order&lt;/name>\n&quot; +&#xD;&#xA;&quot;            &lt;value>&lt;string>id asc&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/member>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;        &lt;/struct>\n&quot; +&#xD;&#xA;&quot;      &lt;/value>\n&quot; +&#xD;&#xA;&quot;    &lt;/param>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;  &lt;/params>\n&quot; +&#xD;&#xA;&quot;&lt;/methodCall>&quot;;&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;xml_request&quot;, xml);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="int lastId = (Integer)globalMap.get(&quot;last_id&quot;);&#xD;&#xA;int pageSize = (Integer)globalMap.get(&quot;page_size&quot;);&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;lastId : &quot;+lastId+ &quot; pageSize : &quot; +pageSize);&#xD;&#xA;&#xD;&#xA;String xml =&#xD;&#xA;&quot;&lt;?xml version=\&quot;1.0\&quot;?>\n&quot; +&#xD;&#xA;&quot;&lt;methodCall>\n&quot; +&#xD;&#xA;&quot;  &lt;methodName>execute_kw&lt;/methodName>\n&quot; +&#xD;&#xA;&quot;  &lt;params>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>wondertex&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;int>2&lt;/int>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>&quot;+context.odoo_api_key+&quot;&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>res.partner&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&quot;    &lt;param>&lt;value>&lt;string>search_read&lt;/string>&lt;/value>&lt;/param>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;    &lt;param>\n&quot; +&#xD;&#xA;&quot;      &lt;value>\n&quot; +&#xD;&#xA;&quot;        &lt;array>\n&quot; +&#xD;&#xA;&quot;          &lt;data>\n&quot; +&#xD;&#xA;&quot;            &lt;value>\n&quot; +&#xD;&#xA;&quot;              &lt;array>\n&quot; +&#xD;&#xA;&quot;                &lt;data>\n&quot; +&#xD;&#xA;&quot;                  &lt;value>\n&quot; +&#xD;&#xA;&quot;                    &lt;array>\n&quot; +&#xD;&#xA;&quot;                      &lt;data>\n&quot; +&#xD;&#xA;&quot;                        &lt;value>&lt;string>id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                        &lt;value>&lt;string>&amp;gt;&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                        &lt;value>&lt;int>&quot;+ lastId +&quot;&lt;/int>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                      &lt;/data>\n&quot; +&#xD;&#xA;&quot;                    &lt;/array>\n&quot; +&#xD;&#xA;&quot;                  &lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;/data>\n&quot; +&#xD;&#xA;&quot;              &lt;/array>\n&quot; +&#xD;&#xA;&quot;            &lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/data>\n&quot; +&#xD;&#xA;&quot;        &lt;/array>\n&quot; +&#xD;&#xA;&quot;      &lt;/value>\n&quot; +&#xD;&#xA;&quot;    &lt;/param>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;    &lt;param>\n&quot; +&#xD;&#xA;&quot;      &lt;value>\n&quot; +&#xD;&#xA;&quot;        &lt;struct>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;          &lt;member>\n&quot; +&#xD;&#xA;&quot;            &lt;name>fields&lt;/name>\n&quot; +&#xD;&#xA;&quot;            &lt;value>\n&quot; +&#xD;&#xA;&quot;              &lt;array>&lt;data>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;                &lt;value>&lt;string>id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>name&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>display_name&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>complete_name&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>ref&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>active&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>type&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>type_address_label&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>is_company&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>company_type&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>employee&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>function&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>lang&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>tz&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>tz_offset&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>street&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>street2&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>zip&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>city&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>state_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>country_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>country_code&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>contact_address&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>contact_address_complete&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>contact_address_inline&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>email&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>email_normalized&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>phone&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>phone_sanitized&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>customer_rank&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>supplier_rank&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>credit&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>debit&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>total_invoiced&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>total_due&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>total_overdue&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>currency_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>property_account_payable_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>property_account_receivable_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>activity_user_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>create_uid&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>create_date&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>write_uid&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>write_date&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>category_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>child_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>message_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>invoice_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>bank_ids&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>property_product_pricelist&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>company_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>vat&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;                &lt;value>&lt;string>buyer_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;                &lt;value>&lt;string>industry_id&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;              &lt;/data>&lt;/array>\n&quot; +&#xD;&#xA;&quot;            &lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/member>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;          &lt;member>\n&quot; +&#xD;&#xA;&quot;            &lt;name>limit&lt;/name>\n&quot; +&#xD;&#xA;&quot;            &lt;value>&lt;int>&quot;+ pageSize +&quot;&lt;/int>&lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/member>\n&quot; +&#xD;&#xA;&quot;          &lt;member>\n&quot; +&#xD;&#xA;&quot;            &lt;name>order&lt;/name>\n&quot; +&#xD;&#xA;&quot;            &lt;value>&lt;string>id asc&lt;/string>&lt;/value>\n&quot; +&#xD;&#xA;&quot;          &lt;/member>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;        &lt;/struct>\n&quot; +&#xD;&#xA;&quot;      &lt;/value>\n&quot; +&#xD;&#xA;&quot;    &lt;/param>\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;  &lt;/params>\n&quot; +&#xD;&#xA;&quot;&lt;/methodCall>&quot;;&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;xml_request&quot;, xml);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="tJava_BUILD_XML"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1665,6 +1717,24 @@
       <elementValue elementRef="TRACE_COLUMN" value="activity_user_id_name" id="132"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="133"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="134"/>
+      <elementValue elementRef="TRACE_COLUMN" value="buyer_id_name" id="135"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="136"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="137"/>
+      <elementValue elementRef="TRACE_COLUMN" value="industry" id="138"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="139"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="140"/>
+      <elementValue elementRef="TRACE_COLUMN" value="buyer_id" id="141"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="142"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="143"/>
+      <elementValue elementRef="TRACE_COLUMN" value="buyer_id_id" id="144"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="145"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="146"/>
+      <elementValue elementRef="TRACE_COLUMN" value="industry_id_name" id="147"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="148"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="149"/>
+      <elementValue elementRef="TRACE_COLUMN" value="industry_id_id" id="150"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="151"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="152"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
@@ -1703,6 +1773,24 @@
       <elementValue elementRef="TRACE_COLUMN" value="activity_user_id_name" id="21"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="buyer_id_name" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="industry" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="buyer_id" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="buyer_id_id" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="industry_id_name" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="industry_id_id" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfOUT_CLEAN" show="false"/>
