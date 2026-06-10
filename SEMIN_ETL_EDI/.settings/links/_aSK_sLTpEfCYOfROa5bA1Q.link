@@ -1,0 +1,328 @@
+{
+  "itemId" : "_aSK_sLTpEfCYOfROa5bA1Q",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_aNtrgR6qEfGoauYJ5eghPA",
+      "name" : "File_Context_VF"
+    }, {
+      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
+    "parameterList" : [ {
+      "id" : "_ojBeUe_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_password"
+    }, {
+      "id" : "_ojBeUu_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_path"
+    }, {
+      "id" : "_ojBeS-_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Account"
+    }, {
+      "id" : "_ojBeTu_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_BDD"
+    }, {
+      "id" : "_aNuSnB6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_BDD_Silver"
+    }, {
+      "id" : "_ojBeTe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_MDP"
+    }, {
+      "id" : "_ojBeU-_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Password"
+    }, {
+      "id" : "_aNuSnx6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_Bronze"
+    }, {
+      "id" : "_aNuSoB6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_ADMINISTRATION"
+    }, {
+      "id" : "_aNuSoR6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_ESP"
+    }, {
+      "id" : "_aNuSoh6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_PROFILS"
+    }, {
+      "id" : "_aNuSox6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_SAS"
+    }, {
+      "id" : "_aNuSpB6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_Silver"
+    }, {
+      "id" : "_ojBeTO_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_User"
+    }, {
+      "id" : "_aNuSph6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Warehouse_Bronze"
+    }, {
+      "id" : "_aNuSpx6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Warehouse_Silver"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_c_yqUG1dEfChkvInqLRHZA",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Navision_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Navision_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Navision_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Navision_Port"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Navision_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Navision_User"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_cBrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_aNuSrx6qEfGoauYJ5eghPA",
+      "name" : "File_Context_VF"
+    }, {
+      "id" : "_zNCEMW0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EG1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCENG0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCEMG0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIHE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIG1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEMm0_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEM20_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
+    "parameterList" : [ {
+      "id" : "_ojBeR-_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_password"
+    }, {
+      "id" : "_ojBeSO_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_path"
+    }, {
+      "id" : "_ojBeQe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Account"
+    }, {
+      "id" : "_ojBeRO_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_BDD"
+    }, {
+      "id" : "_aNuSvB6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_BDD_Silver"
+    }, {
+      "id" : "_ojBeQ-_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_MDP"
+    }, {
+      "id" : "_ojBeSe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Password"
+    }, {
+      "id" : "_aNuSvx6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_Bronze"
+    }, {
+      "id" : "_aNuSwB6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_ADMINISTRATION"
+    }, {
+      "id" : "_aNuSwR6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_ESP"
+    }, {
+      "id" : "_aNuSwh6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_PROFILS"
+    }, {
+      "id" : "_aNuSwx6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_SAS"
+    }, {
+      "id" : "_aNuSxB6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_Silver"
+    }, {
+      "id" : "_ojBeQu_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_User"
+    }, {
+      "id" : "_aNuSxh6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Warehouse_Bronze"
+    }, {
+      "id" : "_aNuSxx6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Warehouse_Silver"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_c_yqUG1dEfChkvInqLRHZA",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Navision_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Navision_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Navision_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Navision_Port"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Navision_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Navision_User"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_aNuSzx6qEfGoauYJ5eghPA",
+      "name" : "File_Context_VF"
+    }, {
+      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
+    "parameterList" : [ {
+      "id" : "_ojBeR-_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_password"
+    }, {
+      "id" : "_ojBeSO_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_path"
+    }, {
+      "id" : "_ojBeQe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Account"
+    }, {
+      "id" : "_ojBeRO_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_BDD"
+    }, {
+      "id" : "_aNuS3B6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_BDD_Silver"
+    }, {
+      "id" : "_ojBeQ-_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_MDP"
+    }, {
+      "id" : "_ojBeSe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Password"
+    }, {
+      "id" : "_aNuS3x6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_Bronze"
+    }, {
+      "id" : "_aNuS4B6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_ADMINISTRATION"
+    }, {
+      "id" : "_aNuS4R6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_ESP"
+    }, {
+      "id" : "_aNuS4h6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_PROFILS"
+    }, {
+      "id" : "_aNuS4x6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_SEMIN_SAS"
+    }, {
+      "id" : "_aNuS5B6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Schema_Silver"
+    }, {
+      "id" : "_ojBeQu_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_User"
+    }, {
+      "id" : "_aNuS5h6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Warehouse_Bronze"
+    }, {
+      "id" : "_aNuS5x6qEfGoauYJ5eghPA",
+      "name" : "Snowflake_Warehouse_Silver"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_c_yqUG1dEfChkvInqLRHZA",
+    "parameterList" : [ {
+      "id" : "_qjCM421dEfChkvInqLRHZA",
+      "name" : "Navision_BDD"
+    }, {
+      "id" : "_qjCM4G1dEfChkvInqLRHZA",
+      "name" : "Navision_Host"
+    }, {
+      "id" : "_hq9SwG16EfChkvInqLRHZA",
+      "name" : "Navision_JDBC"
+    }, {
+      "id" : "_hq9SwW16EfChkvInqLRHZA",
+      "name" : "Navision_Port"
+    }, {
+      "id" : "_qjCM4m1dEfChkvInqLRHZA",
+      "name" : "Navision_Schema"
+    }, {
+      "id" : "_qjCM4W1dEfChkvInqLRHZA",
+      "name" : "Navision_User"
+    } ]
+  } ]
+}
