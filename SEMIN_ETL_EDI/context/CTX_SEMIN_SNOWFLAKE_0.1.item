@@ -13,6 +13,14 @@
     <contextParameter xmi:id="_10njgBPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
     <contextParameter xmi:id="_10njgRPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ODOO_BRONZE"/>
     <contextParameter xmi:id="_KROxoBPeEfGHjLe3oPnj5g" comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_DEV"/>
+    <contextParameter xmi:id="_rsv2oHqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_DEV"/>
+    <contextParameter xmi:id="_rsv2oXqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RUG_CZ"/>
+    <contextParameter xmi:id="_rsv2onqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_DEV"/>
+    <contextParameter xmi:id="_vqMocIQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_DEV"/>
+    <contextParameter xmi:id="_vqMocYQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RUG"/>
+    <contextParameter xmi:id="_vqMocoQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_DEV"/>
+    <contextParameter xmi:id="_tS9sQJD0EfG1frUedQy77g" comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LORRAINE_REFENDAGE"/>
+    <contextParameter xmi:id="_ia81UJD-EfG1frUedQy77g" comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_DEV"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_ojBeSu_FEfCtA9TQCOJNgQ" confirmationNeeded="false" hide="false" name="PROD">
     <contextParameter xmi:id="_ojBeS-_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QMKZKFX-HG22197"/>
@@ -27,6 +35,14 @@
     <contextParameter xmi:id="_10njghPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
     <contextParameter xmi:id="_10njgxPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ODOO_BRONZE"/>
     <contextParameter xmi:id="_KROxoRPeEfGHjLe3oPnj5g" comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_PROD"/>
+    <contextParameter xmi:id="_rsv2o3qeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
+    <contextParameter xmi:id="_rsv2pHqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RUG_CZ"/>
+    <contextParameter xmi:id="_rsv2pXqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_PROD"/>
+    <contextParameter xmi:id="_vqMoc4QGEfGO_6zcRT-Rfg" comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
+    <contextParameter xmi:id="_vqModIQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RUG"/>
+    <contextParameter xmi:id="_vqModYQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_PROD"/>
+    <contextParameter xmi:id="_tS9sQZD0EfG1frUedQy77g" comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LORRAINE_REFENDAGE"/>
+    <contextParameter xmi:id="_ia81UZD-EfG1frUedQy77g" comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_ojBeVO_FEfCtA9TQCOJNgQ" confirmationNeeded="false" hide="false" name="REC">
     <contextParameter xmi:id="_ojBeVe_FEfCtA9TQCOJNgQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QMKZKFX-HG22197"/>
@@ -41,5 +57,13 @@
     <contextParameter xmi:id="_10njhBPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_PROD"/>
     <contextParameter xmi:id="_10njhRPdEfGHjLe3oPnj5g" comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ODOO_BRONZE"/>
     <contextParameter xmi:id="_KROxohPeEfGHjLe3oPnj5g" comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_QAT"/>
+    <contextParameter xmi:id="_rsv2pnqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_QAT"/>
+    <contextParameter xmi:id="_rsv2p3qeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RUG_CZ"/>
+    <contextParameter xmi:id="_rsv2qHqeEfGfVuv8LkJ7vQ" comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_QAT"/>
+    <contextParameter xmi:id="_vqModoQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_QAT"/>
+    <contextParameter xmi:id="_vqMod4QGEfGO_6zcRT-Rfg" comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RUG"/>
+    <contextParameter xmi:id="_vqMoeIQGEfGO_6zcRT-Rfg" comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB_RAW_DATA_QAT"/>
+    <contextParameter xmi:id="_tS9sQpD0EfG1frUedQy77g" comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LORRAINE_REFENDAGE"/>
+    <contextParameter xmi:id="_ia81UpD-EfG1frUedQy77g" comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="COMPUTE_ETL_REC"/>
   </talendfile:ContextType>
 </xmi:XMI>

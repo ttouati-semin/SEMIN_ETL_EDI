@@ -5,32 +5,32 @@
     <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="24" internalId="_G2LPMW1aEfChkvInqLRHZA"/>
     <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_G2LPMm1aEfChkvInqLRHZA"/>
     <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_G2LPM21aEfChkvInqLRHZA"/>
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI4B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI4R6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI4h6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI4x6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI5B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI5R6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI5h6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="" internalId="_BXHI5x6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="" internalId="_BXHI6B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="" internalId="_BXHI6R6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI6h6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI6x6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI7B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI7R6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI7h6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI7x6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI8B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI8R6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI8h6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI8x6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI9B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI9R6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI9h6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI9x6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI-B6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHI-R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHI4B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI4R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_BXHI4h6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_BXHI4x6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_BXHI5B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_BXHI5R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_BXHI5h6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_BXHI5x6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_BXHI6B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_BXHI6R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_BXHI6h6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_BXHI6x6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_BXHI7B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_PROD" internalId="_BXHI7R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI7h6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_BXHI7x6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_BXHI8B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI8R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI8h6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI8x6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI9B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI9R6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI9h6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_BXHI9x6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI-B6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHI-R6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_BXHI-h6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_BXHI-x6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_BXHI_B6rEfGoauYJ5eghPA"/>
@@ -43,32 +43,32 @@
     <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="24" internalId="_G2LPNW1aEfChkvInqLRHZA"/>
     <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_G2LPNm1aEfChkvInqLRHZA"/>
     <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_G2LPN21aEfChkvInqLRHZA"/>
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes.properties" internalId="_BXHJAB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJAR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_Bronze.log" internalId="_BXHJAh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Suivi_Exec.log" internalId="_BXHJAx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets/" internalId="_BXHJBB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJAB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJAR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_BXHJAh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_BXHJAx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_BXHJBB6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_BXHJBR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas/" internalId="_BXHJBh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests/" internalId="_BXHJBx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_BXHJBh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_BXHJBx6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_BXHJCB6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_BXHJCR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJCh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJCx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJDB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJDR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJDh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJDx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJEB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJER6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJEh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJEx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJFB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJFR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJFh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJFx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJGB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJGR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_BXHJCh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_BXHJCx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_BXHJDB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_BXHJDR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJDh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_BXHJDx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_BXHJEB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJER6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJEh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJEx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJFB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJFR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJFh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_BXHJFx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJGB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJGR6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_BXHJGh6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_BXHJGx6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_BXHJHB6rEfGoauYJ5eghPA"/>
@@ -81,38 +81,76 @@
     <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="24" internalId="_G2LPNW1aEfChkvInqLRHZA"/>
     <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_G2LPNm1aEfChkvInqLRHZA"/>
     <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_G2LPN21aEfChkvInqLRHZA"/>
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes.properties" internalId="_BXHJIB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJIR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_Bronze.log" internalId="_BXHJIh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Suivi_Exec.log" internalId="_BXHJIx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets/" internalId="_BXHJJB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJIB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJIR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_BXHJIh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_BXHJIx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_BXHJJB6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_BXHJJR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas/" internalId="_BXHJJh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests/" internalId="_BXHJJx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_BXHJJh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_BXHJJx6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_BXHJKB6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_BXHJKR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJKh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJKx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJLB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJLR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJLh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJLx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJMB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJMR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJMh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJMx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJNB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJNR6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJNh6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJNx6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJOB6rEfGoauYJ5eghPA"/>
-    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="" internalId="_BXHJOR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_BXHJKh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_BXHJKx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_BXHJLB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_BXHJLR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJLh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_BXHJLx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_BXHJMB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJMR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJMh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJMx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJNB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJNR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJNh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_BXHJNx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJOB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJOR6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_BXHJOh6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_BXHJOx6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_BXHJPB6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="" internalId="_BXHJPR6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_BXHJPh6rEfGoauYJ5eghPA"/>
     <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_BXHJPx6rEfGoauYJ5eghPA"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="QAT">
+    <contextParameter comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_G2LPNG1aEfChkvInqLRHZA"/>
+    <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="24" internalId="_G2LPNW1aEfChkvInqLRHZA"/>
+    <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true" internalId="_G2LPNm1aEfChkvInqLRHZA"/>
+    <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_G2LPN21aEfChkvInqLRHZA"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_BXHJIR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_3KtGgG5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_3KtGgW5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_3KtGgm5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_3KtGg25PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Snowflake_BDD_Silver" prompt="Snowflake_BDD_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJLh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_3KtGhG5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_3KtGhW5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Snowflake_Schema_Bronze" prompt="Snowflake_Schema_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJMR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ADMINISTRATION" prompt="Snowflake_Schema_SEMIN_ADMINISTRATION?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJMh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_ESP" prompt="Snowflake_Schema_SEMIN_ESP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJMx6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_PROFILS" prompt="Snowflake_Schema_SEMIN_PROFILS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJNB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_SEMIN_SAS" prompt="Snowflake_Schema_SEMIN_SAS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJNR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Schema_Silver" prompt="Snowflake_Schema_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJNh6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_3KtGhm5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJOB6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Silver" prompt="Snowflake_Warehouse_Silver?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_BXHJOR6rEfGoauYJ5eghPA"/>
+    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_3KtGh25PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_3KtGiG5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_3KtGiW5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_3KtGim5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_3KtGi25PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_3KtGjG5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_3KtGjW5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_3KtGjm5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_3KtGj25PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_3KtGkG5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_3KtGkW5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_3KtGkm5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_3KtGk25PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_3KtGlG5PEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_3KtGlW5PEfGXt_OZXnDBUg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -157,7 +195,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:tAlmpGEBGEm7Zof5ImNTovgYXXZ+58HMqq3OGE7k" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:zTHKIDpb7UcSjKk72+Iq7vqB9umeLh3R2XehnIOc" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -192,7 +230,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QXQdeZYE64DiKm2YyVVvKzPxssZ8WSfLePBMzexp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wW4ufdvd0mL/oiHt2ca7nJ3bF9AHXGhy5F+oJbAE" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -1452,7 +1490,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -1491,7 +1529,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>

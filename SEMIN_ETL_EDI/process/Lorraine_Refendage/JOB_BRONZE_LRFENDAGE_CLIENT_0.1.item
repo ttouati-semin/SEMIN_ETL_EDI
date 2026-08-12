@@ -1,13 +1,379 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_EhOJwGvhEfGXY7_dAT-6DQ"/>
-    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_EhOJwWvhEfGXY7_dAT-6DQ"/>
-    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_EhOJwmvhEfGXY7_dAT-6DQ"/>
-    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_EhOJw2vhEfGXY7_dAT-6DQ"/>
-    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_EhOJxGvhEfGXY7_dAT-6DQ"/>
-    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_EhOJxWvhEfGXY7_dAT-6DQ"/>
-    <contextParameter comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_Password" value="enc:system.encryption.key.v1:XJ30NUtMNaC8V3baFbxvKIctDwLDhxRW6U0Ytkp764YU1efZpyvuxA==" internalId="_EhOJxmvhEfGXY7_dAT-6DQ"/>
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgScJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgScZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgScpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSc5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSdJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSdZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSdpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSd5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSeJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSeZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSepD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSe5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSfJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSfZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSfpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSf5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSgJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSgZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSgpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIgSg5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIgShJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgShZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgShpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSh5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSiJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSiZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIgSipD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Integer" value="24" internalId="_pIgSi5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIgSjJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIgSjZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIgSjpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIgSj5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_pIgSkJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_pIgSkZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_pIgSkpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_pIgSk5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_pIgSlJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_pIgSlZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIgSlpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIgSl5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIgSmJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_pIgSmZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_pIgSmpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIgSm5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIgSnJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIgSnZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_pIgSnpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIgSn5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIgSoJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_pIgSoZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="LORRAINE_REFENDAGE" internalId="_pIgSopD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="ODOO_BRONZE" internalId="_pIgSo5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG" internalId="_pIgSpJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG_CZ" internalId="_pIgSpZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_pIgSppD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIgSp5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIgSqJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIgSqZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIgSqpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIgSq5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_pIgSrJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_pIgSrZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_pIgSrpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_Password" value="enc:system.encryption.key.v1:um3+0JJdNRoLQKlF8PkgFKFYtgs8bDj6migH69ke7k0CN7FHngmLSw==" internalId="_pIgSr5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_pIgSsJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_pIgSsZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_pIgSspD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIgSs5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIgStJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="&#xD;&#xA;" internalId="_pIgStZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIgStpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIgSt5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIgSuJD-EfG1frUedQy77g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSuZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSupD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSu5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSvJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSvZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSvpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSv5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSwJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSwZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSwpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSw5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSxJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSxZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSxpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSx5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSyJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSyZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSypD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSy5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIgSzJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIgSzZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSzpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgSz5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgS0JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgS0ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIgS0pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIgS05D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Integer" value="24" internalId="_pIgS1JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIgS1ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIgS1pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIgS15D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg5gJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_pIg5gZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_pIg5gpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_pIg5g5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_pIg5hJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_pIg5hZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_pIg5hpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg5h5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg5iJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg5iZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_pIg5ipD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_pIg5i5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_PROD" internalId="_pIg5jJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg5jZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_PROD" internalId="_pIg5jpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_pIg5j5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_PROD" internalId="_pIg5kJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_PROD" internalId="_pIg5kZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_pIg5kpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="LORRAINE_REFENDAGE" internalId="_pIg5k5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="ODOO_BRONZE" internalId="_pIg5lJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG" internalId="_pIg5lZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG_CZ" internalId="_pIg5lpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_pIg5l5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg5mJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg5mZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg5mpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg5m5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg5nJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_pIg5nZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_pIg5npD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_pIg5n5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_Password" value="enc:system.encryption.key.v1:AX3SVgPkGvjAsDhZiitztkY5iS4n+Gx81dBOQ3ihN+4C6yE810m34w==" internalId="_pIg5oJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_pIg5oZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_pIg5opD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_pIg5o5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg5pJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg5pZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="&#xD;&#xA;" internalId="_pIg5ppD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg5p5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg5qJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg5qZD-EfG1frUedQy77g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5qpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5q5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5rJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5rZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5rpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5r5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5sJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5sZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5spD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5s5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5tJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5tZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5tpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5t5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5uJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5uZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5upD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5u5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5vJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIg5vZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIg5vpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5v5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5wJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5wZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5wpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5w5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg5xJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Integer" value="24" internalId="_pIg5xZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg5xpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg5x5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg5yJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg5yZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_pIg5ypD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_pIg5y5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_pIg5zJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_pIg5zZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_pIg5zpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_pIg5z5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg50JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg50ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg50pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_pIg505D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_pIg51JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg51ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg51pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg515D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_pIg52JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg52ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg52pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_pIg525D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="LORRAINE_REFENDAGE" internalId="_pIg53JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="ODOO_BRONZE" internalId="_pIg53ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG" internalId="_pIg53pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG_CZ" internalId="_pIg535D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_pIg54JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIg54ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg54pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg545D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIg55JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIg55ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_pIg55pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_pIg555D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_pIg56JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_Password" value="enc:system.encryption.key.v1:ioiBnpdSdplsYnnl656J8a1A/5nMWQ4j5pgK72FVa/5FkQrMVLPQ4g==" internalId="_pIg56ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_pIg56pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_pIg565D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_pIg57JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg57ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg57pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="&#xD;&#xA;" internalId="_pIg575D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg58JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg58ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg58pD-EfG1frUedQy77g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="QAT">
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg585D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg59JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg59ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg59pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg595D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5-JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5-ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5-pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5-5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5_JD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5_ZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5_pD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg5_5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6AJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6AZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6ApD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6A5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6BJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6BZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIg6BpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIg6B5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6CJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6CZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6CpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6C5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6DJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg6DZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Integer" value="24" internalId="_pIg6DpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg6D5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg6EJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg6EZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg6EpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_pIg6E5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_pIg6FJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_pIg6FZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_pIg6FpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_pIg6F5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_pIg6GJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg6GZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg6GpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg6G5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_pIg6HJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_pIg6HZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg6HpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg6H5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg6IJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_pIg6IZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg6IpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_DEV" internalId="_pIg6I5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_pIg6JJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="LORRAINE_REFENDAGE" internalId="_pIg6JZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="ODOO_BRONZE" internalId="_pIg6JpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG" internalId="_pIg6J5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG_CZ" internalId="_pIg6KJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_pIg6KZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIg6KpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg6K5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg6LJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIg6LZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_pIg6LpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_pIg6L5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_pIg6MJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_pIg6MZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_Password" value="enc:system.encryption.key.v1:ItQAGnjEpHwTfPhQxuGnX+e6npo+884tIpWy7gGCn5d2DzUu+Wy49g==" internalId="_pIg6MpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_pIg6M5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_pIg6NJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_pIg6NZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6NpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6N5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="&#xD;&#xA;" internalId="_pIg6OJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6OZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6OpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6O5D-EfG1frUedQy77g"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="REC">
+    <contextParameter comment="" name="p_CANAL_CIBLE" prompt="p_CANAL_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6PJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CANAL_SOURCE" prompt="p_CANAL_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6PZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ARCHIVE" prompt="p_CHEMIN_ARCHIVE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6PpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_CIBLE" prompt="p_CHEMIN_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6P5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_ERREUR" prompt="p_CHEMIN_ERREUR?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6QJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CHEMIN_SOURCE" prompt="p_CHEMIN_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6QZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_CIBLE" prompt="p_CODE_CONNEXION_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6QpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_CONNEXION_SOURCE" prompt="p_CODE_CONNEXION_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6Q5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_ENTITE" prompt="p_CODE_ENTITE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6RJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_PARTENAIRE" prompt="p_CODE_PARTENAIRE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6RZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_CODE_TYPE_FLUX" prompt="p_CODE_TYPE_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6RpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DELETE_SRC_FILES" prompt="p_DELETE_SRC_FILES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6R5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_DUREE_RETENTION_ANNEES" prompt="p_DUREE_RETENTION_ANNEES?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6SJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_EMAIL_CONTACT" prompt="p_EMAIL_CONTACT?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6SZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_CIBLE" prompt="p_HOST_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6SpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_HOST_SOURCE" prompt="p_HOST_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6S5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_MASQUE_FICHIER_SOURCE" prompt="p_MASQUE_FICHIER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6TJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_CIBLE" prompt="p_PASSWORD_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6TZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PASSWORD_SOURCE" prompt="p_PASSWORD_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6TpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_CIBLE" prompt="p_PORT_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIg6T5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_PORT_SOURCE" prompt="p_PORT_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_Integer" value="" internalId="_pIg6UJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_CIBLE" prompt="p_RACINE_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6UZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_RACINE_SOURCE" prompt="p_RACINE_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6UpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_SENS_FLUX" prompt="p_SENS_FLUX?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6U5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_CIBLE" prompt="p_USER_CIBLE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6VJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="p_USER_SOURCE" prompt="p_USER_SOURCE?" promptNeeded="false" repositoryContextId="_GFaHoO_SEfCtA9TQCOJNgQ" type="id_String" value="" internalId="_pIg6VZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_L" prompt="Param_Context_File_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg6VpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Delta_H" prompt="Param_Delta_H?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Integer" value="24" internalId="_pIg6V5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_L" prompt="Param_Display_L?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg6WJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Output_File" prompt="Param_Output_File?" promptNeeded="false" repositoryContextId="_-Bvj8G0_EfChkvInqLRHZA" type="id_Boolean" value="true" internalId="_pIg6WZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg6WpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_pIg6W5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_pIg6XJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_pIg6XZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_pIg6XpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_pIg6X5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_pIg6YJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_pIg6YZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg6YpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_pIg6Y5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg6ZJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="C:\Talend\snowflake_keystore.p12" internalId="_pIg6ZZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="QMKZKFX-HG22197" internalId="_pIg6ZpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_BDD" prompt="Snowflake_BDD?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_QAT" internalId="_pIg6Z5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_MDP" prompt="Snowflake_MDP?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_Password" value="" internalId="_pIg6aJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_ODOO" prompt="Snowflake_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_QAT" internalId="_pIg6aZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Password" prompt="Snowflake_Password?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="SEMIN01" internalId="_pIg6apD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG" prompt="Snowflake_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_QAT" internalId="_pIg6a5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_RUG_CZ" prompt="Snowflake_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="DB_RAW_DATA_QAT" internalId="_pIg6bJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_EDI" prompt="Snowflake_Schema_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="EDI_SEMIN_CONFIG_PARAMS" internalId="_pIg6bZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="LORRAINE_REFENDAGE" internalId="_pIg6bpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_ODOO" prompt="Snowflake_Schema_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="ODOO_BRONZE" internalId="_pIg6b5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG" prompt="Snowflake_Schema_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG" internalId="_pIg6cJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_RUG_CZ" prompt="Snowflake_Schema_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="RUG_CZ" internalId="_pIg6cZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_User" prompt="Snowflake_User?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="S_TALEND_PROD" internalId="_pIg6cpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_Bronze" prompt="Snowflake_Warehouse_Bronze?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_REC" internalId="_pIg6c5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_EDI" prompt="Snowflake_Warehouse_EDI?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg6dJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_ODOO" prompt="Snowflake_Warehouse_ODOO?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_pIg6dZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG" prompt="Snowflake_Warehouse_RUG?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_QAT" internalId="_pIg6dpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_QAT" internalId="_pIg6d5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_BDD" prompt="Navision_BDD?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SEMIN" internalId="_pIg6eJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Host" prompt="Navision_Host?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="ulysse" internalId="_pIg6eZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_JDBC" prompt="Navision_JDBC?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="instanceName=NAVISION;encrypt=false;trustServerCertificate=true" internalId="_pIg6epD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Password" prompt="Navision_Password?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_Password" value="enc:system.encryption.key.v1:zQwsmnKnPwYs8xgGOuryJQxIsG3wcwHPxvbxGXcZg2DYdM1K+UcECA==" internalId="_pIg6e5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Port" prompt="Navision_Port?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="1433" internalId="_pIg6fJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_Schema" prompt="Navision_Schema?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="dbo" internalId="_pIg6fZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Navision_User" prompt="Navision_User?" promptNeeded="false" repositoryContextId="_c_yqUG1dEfChkvInqLRHZA" type="id_String" value="SQLTalend" internalId="_pIg6fpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_DB" prompt="Snowflake_DB?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6f5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_BRONZE" prompt="Snowflake_Schema_BRONZE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6gJD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="&#xD;&#xA;" internalId="_pIg6gZD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_Schema_SILVER" prompt="Snowflake_Schema_SILVER?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6gpD-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_UserId" prompt="Snowflake_UserId?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6g5D-EfG1frUedQy77g"/>
+    <contextParameter comment="" name="Snowflake_WAREHOUSE" prompt="Snowflake_WAREHOUSE?" promptNeeded="false" repositoryContextId="_hPgZkLiTEe-W-dL5fDhv3g" type="id_String" value="" internalId="_pIg6hJD-EfG1frUedQy77g"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -238,9 +604,9 @@
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.oauthUsername" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="configuration.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:snhqpxYELyAOQUjFxz0HqqQQwcz+iIvljEgmv/ku" show="false"/>
     <elementParameter field="TEXT" name="configuration.snowflakeAuth.scope" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="configuration.warehouse" value="context.Snowflake_Warehouse_Silver"/>
-    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.Snowflake_Schema_Silver"/>
-    <elementParameter field="TEXT" name="configuration.database" value="context.Snowflake_BDD_Silver"/>
+    <elementParameter field="TEXT" name="configuration.warehouse" value="context.Snowflake_Warehouse_Bronze"/>
+    <elementParameter field="TEXT" name="configuration.dbSchema" value="context.Snowflake_Schema_LR"/>
+    <elementParameter field="TEXT" name="configuration.database" value="context.Snowflake_BDD"/>
     <elementParameter field="CHECK" name="configuration.shareConnection" value="false"/>
     <elementParameter field="TEXT" name="configuration.sharedConnectionName" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="configuration.autoCommit" value="true"/>
@@ -262,18 +628,18 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_2"/>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="440">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="440">
+  <node componentName="SnowflakeClose" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNJbnB1dAClose" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>Fermeture de la connexion"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
     <metadata connector="FLOW" name="tDBClose_1"/>
     <metadata connector="LOOKUP" name="LOOKUP"/>
@@ -291,171 +657,531 @@
       <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="200">
+  <node componentName="JDBCConnection" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlConnection" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server|ELT/Connections" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlConnection" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\WS_Tools_Taha\Talend\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Vua6AOKDEfCBWawNnQ4E_w" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
-    <elementParameter field="TEXT" name="HOST" value="context.Navision_Host"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Navision_Port"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Navision_Schema"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Navision_BDD"/>
-    <elementParameter field="TEXT" name="USER" value="context.Navision_User"/>
-    <elementParameter field="PASSWORD" name="PASS" value="context.Navision_Password"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.Navision_JDBC"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
-    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0Connection" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="SEMIN_SQL_SERVER"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="configuration.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.jdbcUrl" value="jdbc:odbc:Driver={HFSQL};Server Name=10.223.1.70;Server Port=4900;Database=LRefendage;ANA=C:\Talend\Projet_BI\Configurations\LREFENDAGE.wdd;UID=LR-OLEDB;PWD=8rMjQtIuJLBx+KQCTZLh@"/>
+    <elementParameter field="TEXT" name="configuration.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.jdbcDriver"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.jdbcClass" value="sun.jdbc.odbc.JdbcOdbcDriver"/>
+    <elementParameter field="TEXT" name="configuration.userId" value=""/>
+    <elementParameter field="PASSWORD" name="configuration.password" value=""/>
+    <elementParameter field="CHECK" name="configuration.useSharedDBConnection" value="false"/>
+    <elementParameter field="TEXT" name="configuration.sharedDBConnectionName" value="" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useDataSource" value="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSourceAlias" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useAutoCommit" value="true"/>
+    <elementParameter field="CHECK" name="configuration.autoCommit" value="false"/>
+    <elementParameter field="CHECK" name="configuration.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
+    <metadata connector="FLOW" name="tDBConnection_2"/>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1400" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;Extraction Full de la table &quot; + (String)globalMap.get(&quot;SQLServer_Table&quot;)"/>
     <elementParameter field="TEXT" name="CODE" value="42"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_3"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D35uxZNHKI+JSAdQC3muSGYtrgAmBDHZF3vw6O3j" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT&#xD;&#xA;    c.IDCLIENT AS IDCLIENT,&#xD;&#xA;    c.Code_client AS CODE_CLIENT,&#xD;&#xA;    c.Nom_client AS NOM_CLIENT,&#xD;&#xA;    c.Adresse1 AS ADRESSE1,&#xD;&#xA;    c.Adresse2 AS ADRESSE2,&#xD;&#xA;    c.Adresse3 AS ADRESSE3,&#xD;&#xA;    c.Code_postal AS CODE_POSTAL,&#xD;&#xA;    c.Ville AS VILLE,&#xD;&#xA;    c.Code_pays AS CODE_PAYS,&#xD;&#xA;    c.Telephone1 AS TELEPHONE1,&#xD;&#xA;    c.Telephone2 AS TELEPHONE2,&#xD;&#xA;    c.telecopie1 AS TELECOPIE1,&#xD;&#xA;    c.AdrEMail AS ADREMAIL,&#xD;&#xA;    c.Site_www AS SITE_WWW,&#xD;&#xA;    c.DateH_maj AS DATEH_MAJ,&#xD;&#xA;    c.Type AS TYPE,&#xD;&#xA;    c.Id_tva AS ID_TVA,&#xD;&#xA;    c.siret AS SIRET,&#xD;&#xA;    c.NAF AS NAF,&#xD;&#xA;    c.Activité AS ACTIVITE,&#xD;&#xA;    c.secteur AS SECTEUR,&#xD;&#xA;    c.Mode_reglement AS MODE_REGLEMENT,&#xD;&#xA;    c.Devise AS DEVISE,&#xD;&#xA;    c.Escompte AS ESCOMPTE,&#xD;&#xA;    c.Nombre_ex_fact AS NOMBRE_EX_FACT,&#xD;&#xA;    c.Ventilation AS VENTILATION,&#xD;&#xA;    c.Mode_regr_fact AS MODE_REGR_FACT,&#xD;&#xA;    c.Num_compte AS NUM_COMPTE,&#xD;&#xA;    c.Nom_client_fac AS NOM_CLIENT_FAC,&#xD;&#xA;    c.Adresse1_fac AS ADRESSE1_FAC,&#xD;&#xA;    c.Adresse2_fac AS ADRESSE2_FAC,&#xD;&#xA;    c.Adresse3_fac AS ADRESSE3_FAC,&#xD;&#xA;    c.Code_postal_fac AS CODE_POSTAL_FAC,&#xD;&#xA;    c.Ville_fac AS VILLE_FAC,&#xD;&#xA;    c.Code_pays_fac AS CODE_PAYS_FAC,&#xD;&#xA;    c.interlocuteur1 AS INTERLOCUTEUR1,&#xD;&#xA;    c.Enr_actif AS ENR_ACTIF,&#xD;&#xA;    c.Top_dico AS TOP_DICO,&#xD;&#xA;    c.Date_creation AS DATE_CREATION,&#xD;&#xA;    c.Utilisateur_creation AS UTILISATEUR_CREATION,&#xD;&#xA;    c.Utilisateur AS UTILISATEUR,&#xD;&#xA;    c.Observation AS OBSERVATION&#xD;&#xA;FROM CLIENT&#xD;&#xA;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
-    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="No_" id="0"/>
-      <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Sell_to_Customer_No_" id="2"/>
-      <elementValue elementRef="TRIM" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Bill_to_Customer_No_" id="4"/>
-      <elementValue elementRef="TRIM" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Posting_Date" id="6"/>
-      <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Location_Code" id="8"/>
-      <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Stand" id="10"/>
-      <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Currency_Factor" id="12"/>
-      <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Database_Origin" id="14"/>
-      <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="clientSell_Key" id="16"/>
-      <elementValue elementRef="TRIM" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="clientbill_Key" id="18"/>
-      <elementValue elementRef="TRIM" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="invoice_Key" id="20"/>
-      <elementValue elementRef="TRIM" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="cr_memo_Key" id="22"/>
-      <elementValue elementRef="TRIM" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Posting_Description" id="24"/>
-      <elementValue elementRef="TRIM" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Date" id="26"/>
-      <elementValue elementRef="TRIM" value="false" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Order_No_" id="28"/>
-      <elementValue elementRef="TRIM" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="facture_avoir_ID" id="30"/>
-      <elementValue elementRef="TRIM" value="false" id="31"/>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace&quot;" show="false"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c echo HELLO&quot;" show="false"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="true"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND">
+      <elementValue elementRef="VALUE" value="&quot;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;-NoProfile&quot;" id="1"/>
+      <elementValue elementRef="VALUE" value="&quot;-NonInteractive&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="&quot;-ExecutionPolicy&quot;" id="3"/>
+      <elementValue elementRef="VALUE" value="&quot;Bypass&quot;" id="4"/>
+      <elementValue elementRef="VALUE" value="&quot;-File&quot;" id="5"/>
+      <elementValue elementRef="VALUE" value="&quot;C:\\Talend\\Projet_BI\\scripts\\LREFENDAGE_EXTRACT.ps1&quot;" id="6"/>
+      <elementValue elementRef="VALUE" value="&quot;-Password&quot;" id="7"/>
+      <elementValue elementRef="VALUE" value="&quot;8rMjQtIuJLBx+KQCTZLh@&quot;" id="8"/>
+      <elementValue elementRef="VALUE" value="&quot;-TableName&quot;" id="9"/>
+      <elementValue elementRef="VALUE" value="&quot;LRefendage_Clients&quot;" id="10"/>
+      <elementValue elementRef="VALUE" value="&quot;-Top&quot;" id="11"/>
+      <elementValue elementRef="VALUE" value="&quot;0&quot;" id="12"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
-    <metadata connector="FLOW" label="metadata" name="tDBInput_1">
-      <column comment="" key="false" length="265" name="No_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="No_"/>
-      </column>
-      <column comment="" key="false" length="265" name="Sell_to_Customer_No_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Sell_to_Customer_No_"/>
-      </column>
-      <column comment="" key="false" length="265" name="Bill_to_Customer_No_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Bill_to_Customer_No_"/>
-      </column>
-      <column comment="" key="false" length="265" name="Posting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Posting_Date"/>
-      </column>
-      <column comment="" key="false" length="265" name="Location_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Location_Code"/>
-      </column>
-      <column comment="" key="false" length="265" name="Stand" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Stand"/>
-      </column>
-      <column comment="" key="false" length="265" name="Currency_Factor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Currency_Factor"/>
-      </column>
-      <column comment="" key="false" length="265" name="Database_Origin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Database_Origin"/>
-      </column>
-      <column comment="" key="false" length="265" name="clientSell_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="clientSell_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="clientbill_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="clientbill_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="invoice_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="invoice_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="cr_memo_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="cr_memo_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="Posting_Description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Posting_Description"/>
-      </column>
-      <column comment="" key="false" length="265" name="Order_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Order_Date"/>
-      </column>
-      <column comment="" key="false" length="265" name="Order_No_" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Order_No_"/>
-      </column>
-      <column comment="" key="false" length="-1" name="facture_avoir_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="facture_avoir_ID"/>
-      </column>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_1"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:\\Talend\\Projet_BI\\Temp\\LRefendage_Clients.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDCLIENT" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_client" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nom_client" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse1" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse2" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse3" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_postal" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ville" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_pays" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Telephone1" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateH_maj" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Telephone2" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AdrEMail" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Site_www" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telecopie1" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id_tva" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Enr_actif" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Top_dico" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_compte" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Observation" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utilisateur" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siret" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mode_reglement" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_creation" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAF" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utilisateur_creation" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activite" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Devise" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nombre_ex_fact" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="secteur" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Escompte" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_pays_fac" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ville_fac" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_postal_fac" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse3_fac" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse2_fac" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse1_fac" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nom_client_fac" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="interlocuteur1" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ventilation" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mode_regr_fact" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IDCLIENT" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_client" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nom_client" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse1" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse2" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse3" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_postal" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ville" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_pays" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Telephone1" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateH_maj" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Telephone2" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AdrEMail" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Site_www" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="telecopie1" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id_tva" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Enr_actif" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Top_dico" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Num_compte" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Observation" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utilisateur" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siret" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mode_reglement" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_creation" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAF" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utilisateur_creation" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Activite" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Devise" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nombre_ex_fact" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="secteur" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Escompte" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_pays_fac" id="64"/>
+      <elementValue elementRef="DECODE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ville_fac" id="66"/>
+      <elementValue elementRef="DECODE" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_postal_fac" id="68"/>
+      <elementValue elementRef="DECODE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse3_fac" id="70"/>
+      <elementValue elementRef="DECODE" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse2_fac" id="72"/>
+      <elementValue elementRef="DECODE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adresse1_fac" id="74"/>
+      <elementValue elementRef="DECODE" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nom_client_fac" id="76"/>
+      <elementValue elementRef="DECODE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="interlocuteur1" id="78"/>
+      <elementValue elementRef="DECODE" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ventilation" id="80"/>
+      <elementValue elementRef="DECODE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mode_regr_fact" id="82"/>
+      <elementValue elementRef="DECODE" value="false" id="83"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="-1" name="IDCLIENT" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateH_maj" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AdrEMail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_www" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="telecopie1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id_tva" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Enr_actif" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Top_dico" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_compte" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Observation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="siret" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_reglement" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_creation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur_creation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Activite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Devise" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nombre_ex_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="secteur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escompte" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="interlocuteur1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ventilation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_regr_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="IDCLIENT" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateH_maj" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AdrEMail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_www" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="telecopie1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id_tva" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Enr_actif" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Top_dico" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_compte" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Observation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="siret" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_reglement" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_creation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur_creation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Activite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Devise" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nombre_ex_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="secteur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escompte" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="interlocuteur1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ventilation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_regr_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="SnowflakeOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="240">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_5ttuQGu8EfGXY7_dAT-6DQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="ALIM_CLIENT">
+      <column comment="" key="false" length="-1" name="IDCLIENT" nullable="false" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateH_maj" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AdrEMail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_www" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="telecopie1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id_tva" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Enr_actif" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Top_dico" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_compte" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Observation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="siret" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_reglement" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_creation" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur_creation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Activite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Devise" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nombre_ex_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="secteur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escompte" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="interlocuteur1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ventilation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_regr_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="ALIM_CLIENT">
+        <mapperTableEntries name="IDCLIENT" expression="row1.IDCLIENT == null || row1.IDCLIENT.trim().isEmpty() ? null : new java.math.BigDecimal(row1.IDCLIENT.trim())" type="id_BigDecimal"/>
+        <mapperTableEntries name="Code_client" expression="row1.Code_client == null || row1.Code_client.trim().isEmpty() ? null : row1.Code_client.trim()" type="id_String"/>
+        <mapperTableEntries name="Nom_client" expression="row1.Nom_client == null || row1.Nom_client.trim().isEmpty() ? null : row1.Nom_client.trim()" type="id_String"/>
+        <mapperTableEntries name="Adresse1" expression="row1.Adresse1 == null || row1.Adresse1.trim().isEmpty() ? null : row1.Adresse1.trim()" type="id_String"/>
+        <mapperTableEntries name="Adresse2" expression="row1.Adresse2 == null || row1.Adresse2.trim().isEmpty() ? null : row1.Adresse2.trim()" type="id_String"/>
+        <mapperTableEntries name="Adresse3" expression="row1.Adresse3 == null || row1.Adresse3.trim().isEmpty() ? null : row1.Adresse3.trim()" type="id_String"/>
+        <mapperTableEntries name="Code_postal" expression="row1.Code_postal == null || row1.Code_postal.trim().isEmpty() ? null : row1.Code_postal.trim()" type="id_String"/>
+        <mapperTableEntries name="Ville" expression="row1.Ville == null || row1.Ville.trim().isEmpty() ? null : row1.Ville.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_pays" expression="row1.Code_pays == null || row1.Code_pays.trim().isEmpty() ? null : row1.Code_pays.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Telephone1" expression="row1.Telephone1 == null || row1.Telephone1.trim().isEmpty() ? null : row1.Telephone1.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DateH_maj" expression="row1.DateH_maj == null || row1.DateH_maj.trim().isEmpty() ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.DateH_maj.trim())" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="TYPE" expression="row1.TYPE == null || row1.TYPE.trim().isEmpty() ? null : Integer.valueOf(row1.TYPE.trim())" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Telephone2" expression="row1.Telephone2 == null || row1.Telephone2.trim().isEmpty() ? null : row1.Telephone2.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AdrEMail" expression="row1.AdrEMail == null || row1.AdrEMail.trim().isEmpty() ? null : row1.AdrEMail.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_www" expression="row1.Site_www == null || row1.Site_www.trim().isEmpty() ? null : row1.Site_www.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="telecopie1" expression="row1.telecopie1 == null || row1.telecopie1.trim().isEmpty() ? null : row1.telecopie1.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Id_tva" expression="row1.Id_tva == null || row1.Id_tva.trim().isEmpty() ? null : row1.Id_tva.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Enr_actif" expression="row1.Enr_actif == null || row1.Enr_actif.trim().isEmpty() ? null : &quot;1&quot;.equals(row1.Enr_actif.trim())" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="Top_dico" expression="row1.Top_dico == null || row1.Top_dico.trim().isEmpty() ? null : &quot;1&quot;.equals(row1.Top_dico.trim())" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="Num_compte" expression="row1.Num_compte == null || row1.Num_compte.trim().isEmpty() ? null : row1.Num_compte.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Observation" expression="row1.Observation == null || row1.Observation.trim().isEmpty() ? null : row1.Observation.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utilisateur" expression="row1.Utilisateur == null || row1.Utilisateur.trim().isEmpty() ? null : row1.Utilisateur.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="siret" expression="row1.siret == null || row1.siret.trim().isEmpty() ? null : row1.siret.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mode_reglement" expression="row1.Mode_reglement == null || row1.Mode_reglement.trim().isEmpty() ? null : row1.Mode_reglement.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_creation" expression="row1.Date_creation == null || row1.Date_creation.trim().isEmpty() ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Date_creation.trim())" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="NAF" expression="row1.NAF == null || row1.NAF.trim().isEmpty() ? null : row1.NAF.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utilisateur_creation" expression="row1.Utilisateur_creation == null || row1.Utilisateur_creation.trim().isEmpty() ? null : row1.Utilisateur_creation.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Activite" expression="row1.Activite == null || row1.Activite.trim().isEmpty() ? null : row1.Activite.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Devise" expression="row1.Devise == null || row1.Devise.trim().isEmpty() ? null : row1.Devise.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nombre_ex_fact" expression="row1.Nombre_ex_fact == null || row1.Nombre_ex_fact.trim().isEmpty() ? null : Integer.valueOf(row1.Nombre_ex_fact.trim())" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="secteur" expression="row1.secteur == null || row1.secteur.trim().isEmpty() ? null : row1.secteur.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Escompte" expression="row1.Escompte == null || row1.Escompte.trim().isEmpty() ? null : Double.valueOf(row1.Escompte.trim().replace(&quot;,&quot;, &quot;.&quot;))" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Code_pays_fac" expression="row1.Code_pays_fac == null || row1.Code_pays_fac.trim().isEmpty() ? null : row1.Code_pays_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ville_fac" expression="row1.Ville_fac == null || row1.Ville_fac.trim().isEmpty() ? null : row1.Ville_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_postal_fac" expression="row1.Code_postal_fac == null || row1.Code_postal_fac.trim().isEmpty() ? null : row1.Code_postal_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adresse3_fac" expression="row1.Adresse3_fac == null || row1.Adresse3_fac.trim().isEmpty() ? null : row1.Adresse3_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adresse2_fac" expression="row1.Adresse2_fac == null || row1.Adresse2_fac.trim().isEmpty() ? null : row1.Adresse2_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adresse1_fac" expression="row1.Adresse1_fac == null || row1.Adresse1_fac.trim().isEmpty() ? null : row1.Adresse1_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nom_client_fac" expression="row1.Nom_client_fac == null || row1.Nom_client_fac.trim().isEmpty() ? null : row1.Nom_client_fac.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="interlocuteur1" expression="row1.interlocuteur1 == null || row1.interlocuteur1.trim().isEmpty() ? null : row1.interlocuteur1.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ventilation" expression="row1.Ventilation == null || row1.Ventilation.trim().isEmpty() ? null : row1.Ventilation.trim()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mode_regr_fact" expression="row1.Mode_regr_fact == null || row1.Mode_regr_fact.trim().isEmpty() ? null : row1.Mode_regr_fact.trim()" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="IDCLIENT" type="id_String"/>
+        <mapperTableEntries name="Code_client" type="id_String"/>
+        <mapperTableEntries name="Nom_client" type="id_String"/>
+        <mapperTableEntries name="Adresse1" type="id_String"/>
+        <mapperTableEntries name="Adresse2" type="id_String"/>
+        <mapperTableEntries name="Adresse3" type="id_String"/>
+        <mapperTableEntries name="Code_postal" type="id_String"/>
+        <mapperTableEntries name="Ville" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_pays" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Telephone1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DateH_maj" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Telephone2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AdrEMail" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_www" type="id_String" nullable="true"/>
+        <mapperTableEntries name="telecopie1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Id_tva" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Enr_actif" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Top_dico" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Num_compte" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Observation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utilisateur" type="id_String" nullable="true"/>
+        <mapperTableEntries name="siret" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mode_reglement" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_creation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utilisateur_creation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Activite" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Devise" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nombre_ex_fact" type="id_String" nullable="true"/>
+        <mapperTableEntries name="secteur" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Escompte" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_pays_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ville_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_postal_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adresse3_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adresse2_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adresse1_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nom_client_fac" type="id_String" nullable="true"/>
+        <mapperTableEntries name="interlocuteur1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ventilation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mode_regr_fact" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="SnowflakeOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSnowflakeOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="c25vd2ZsYWtlI1Nub3dmbGFrZSNPdXRwdXQ" show="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -465,14 +1191,14 @@
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.account" value="&quot;AELEMMP-TELENCO&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.authenticationType" value="BASIC" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.userId" value="&quot;SACHA&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="enc:system.encryption.key.v1:0/8ATwNk0jKa1q7GH37coRjcQdBJ1Lzywd+9KcY1V8ax9R+K7sPHqsIFq+LERNayYnXR" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.password" value="enc:system.encryption.key.v1:SjhUHHtcE58BVtvWveqSPcOL2dh2hAfKYf9DbK9u+OdbUCbQWdne7fKpEOnw7om/8TYD" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.keyAlias" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.oauthTokenEndpoint" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.clientId" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.clientSecret" value="enc:system.encryption.key.v1:JQoOS9lVwg4NwIHm+aJkiHWJC2SKVbgO+JECOxxl" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.clientSecret" value="enc:system.encryption.key.v1:DF3v8LGR5vMSutjOHV9iHMxXENdp/zZQPmg0rsUO" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.snowflakeAuth.grantType" value="CLIENT_CREDENTIALS" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.oauthUsername" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:a6HFHfl3o9J83jyu5lARc1BJ05eketdNh4QbnU1X" show="false"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.snowflakeAuth.oauthPassword" value="enc:system.encryption.key.v1:imVqzl9l4rGncdFxp/DuhAMAz7aUBIqizjn/+9K/" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.snowflakeAuth.scope" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.warehouse" value="&quot;COMPUTE_TELENCO&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.dbSchema" value="&quot;BRONZE&quot;" show="false"/>
@@ -481,7 +1207,7 @@
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="(String)globalMap.get(&quot;Snowflake_Table&quot;)"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeOutputCommonConfig.tableAction" value="TRUNCATE"/>
     <elementParameter field="CLOSED_LIST" name="configuration.snowflakeOutputCommonConfig.dataAction" value="INSERT"/>
-    <elementParameter field="COLUMN_LIST" name="configuration.snowflakeOutputCommonConfig.upsertKeyColumn" value="No_" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="configuration.snowflakeOutputCommonConfig.upsertKeyColumn" value="IDCLIENT" show="false"/>
     <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="true" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcParameters" value="&quot;&quot;" show="false"/>
@@ -505,54 +1231,48 @@
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
     <metadata connector="FLOW" label="metadata" name="tSnowflakeOutput_1">
-      <column comment="" key="false" length="265" name="No_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="No_"/>
-      </column>
-      <column comment="" key="false" length="265" name="Sell_to_Customer_No_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Sell_to_Customer_No_"/>
-      </column>
-      <column comment="" key="false" length="265" name="Bill_to_Customer_No_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Bill_to_Customer_No_"/>
-      </column>
-      <column comment="" key="false" length="265" name="Posting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Posting_Date"/>
-      </column>
-      <column comment="" key="false" length="265" name="Location_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Location_Code"/>
-      </column>
-      <column comment="" key="false" length="265" name="Stand" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Stand"/>
-      </column>
-      <column comment="" key="false" length="265" name="Currency_Factor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Currency_Factor"/>
-      </column>
-      <column comment="" key="false" length="265" name="Database_Origin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Database_Origin"/>
-      </column>
-      <column comment="" key="false" length="265" name="clientSell_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="clientSell_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="clientbill_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="clientbill_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="invoice_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="invoice_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="cr_memo_Key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="cr_memo_Key"/>
-      </column>
-      <column comment="" key="false" length="265" name="Posting_Description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Posting_Description"/>
-      </column>
-      <column comment="" key="false" length="265" name="Order_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Order_Date"/>
-      </column>
-      <column comment="" key="false" length="265" name="Order_No_" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="265" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="Order_No_"/>
-      </column>
-      <column comment="" key="false" length="-1" name="facture_avoir_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true">
-        <additionalField key="AVRO_TECHNICAL_KEY" value="facture_avoir_ID"/>
-      </column>
+      <column comment="" key="false" length="-1" name="IDCLIENT" nullable="false" pattern="" precision="-1" sourceType="" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateH_maj" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Telephone2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AdrEMail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_www" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="telecopie1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Id_tva" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Enr_actif" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Top_dico" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_compte" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Observation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="siret" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_reglement" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_creation" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAF" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Utilisateur_creation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Activite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Devise" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nombre_ex_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="secteur" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escompte" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_pays_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ville_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Code_postal_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse3_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse2_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Adresse1_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nom_client_fac" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="interlocuteur1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ventilation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Mode_regr_fact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="reject" name="reject">
       <column comment="" key="false" length="255" name="columnName" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true">
@@ -618,6 +1338,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBConnection_1" target="tDBConnection_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tWarn_2" offsetLabelX="0" offsetLabelY="0" source="tWarn_2" target="tJava_2">
@@ -628,11 +1349,147 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tWarn_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tSnowflakeOutput_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_1" offsetLabelX="0" offsetLabelY="0" source="tSystem_1" target="tFileInputDelimited_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="ALIM_CLIENT" lineStyle="0" metaname="ALIM_CLIENT" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSnowflakeOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Adresse3_fac" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Top_dico" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Code_pays_fac" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="interlocuteur1" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Utilisateur_creation" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mode_reglement" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="siret" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_compte" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nom_client" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Escompte" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Code_postal" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nom_client_fac" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Utilisateur" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateH_maj" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ville" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="telecopie1" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Code_postal_fac" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Site_www" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Enr_actif" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id_tva" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="IDCLIENT" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Adresse2" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Adresse1" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Adresse3" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Date_creation" id="75"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
+      <elementValue elementRef="TRACE_COLUMN" value="secteur" id="78"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAF" id="81"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Adresse2_fac" id="84"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Telephone1" id="87"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Devise" id="90"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Telephone2" id="93"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Observation" id="96"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
+      <elementValue elementRef="TRACE_COLUMN" value="AdrEMail" id="99"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ventilation" id="102"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Code_client" id="105"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Ville_fac" id="108"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Adresse1_fac" id="111"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mode_regr_fact" id="114"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activite" id="117"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Code_pays" id="120"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nombre_ex_fact" id="123"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ALIM_CLIENT" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
@@ -697,7 +1554,12 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>

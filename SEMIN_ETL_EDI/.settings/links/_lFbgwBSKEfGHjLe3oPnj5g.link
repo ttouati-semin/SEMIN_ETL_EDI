@@ -4,31 +4,31 @@
     "contextName" : "DEVELOPPEMENT",
     "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
     "parameterList" : [ {
-      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
       "name" : "File_Context"
     }, {
-      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Bronze"
     }, {
-      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Exec"
     }, {
-      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Rejets"
     }, {
-      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Root_PRJ"
     }, {
-      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
       "name" : "Folder_Schema"
     }, {
-      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
       "name" : "Folder_Tests"
     }, {
-      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
       "name" : "Param_Context_File_G"
     }, {
-      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
       "name" : "Param_Display_G"
     } ]
   }, {
@@ -97,31 +97,31 @@
     "contextName" : "RECETTE",
     "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
     "parameterList" : [ {
-      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
       "name" : "File_Context"
     }, {
-      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Bronze"
     }, {
-      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Exec"
     }, {
-      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Rejets"
     }, {
-      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Root_PRJ"
     }, {
-      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
       "name" : "Folder_Schema"
     }, {
-      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
       "name" : "Folder_Tests"
     }, {
-      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
       "name" : "Param_Context_File_G"
     }, {
-      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
       "name" : "Param_Display_G"
     } ]
   }, {
@@ -190,31 +190,31 @@
     "contextName" : "PRODUCTION",
     "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
     "parameterList" : [ {
-      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
       "name" : "File_Context"
     }, {
-      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Bronze"
     }, {
-      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Exec"
     }, {
-      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Rejets"
     }, {
-      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Root_PRJ"
     }, {
-      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
       "name" : "Folder_Schema"
     }, {
-      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
       "name" : "Folder_Tests"
     }, {
-      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
       "name" : "Param_Context_File_G"
     }, {
-      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
       "name" : "Param_Display_G"
     } ]
   }, {
@@ -283,31 +283,31 @@
     "contextName" : "REC",
     "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
     "parameterList" : [ {
-      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
       "name" : "File_Context"
     }, {
-      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Bronze"
     }, {
-      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
       "name" : "File_Logs_Exec"
     }, {
-      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Rejets"
     }, {
-      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
       "name" : "Folder_Root_PRJ"
     }, {
-      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
       "name" : "Folder_Schema"
     }, {
-      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
       "name" : "Folder_Tests"
     }, {
-      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
       "name" : "Param_Context_File_G"
     }, {
-      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
       "name" : "Param_Display_G"
     } ]
   }, {
@@ -557,6 +557,99 @@
     }, {
       "id" : "_wRXEfBCqEfG4ub9pBTGXuQ",
       "name" : "page_limit"
+    } ]
+  }, {
+    "contextName" : "QAT",
+    "repoId" : "_NZqn0Hv0EfCCZ8EYmrLolQ",
+    "parameterList" : [ {
+      "id" : "_ojBeR-_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_password"
+    }, {
+      "id" : "_ojBeSO_FEfCtA9TQCOJNgQ",
+      "name" : "Keystore_path"
+    }, {
+      "id" : "_ojBeQe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Account"
+    }, {
+      "id" : "_ojBeRO_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_BDD"
+    }, {
+      "id" : "_ojBeQ-_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_MDP"
+    }, {
+      "id" : "_KROxoBPeEfGHjLe3oPnj5g",
+      "name" : "Snowflake_ODOO"
+    }, {
+      "id" : "_ojBeSe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Password"
+    }, {
+      "id" : "_ojBeRu_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Schema_EDI"
+    }, {
+      "id" : "_10njgRPdEfGHjLe3oPnj5g",
+      "name" : "Snowflake_Schema_ODOO"
+    }, {
+      "id" : "_ojBeQu_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_User"
+    }, {
+      "id" : "_ojBeRe_FEfCtA9TQCOJNgQ",
+      "name" : "Snowflake_Warehouse_EDI"
+    }, {
+      "id" : "_10njgBPdEfGHjLe3oPnj5g",
+      "name" : "Snowflake_Warehouse_ODOO"
+    } ]
+  }, {
+    "contextName" : "QAT",
+    "repoId" : "_wQloYBCqEfG4ub9pBTGXuQ",
+    "parameterList" : [ {
+      "id" : "_wRXEexCqEfG4ub9pBTGXuQ",
+      "name" : "odoo_api_key"
+    }, {
+      "id" : "_wRXEeRCqEfG4ub9pBTGXuQ",
+      "name" : "odoo_db"
+    }, {
+      "id" : "_wRXEehCqEfG4ub9pBTGXuQ",
+      "name" : "odoo_login"
+    }, {
+      "id" : "_wRXEeBCqEfG4ub9pBTGXuQ",
+      "name" : "odoo_url"
+    }, {
+      "id" : "_wRXEfRCqEfG4ub9pBTGXuQ",
+      "name" : "out_dir"
+    }, {
+      "id" : "_wRXEfBCqEfG4ub9pBTGXuQ",
+      "name" : "page_limit"
+    } ]
+  }, {
+    "contextName" : "QAT",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
     } ]
   } ]
 }

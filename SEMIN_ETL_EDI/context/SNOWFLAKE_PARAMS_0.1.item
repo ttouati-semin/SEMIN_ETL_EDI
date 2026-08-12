@@ -11,6 +11,7 @@
     <contextParameter xmi:id="_hPucCLiTEe-W-dL5fDhv3g" comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#xD;&#xA;"/>
     <contextParameter xmi:id="_cBsjMGYyEfCIQuZeKmJtYQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="__jHNQGYyEfCIQuZeKmJtYQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_TLHDgJD9EfG1frUedQy77g" comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_tgoX4GY1EfCIQuZeKmJtYQ" confirmationNeeded="false" hide="false" name="DEV">
     <contextParameter xmi:id="_tgoX4WY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -23,6 +24,7 @@
     <contextParameter xmi:id="_tgoX6GY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#xD;&#xA;"/>
     <contextParameter xmi:id="_tgoX6WY1EfCIQuZeKmJtYQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN01"/>
     <contextParameter xmi:id="_tgoX6mY1EfCIQuZeKmJtYQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:\Talend\snowflake_keystore.P12"/>
+    <contextParameter xmi:id="_TLHDgZD9EfG1frUedQy77g" comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_tgoX62Y1EfCIQuZeKmJtYQ" confirmationNeeded="false" hide="false" name="PROD">
     <contextParameter xmi:id="_tgoX7GY1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Account" prompt="Snowflake_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -35,5 +37,6 @@
     <contextParameter xmi:id="_tgoX82Y1EfCIQuZeKmJtYQ" comment="" name="Snowflake_Schema_GOLD" prompt="Snowflake_Schema_GOLD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#xD;&#xA;"/>
     <contextParameter xmi:id="_tgoX9GY1EfCIQuZeKmJtYQ" comment="" name="Keystore_password" prompt="Keystore_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter xmi:id="_tgoX9WY1EfCIQuZeKmJtYQ" comment="" name="Keystore_path" prompt="Keystore_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_TLHDgpD9EfG1frUedQy77g" comment="" name="Snowflake_Schema_LR" prompt="Snowflake_Schema_LR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
