@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCjkBS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCjkBS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCjkRS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCjkhS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCjkxS3EfGHjLe3oPnj5g"/>
@@ -30,7 +30,7 @@
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCjqhS3EfGHjLe3oPnj5g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="REC">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCjqxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCjqxS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCjrBS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCjrRS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCjrhS3EfGHjLe3oPnj5g"/>
@@ -59,7 +59,7 @@
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCjxRS3EfGHjLe3oPnj5g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="PROD">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCjxhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCjxhS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCjxxS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCjyBS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCjyRS3EfGHjLe3oPnj5g"/>
@@ -88,7 +88,7 @@
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCj4BS3EfGHjLe3oPnj5g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEVELOPPEMENT">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCj4RS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCj4RS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCj4hS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCj4xS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCj5BS3EfGHjLe3oPnj5g"/>
@@ -117,7 +117,7 @@
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCj-xS3EfGHjLe3oPnj5g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCj_BS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCj_BS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCj_RS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCj_hS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCj_xS3EfGHjLe3oPnj5g"/>
@@ -146,7 +146,7 @@
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCkFhS3EfGHjLe3oPnj5g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="RECETTE">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCkFxS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCkFxS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCkGBS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCkGRS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCkGhS3EfGHjLe3oPnj5g"/>
@@ -175,7 +175,7 @@
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_1pCkMRS3EfGHjLe3oPnj5g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="PRODUCTION">
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_1pCkMhS3EfGHjLe3oPnj5g"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_1pCkMhS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_1pCkMxS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_1pCkNBS3EfGHjLe3oPnj5g"/>
     <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_1pCkNRS3EfGHjLe3oPnj5g"/>
@@ -222,7 +222,7 @@
     <contextParameter comment="" name="odoo_url" prompt="odoo_url?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="https://wondertex.odoo.com" internalId="_NRTKP25QEfGXt_OZXnDBUg"/>
     <contextParameter comment="" name="out_dir" prompt="out_dir?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="C:\Talend\Projet_BI\TMP_ODOO" internalId="_NRTKQG5QEfGXt_OZXnDBUg"/>
     <contextParameter comment="" name="page_limit" prompt="page_limit?" promptNeeded="false" repositoryContextId="_wQloYBCqEfG4ub9pBTGXuQ" type="id_String" value="200" internalId="_NRTKQW5QEfGXt_OZXnDBUg"/>
-    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_NRTKQm5QEfGXt_OZXnDBUg"/>
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_NRTKQm5QEfGXt_OZXnDBUg"/>
     <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_NRTKQ25QEfGXt_OZXnDBUg"/>
     <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_NRTKRG5QEfGXt_OZXnDBUg"/>
     <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_NRTKRW5QEfGXt_OZXnDBUg"/>

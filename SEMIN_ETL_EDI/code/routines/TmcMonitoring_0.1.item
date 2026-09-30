@@ -1,0 +1,386 @@
+package routines;
+
+import java.io.*;
+import java.net.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.security.*;
+import java.sql.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+/** Talend TMC inventory and execution collector. No Talend SDK dependency. */
+public final class TmcMonitoring {
+    private TmcMonitoring() { }
+    public interface Transport { Object get(String path) throws Exception; }
+    public static final class HttpFailure extends IOException {
+        private static final long serialVersionUID=1L;
+        public final int status;
+        public HttpFailure(int status,String path){super("TMC HTTP "+status+" on "+path.split("\\?")[0]);this.status=status;}
+    }
+    public static final class HttpTransport implements Transport {
+        final String base, token; final int timeout, retries; int requests;
+        public HttpTransport(Properties p){
+            base=TmcConfig.req(p,"TMC_Api_Base_Url").replaceAll("/+$","");
+            if(!base.matches("https://api\\.(eu|us|ap|au|us-west)\\.cloud\\.talend\\.com"))
+                throw new IllegalArgumentException("Unsupported TMC API host");
+            token=TmcConfig.req(p,"TMC_Access_Token");
+            timeout=1000*TmcConfig.integer(p,"TMC_Request_Timeout_Seconds",1,600);
+            retries=TmcConfig.integer(p,"TMC_Max_Retries",0,8);
+        }
+        public Object get(String path)throws Exception{
+            if(!path.startsWith("/orchestration/") && !path.startsWith("/processing/"))throw new IOException("Unsupported API path");
+            for(int attempt=0;;attempt++){
+                if(++requests>20000)throw new IOException("API request budget exhausted; collection incomplete");
+                HttpURLConnection h=(HttpURLConnection)new URL(base+path).openConnection();
+                h.setInstanceFollowRedirects(false);h.setRequestMethod("GET");
+                h.setConnectTimeout(timeout);h.setReadTimeout(timeout);
+                h.setRequestProperty("Authorization","Bearer "+token);
+                h.setRequestProperty("Accept","application/json");h.setRequestProperty("talend-version","2021-03");
+                long waitMillis=Math.min(60000L,1000L*(1L<<attempt));
+                try{
+                    int code=h.getResponseCode();
+                    if(code==200){
+                        try(InputStream in=h.getInputStream();ByteArrayOutputStream out=new ByteArrayOutputStream()){
+                            byte[] buf=new byte[8192];int n;int bytes=0;
+                            while((n=in.read(buf))>=0){bytes+=n;if(bytes>32*1024*1024)throw new IOException("API response exceeds 32 MiB");out.write(buf,0,n);}
+                            return TmcJson.parse(new String(out.toByteArray(),StandardCharsets.UTF_8));
+                        }
+                    }
+                    if((code!=429 && code!=408 && code<500) || attempt>=retries)throw new HttpFailure(code,path);
+                    String retry=h.getHeaderField("Retry-After");
+                    if(retry!=null){
+                        try{waitMillis=Math.max(waitMillis,Long.parseLong(retry)*1000L);}
+                        catch(NumberFormatException e){try{waitMillis=Math.max(waitMillis,ZonedDateTime.parse(retry,DateTimeFormatter.RFC_1123_DATE_TIME).toInstant().toEpochMilli()-System.currentTimeMillis());}catch(Exception ignored){}}
+                        if(waitMillis>300000L)throw new HttpFailure(code,path+" (Retry-After too long)");
+                    }
+                }catch(HttpFailure e){throw e;}
+                catch(IllegalArgumentException e){throw new IOException("Unexpected JSON response from TMC");}
+                catch(IOException e){if(attempt>=retries)throw new IOException("TMC network failure after retries: "+e.getClass().getSimpleName());}
+                finally{h.disconnect();}
+                System.out.println("TMC transient failure; retry "+(attempt+1));
+                Thread.sleep(waitMillis);
+            }
+        }
+    }
+    @SuppressWarnings("unchecked")
+    public static Map<String,Object> obj(Object x){if(!(x instanceof Map))throw new IllegalArgumentException("Expected JSON object");return (Map<String,Object>)x;}
+    @SuppressWarnings("unchecked")
+    public static List<Object> array(Object x){if(!(x instanceof List))throw new IllegalArgumentException("Expected JSON array");return (List<Object>)x;}
+    public static String str(Map<String,Object> m,String k){Object o=m.get(k);return o==null?null:o.toString();}
+    public static String required(Map<String,Object> m,String k){String s=str(m,k);if(s==null || s.isEmpty())throw new IllegalArgumentException("Missing API field: "+k);return s;}
+    static Map<String,Object> select(Map<String,Object> m,String... names){Map<String,Object> r=new LinkedHashMap<String,Object>();for(String n:names)if(m.containsKey(n))r.put(n,m.get(n));return r;}
+    static String enc(String s)throws UnsupportedEncodingException{return URLEncoder.encode(s,"UTF-8");}
+    static long number(Object n,long fallback){return n instanceof Number?((Number)n).longValue():fallback;}
+
+    public static final class Page {
+        public final List<Object> items; public final long total; public final int limit;
+        Page(Object result,int expectedOffset,int requestedLimit){
+            Map<String,Object> m=obj(result);items=array(m.get("items"));total=number(m.get("total"),-1);
+            int offset=(int)number(m.get("offset"),-1);limit=(int)number(m.get("limit"),requestedLimit);
+            if(offset!=expectedOffset || limit<1 || limit>100 || items.size()>limit)
+                throw new IllegalArgumentException("Inconsistent API pagination");
+        }
+    }
+    /** Window boundaries overlap intentionally. The execution id removes duplicates. */
+    public static List<Map<String,Object>> executionWindow(Transport http,String workspace,long from,long to,int size,int depth)throws Exception{
+        if(depth>40 || from>to)throw new IOException("Execution time range cannot be partitioned");
+        String url="/processing/executables/tasks/executions?workspaceId="+enc(workspace)+"&from="+from+"&to="+to;
+        LinkedHashMap<String,Map<String,Object>> rows=new LinkedHashMap<String,Map<String,Object>>();
+        int offset=0;long expected=-1;Set<String> pages=new HashSet<String>();boolean saturated=false;
+        while(true){
+            Page p=new Page(http.get(url+"&limit="+size+"&offset="+offset),offset,size);
+            expected=Math.max(expected,p.total);
+            if(expected>1000){saturated=true;break;}
+            List<String> ids=new ArrayList<String>();
+            for(Object x:p.items){Map<String,Object> r=obj(x);String id=required(r,"executionId");rows.put(id,r);ids.add(id);}
+            if(!ids.isEmpty() && !pages.add(ids.toString()))throw new IOException("TMC returned a repeated execution page");
+            int n=p.items.size();offset+=n;
+            if(n<p.limit || (p.total>=0 && offset>=p.total)){
+                if(expected>=0 && rows.size()<expected)saturated=true;
+                break;
+            }
+            if(offset>=1000){saturated=true;break;}
+        }
+        if(!saturated)return new ArrayList<Map<String,Object>>(rows.values());
+        if(to-from<=1)throw new IOException("Over 1000 overlapping runs in a minimal time window; collection incomplete");
+        long mid=from+(to-from)/2;
+        rows.clear();
+        for(Map<String,Object> r:executionWindow(http,workspace,from,mid,size,depth+1))rows.put(required(r,"executionId"),r);
+        for(Map<String,Object> r:executionWindow(http,workspace,mid,to,size,depth+1))rows.put(required(r,"executionId"),r);
+        return new ArrayList<Map<String,Object>>(rows.values());
+    }
+    public static List<Map<String,Object>> tasks(Transport http,String path,String workspace,int size)throws Exception{
+        LinkedHashMap<String,Map<String,Object>> all=new LinkedHashMap<String,Map<String,Object>>();int offset=0;long total=-1;
+        for(int page=0;page<10000;page++){
+            Page p=new Page(http.get(path+"?workspaceId="+enc(workspace)+"&limit="+size+"&offset="+offset),offset,size);
+            total=Math.max(total,p.total);int before=all.size();
+            for(Object v:p.items){Map<String,Object> t=obj(v);String id=str(t,"executable");if(id==null)id=required(t,"id");all.put(id,t);}
+            if(!p.items.isEmpty() && all.size()==before)throw new IOException("TMC returned a repeated task page");
+            offset+=p.items.size();
+            if(p.items.size()<p.limit || (p.total>=0 && offset>=p.total)){
+                if(total>=0 && all.size()<total)throw new IOException("Task inventory changed during pagination; rerun collection");
+                return new ArrayList<Map<String,Object>>(all.values());
+            }
+        }
+        throw new IOException("Task pagination budget exceeded");
+    }
+    static Map<String,Object> row(String type,String id,String env,String ws,Map<String,Object> payload){
+        Map<String,Object> r=new LinkedHashMap<String,Object>();r.put("kind",type);r.put("id",id);r.put("env",env);r.put("ws",ws);r.put("payload",payload);return r;
+    }
+
+    public static final class Session implements AutoCloseable {
+        final Properties p; final String source, prefix; final int size,lookback,window,maxRecovery;
+        final long cutoff; final String runId=UUID.randomUUID().toString();
+        final List<Map<String,Object>> environments=new ArrayList<Map<String,Object>>();
+        final List<Map<String,Object>> workspaces=new ArrayList<Map<String,Object>>();
+        final Map<String,Map<String,Object>> staged=new LinkedHashMap<String,Map<String,Object>>();
+        final Map<String,Long> checkpoints=new LinkedHashMap<String,Long>();
+        final Map<String,Long> fromByWorkspace=new LinkedHashMap<String,Long>();
+        final Map<String,String> workspaceEnv=new LinkedHashMap<String,String>();
+        java.nio.channels.FileChannel lockChannel; java.nio.channels.FileLock lock;
+        Connection db; URLClassLoader driverLoader; Transport http; boolean auditCreated,done,failed;
+        int taskCount; String phase="init";
+        public Session(Properties p){
+            this.p=p;source=TmcConfig.req(p,"TMC_Source");
+            if(!source.matches("[A-Za-z0-9_-]{1,100}"))throw new IllegalArgumentException("Invalid TMC_Source");
+            prefix=TmcConfig.identifier(TmcConfig.req(p,"Snowflake_BDD"))+"."+TmcConfig.identifier(TmcConfig.req(p,"Snowflake_Schema_TMC"))+".";
+            size=TmcConfig.integer(p,"TMC_Page_Size",1,100);lookback=TmcConfig.integer(p,"TMC_Lookback_Hours",1,240);
+            window=TmcConfig.integer(p,"TMC_Window_Hours",1,240);maxRecovery=TmcConfig.integer(p,"TMC_Max_Recovery_Days",1,365);
+            String to=p.getProperty("TMC_To_UTC","");
+            cutoff=to.isEmpty()?System.currentTimeMillis()-1000L*TmcConfig.integer(p,"TMC_End_Lag_Seconds",0,3600):Instant.parse(to).toEpochMilli();
+            if(cutoff>System.currentTimeMillis())throw new IllegalArgumentException("TMC_To_UTC must be in the past");
+            if(!p.getProperty("TMC_From_UTC","").isEmpty() && Instant.parse(p.getProperty("TMC_From_UTC")).toEpochMilli()>=cutoff)
+                throw new IllegalArgumentException("TMC_From_UTC must precede TMC_To_UTC");
+            http=new HttpTransport(p);
+        }
+        public void phase(String step){
+            phase=step;
+            try{
+                if("connect".equals(step))connect();
+                else if("inventory".equals(step))inventory();
+                else if("tasks".equals(step))collectTasks();
+                else if("executions".equals(step))collectExecutions();
+                else if("publish".equals(step))publish();
+                else throw new IllegalArgumentException("Unknown collector phase");
+            }catch(Exception e){String msg=safeError(e);fail(msg);throw new RuntimeException(msg);}
+        }
+        String safeError(Exception e){
+            String msg="TMC phase="+phase+" "+e.getClass().getSimpleName()+": "+String.valueOf(e.getMessage());
+            for(String k:p.stringPropertyNames())if(k.toLowerCase(Locale.ROOT).matches(".*(token|password|pwd|mdp).*")){
+                String secret=p.getProperty(k,"");if(!secret.isEmpty())msg=msg.replace(secret,"[REDACTED]");}
+            return msg.substring(0,Math.min(3500,msg.length()));
+        }
+        void execute(String sql)throws SQLException{try(Statement st=db.createStatement()){st.setQueryTimeout(300);st.execute(sql);}}
+        PreparedStatement prepare(String sql)throws SQLException{PreparedStatement s=db.prepareStatement(sql);s.setQueryTimeout(300);return s;}
+        void connect()throws Exception{
+            Path lockDir=Paths.get(TmcConfig.req(p,"Folder_Root_PRJ"));Files.createDirectories(lockDir);
+            lockChannel=java.nio.channels.FileChannel.open(lockDir.resolve("TMC_"+source+"_"+prefix.replace('.','_')+".lock"),StandardOpenOption.CREATE,StandardOpenOption.WRITE);
+            lock=lockChannel.tryLock();if(lock==null)throw new IOException("Another collector holds the local lock");
+            String account=TmcConfig.req(p,"Snowflake_Account");
+            if(!account.matches("[A-Za-z0-9._-]+"))throw new IllegalArgumentException("Invalid Snowflake_Account");
+            Class<?> cls;
+            String jar=p.getProperty("Snowflake_JDBC_Jar","");
+            if(jar.isEmpty())cls=Class.forName(TmcConfig.req(p,"Snowflake_Driver"));
+            else{
+                if(!Files.isRegularFile(Paths.get(jar)))throw new IOException("Snowflake_JDBC_Jar file not found");
+                driverLoader=new URLClassLoader(new URL[]{Paths.get(jar).toUri().toURL()},TmcMonitoring.class.getClassLoader());
+                cls=Class.forName(TmcConfig.req(p,"Snowflake_Driver"),true,driverLoader);
+            }
+            Driver driver=(Driver)cls.getDeclaredConstructor().newInstance();
+            KeyStore store=KeyStore.getInstance("PKCS12");char[] pass=TmcConfig.req(p,"Keystore_password").toCharArray();
+            PrivateKey key;
+            try{
+                try(InputStream in=Files.newInputStream(Paths.get(TmcConfig.req(p,"Keystore_path")))){store.load(in,pass);}
+                String alias=p.getProperty("Keystore_Alias","");
+                if(alias.isEmpty()){
+                    List<String> aliases=new ArrayList<String>();Enumeration<String> e=store.aliases();while(e.hasMoreElements()){String a=e.nextElement();if(store.isKeyEntry(a))aliases.add(a);}
+                    if(aliases.size()!=1)throw new IllegalArgumentException("Set Keystore_Alias: PKCS12 has zero or multiple key entries");alias=aliases.get(0);
+                }
+                String kp=p.getProperty("Keystore_Key_Password","");char[] keyPass=kp.isEmpty()?pass:kp.toCharArray();
+                try{Key candidate=store.getKey(alias,keyPass);if(!(candidate instanceof PrivateKey))throw new IllegalArgumentException("PKCS12 entry is not a private key");key=(PrivateKey)candidate;}
+                finally{if(keyPass!=pass)Arrays.fill(keyPass,'\0');}
+                if(!"RSA".equalsIgnoreCase(key.getAlgorithm()))throw new IllegalArgumentException("Snowflake requires an RSA private key");
+            }finally{Arrays.fill(pass,'\0');}
+            Properties auth=new Properties();auth.setProperty("user",TmcConfig.req(p,"Snowflake_User"));auth.put("privateKey",key);
+            auth.setProperty("db",TmcConfig.req(p,"Snowflake_BDD"));auth.setProperty("schema",TmcConfig.req(p,"Snowflake_Schema_TMC"));
+            auth.setProperty("warehouse",TmcConfig.req(p,"Snowflake_Warehouse_Bronze"));auth.setProperty("role",TmcConfig.req(p,"Snowflake_Role"));
+            auth.setProperty("JDBC_QUERY_RESULT_FORMAT","JSON");auth.setProperty("loginTimeout","60");auth.setProperty("networkTimeout","120000");
+            db=driver.connect("jdbc:snowflake://"+account+".snowflakecomputing.com",auth);auth.clear();
+            if(db==null)throw new SQLException("Snowflake driver did not accept the JDBC URL");db.setAutoCommit(true);
+            execute("ALTER SESSION SET TIMEZONE='UTC', ERROR_ON_NONDETERMINISTIC_MERGE=TRUE");
+            // No persistent DDL from the job: execute 01_CREATE_TABLES_QAT.sql first.
+            try(PreparedStatement s=prepare("INSERT INTO "+prefix+"COLLECTION_RUN (SOURCE_SYSTEM,COLLECTION_ID,STATUS,STARTED_AT,CUTOFF_UTC) SELECT ?,?,'RUNNING',CURRENT_TIMESTAMP(),TO_TIMESTAMP_TZ(?)")){
+                s.setString(1,source);s.setString(2,runId);s.setString(3,Instant.ofEpochMilli(cutoff).toString());s.executeUpdate();auditCreated=true;
+            }
+            // DDL before starting the publication transaction (Snowflake DDL commits).
+            execute("CREATE TEMPORARY TABLE "+prefix+"TMP_TMC_COLLECTOR (KIND VARCHAR, ID VARCHAR, ENV_ID VARCHAR, WS_ID VARCHAR, PAYLOAD VARIANT)");
+            System.out.println("TMC collection "+runId+" -> "+prefix);
+        }
+        void add(Map<String,Object> r){
+            String k=r.get("kind")+":"+r.get("id");staged.put(k,r);
+            if(staged.size()>250000)throw new IllegalArgumentException("Collection exceeds 250000 objects; reduce initial lookback");
+        }
+        void inventory()throws Exception{
+            Set<String> wanted=new LinkedHashSet<String>();for(String x:TmcConfig.req(p,"TMC_Environment_Names").split(","))if(!x.trim().isEmpty())wanted.add(x.trim());
+            Set<String> found=new HashSet<String>();Set<String> envIds=new HashSet<String>();
+            for(Object x:array(http.get("/orchestration/environments"))){
+                Map<String,Object> e=obj(x);String name=required(e,"name");if(!wanted.contains(name))continue;
+                if(!found.add(name))throw new IOException("Ambiguous duplicate environment name: "+name);
+                String id=required(e,"id");envIds.add(id);environments.add(e);
+                add(row("ENVIRONMENT",id,id,null,select(e,"id","name","description","default","maxCloudContainers")));
+            }
+            if(!found.containsAll(wanted)){wanted.removeAll(found);throw new IOException("TMC environments not visible: "+wanted);}
+            Map<String,Integer> counts=new HashMap<String,Integer>();
+            for(Object x:array(http.get("/orchestration/workspaces"))){
+                Map<String,Object> w=obj(x);String env=required(obj(w.get("environment")),"id");if(!envIds.contains(env))continue;
+                String id=required(w,"id");workspaces.add(w);workspaceEnv.put(id,env);counts.put(env,counts.containsKey(env)?counts.get(env)+1:1);
+                add(row("WORKSPACE",id,env,id,select(w,"id","name","description","owner","type")));
+            }
+            for(String env:envIds)if(!counts.containsKey(env))throw new IOException("Selected environment has no visible workspace: "+env);
+            try(PreparedStatement s=prepare("SELECT WORKSPACE_ID,LAST_SUCCESS_TO_UTC FROM "+prefix+"COLLECTION_WATERMARK WHERE SOURCE_SYSTEM=?")){
+                s.setString(1,source);try(ResultSet r=s.executeQuery()){while(r.next()){java.sql.Timestamp t=r.getTimestamp(2);if(t!=null)checkpoints.put(r.getString(1),t.getTime());}}
+            }
+            System.out.println("TMC inventory: "+environments.size()+" environments, "+workspaces.size()+" workspaces");
+        }
+        void collectTasks()throws Exception{
+            String path=TmcConfig.req(p,"TMC_Tasks_Path");
+            if(!path.equals("/orchestration/executables/tasks") && !path.equals("/orchestration/tasks"))throw new IllegalArgumentException("Unsupported TMC_Tasks_Path");
+            for(Map<String,Object> w:workspaces){
+                String ws=required(w,"id"),env=workspaceEnv.get(ws);
+                for(Map<String,Object> t:tasks(http,path,ws,size)){
+                    String id=str(t,"executable");if(id==null)id=required(t,"id");
+                    if(t.get("workspace")!=null && !ws.equals(required(obj(t.get("workspace")),"id")))throw new IOException("Task API workspace filter mismatch");
+                    Map<String,Object> payload=select(t,"name","description","version","artifactId","tags");payload.put("id",id);
+                    if(t.get("runtime") instanceof Map)payload.put("runtime",select(obj(t.get("runtime")),"id","type","engineId","clusterId","runProfileId"));
+                    add(row("TASK",id,env,ws,payload));taskCount++;
+                }
+            }
+            System.out.println("TMC tasks: "+taskCount);
+        }
+        void collectExecutions()throws Exception{
+            String forcedFrom=p.getProperty("TMC_From_UTC","");long oldestAllowed=cutoff-86400000L*maxRecovery;
+            for(Map<String,Object> w:workspaces){
+                String ws=required(w,"id"),env=workspaceEnv.get(ws);long from=cutoff-lookback*3600000L;
+                if(forcedFrom.isEmpty()){
+                    Long wm=checkpoints.get(ws);if(wm!=null)from=Math.min(from,wm-lookback*3600000L);
+                }else from=Instant.parse(forcedFrom).toEpochMilli();
+                if(from<oldestAllowed)throw new IOException("Recovery exceeds TMC_Max_Recovery_Days for workspace "+ws+"; explicit backfill required");
+                fromByWorkspace.put(ws,from);
+                for(long a=from;a<cutoff;){
+                    long b=Math.min(cutoff,a+window*3600000L);
+                    for(Map<String,Object> x:executionWindow(http,ws,a,b,size,0)){
+                        String id=required(x,"executionId");required(x,"taskId");required(x,"status");
+                        if(x.get("workspaceId")!=null && !ws.equals(str(x,"workspaceId")))throw new IOException("Execution API workspace filter mismatch");
+                        Map<String,Object> payload=select(x,"executionId","taskId","taskVersion","planId","executionType","status","executionStatus","triggerTimestamp","startTimestamp","finishTimestamp","userId","userType","errorMessage","errorType","misfiredExecutionReason","timeout","numberOfProcessedRows","numberOfRejectedRows","apiVersion");
+                        if(x.get("runtime") instanceof Map)payload.put("runtime",select(obj(x.get("runtime")),"id","type","engineId","clusterId","runProfileId"));
+                        for(String field:new String[]{"triggerTimestamp","startTimestamp","finishTimestamp"}){
+                            String v=str(payload,field);if(v!=null)Instant.parse(v); // Fail before publication if contract drifts.
+                        }
+                        add(row("EXECUTION",id,env,ws,payload));
+                    }
+                    a=b;
+                }
+                System.out.println("TMC workspace "+required(w,"name")+": collection window completed");
+            }
+        }
+        void publish()throws Exception{
+            db.setAutoCommit(false);
+            try(PreparedStatement s=prepare("INSERT INTO "+prefix+"TMP_TMC_COLLECTOR SELECT f.value:kind::VARCHAR,f.value:id::VARCHAR,f.value:env::VARCHAR,f.value:ws::VARCHAR,f.value:payload FROM TABLE(FLATTEN(INPUT=>PARSE_JSON(?))) f")){
+                List<Object> batch=new ArrayList<Object>();int chars=0;
+                for(Map<String,Object> r:staged.values()){
+                    int n=TmcJson.stringify(r).length();
+                    if(!batch.isEmpty() && (batch.size()>=500 || chars+n>1000000)){s.setString(1,TmcJson.stringify(batch));s.executeUpdate();batch.clear();chars=0;}
+                    batch.add(r);chars+=n;
+                }
+                if(!batch.isEmpty()){s.setString(1,TmcJson.stringify(batch));s.executeUpdate();}
+            }
+            for(String kind:new String[]{"ENVIRONMENT","WORKSPACE","TASK"})mergeDimension(kind);
+            mergeExecutions();
+            // A manually bounded backfill must not advance the automatic watermark.
+            if(p.getProperty("TMC_From_UTC","").isEmpty() && p.getProperty("TMC_To_UTC","").isEmpty())
+            for(Map.Entry<String,Long> e:fromByWorkspace.entrySet()){
+                try(PreparedStatement s=prepare("MERGE INTO "+prefix+"COLLECTION_WATERMARK t USING (SELECT CAST(? AS VARCHAR) SOURCE_SYSTEM,CAST(? AS VARCHAR) WORKSPACE_ID,TO_TIMESTAMP_TZ(?) LAST_SUCCESS_TO_UTC,CAST(? AS VARCHAR) COLLECTION_ID) s ON t.SOURCE_SYSTEM=s.SOURCE_SYSTEM AND t.WORKSPACE_ID=s.WORKSPACE_ID WHEN MATCHED AND s.LAST_SUCCESS_TO_UTC>=t.LAST_SUCCESS_TO_UTC THEN UPDATE SET LAST_SUCCESS_TO_UTC=s.LAST_SUCCESS_TO_UTC,COLLECTION_ID=s.COLLECTION_ID,UPDATED_AT=CURRENT_TIMESTAMP() WHEN NOT MATCHED THEN INSERT (SOURCE_SYSTEM,WORKSPACE_ID,LAST_SUCCESS_TO_UTC,COLLECTION_ID,UPDATED_AT) VALUES(s.SOURCE_SYSTEM,s.WORKSPACE_ID,s.LAST_SUCCESS_TO_UTC,s.COLLECTION_ID,CURRENT_TIMESTAMP())")){
+                    s.setString(1,source);s.setString(2,e.getKey());s.setString(3,Instant.ofEpochMilli(cutoff).toString());s.setString(4,runId);s.executeUpdate();
+                }
+            }
+            long runs=staged.values().stream().filter(x->"EXECUTION".equals(x.get("kind"))).count();
+            try(PreparedStatement s=prepare("UPDATE "+prefix+"COLLECTION_RUN SET STATUS='SUCCESS',FINISHED_AT=CURRENT_TIMESTAMP(),ENVIRONMENT_COUNT=?,WORKSPACE_COUNT=?,TASK_COUNT=?,EXECUTION_COUNT=?,DETAILS=PARSE_JSON(?) WHERE SOURCE_SYSTEM=? AND COLLECTION_ID=?")){
+                s.setInt(1,environments.size());s.setInt(2,workspaces.size());s.setInt(3,taskCount);s.setLong(4,runs);
+                s.setString(5,TmcJson.stringify(fromByWorkspace));s.setString(6,source);s.setString(7,runId);s.executeUpdate();
+            }
+            db.commit();done=true;System.out.println("TMC SUCCESS: "+runs+" distinct execution(s) merged; collection="+runId);
+        }
+        /** Sends a Paris 08:00-to-08:00 HTML report after Snowflake publication has committed. */
+        public void sendDailyEmail() throws Exception {
+            if (!done || db == null) throw new IllegalStateException("Publish must complete before email");
+            String mailTo=TmcConfig.req(p,"TMC_Email_To");
+            String mailFrom=TmcConfig.req(p,"TMC_Email_From");
+            String smtpHost=TmcConfig.req(p,"TMC_SMTP_Host");
+            int smtpPort=TmcConfig.integer(p,"TMC_SMTP_Port",1,65535);
+            String sql="WITH BOUNDS AS (SELECT "
+                +"DATEADD(hour,8,DATEADD(day,-1,CONVERT_TIMEZONE('Europe/Paris',CURRENT_TIMESTAMP())::DATE)::TIMESTAMP_NTZ) AS PERIOD_START_PARIS, "
+                +"DATEADD(hour,8,TO_TIMESTAMP_NTZ(CONVERT_TIMEZONE('Europe/Paris',CURRENT_TIMESTAMP())::DATE)) AS PERIOD_END_PARIS), "
+                +"R AS (SELECT ENVIRONMENT_NAME,WORKSPACE_NAME,TASK_NAME,EXECUTION_ID,API_STATUS,STATUS_GROUP,TRIGGER_TYPE,"
+                +"START_TIME_PARIS,END_TIME_PARIS,DURATION_SECONDS,PROCESSED_ROWS,REJECTED_ROWS,TRIGGERED_BY,ERROR_MESSAGE,"
+                +"COALESCE(CONVERT_TIMEZONE('Europe/Paris',START_TIME_UTC),CONVERT_TIMEZONE('Europe/Paris',TRIGGER_TIME_UTC),"
+                +"CONVERT_TIMEZONE('Europe/Paris',END_TIME_UTC))::TIMESTAMP_NTZ AS PERIOD_TIMESTAMP_PARIS,"
+                +"DATE_PART('HOUR',COALESCE(CONVERT_TIMEZONE('Europe/Paris',START_TIME_UTC),"
+                +"CONVERT_TIMEZONE('Europe/Paris',TRIGGER_TIME_UTC),CONVERT_TIMEZONE('Europe/Paris',END_TIME_UTC))) AS REPORT_HOUR_PARIS "
+                +"FROM "+prefix+"V_TASK_EXECUTION) "
+                +"SELECT R.* FROM R CROSS JOIN BOUNDS B WHERE R.PERIOD_TIMESTAMP_PARIS>=B.PERIOD_START_PARIS "
+                +"AND R.PERIOD_TIMESTAMP_PARIS<B.PERIOD_END_PARIS "
+                +"ORDER BY IFF(STATUS_GROUP IN ('FAILED','REJECTED','TERMINATED','MISFIRED'),0,1),"
+                +"START_TIME_PARIS DESC NULLS LAST,TASK_NAME";
+            List<TmcMail.Execution> rows=new ArrayList<TmcMail.Execution>();
+            try(PreparedStatement s=prepare(sql);ResultSet r=s.executeQuery()){
+                while(r.next()){
+                    rows.add(new TmcMail.Execution(
+                        r.getString("ENVIRONMENT_NAME"),r.getString("WORKSPACE_NAME"),r.getString("TASK_NAME"),
+                        r.getString("EXECUTION_ID"),r.getString("API_STATUS"),r.getString("STATUS_GROUP"),
+                        r.getString("TRIGGER_TYPE"),r.getString("START_TIME_PARIS"),r.getString("END_TIME_PARIS"),
+                        r.getBigDecimal("DURATION_SECONDS"),r.getObject("PROCESSED_ROWS"),r.getObject("REJECTED_ROWS"),
+                        r.getString("TRIGGERED_BY"),r.getString("ERROR_MESSAGE"),r.getInt("REPORT_HOUR_PARIS")
+                    ));
+                }
+            }
+            LocalDate periodEnd=LocalDate.now(ZoneId.of("Europe/Paris"));
+            LocalDate periodStart=periodEnd.minusDays(1);
+            DateTimeFormatter periodFormat=DateTimeFormatter.ofPattern("dd/MM/yyyy",Locale.FRANCE);
+            String startLabel=periodStart.format(periodFormat),endLabel=periodEnd.format(periodFormat);
+            String subject="Rapport TMC - du "+startLabel+" à 08:00 au "+endLabel+" à 08:00";
+            String html=TmcMail.buildHtml(startLabel,endLabel,rows);
+            TmcMail.sendHtml(smtpHost,smtpPort,mailFrom,mailTo,subject,html);
+            System.out.println("[TMC] Rapport HTML envoyé à "+mailTo+" pour la période du "+startLabel+" à 08:00 au "+endLabel+" à 08:00 ("+rows.size()+" exécution(s)).");
+        }
+        void mergeDimension(String kind)throws Exception{
+            String q="MERGE INTO "+prefix+kind+" t USING (SELECT CAST(? AS VARCHAR) SOURCE_SYSTEM,ID,ENV_ID,WS_ID,PAYLOAD,CAST(? AS VARCHAR) COLLECTION_ID FROM "+prefix+"TMP_TMC_COLLECTOR WHERE KIND='"+kind+"') s ON t.SOURCE_SYSTEM=s.SOURCE_SYSTEM AND t.ID=s.ID WHEN MATCHED THEN UPDATE SET ENVIRONMENT_ID=s.ENV_ID,WORKSPACE_ID=s.WS_ID,NAME=s.PAYLOAD:name::VARCHAR,PAYLOAD=s.PAYLOAD,LAST_SEEN_AT=CURRENT_TIMESTAMP(),COLLECTION_ID=s.COLLECTION_ID WHEN NOT MATCHED THEN INSERT (SOURCE_SYSTEM,ID,ENVIRONMENT_ID,WORKSPACE_ID,NAME,PAYLOAD,FIRST_SEEN_AT,LAST_SEEN_AT,COLLECTION_ID) VALUES(s.SOURCE_SYSTEM,s.ID,s.ENV_ID,s.WS_ID,s.PAYLOAD:name::VARCHAR,s.PAYLOAD,CURRENT_TIMESTAMP(),CURRENT_TIMESTAMP(),s.COLLECTION_ID)";
+            try(PreparedStatement s=prepare(q)){s.setString(1,source);s.setString(2,runId);s.executeUpdate();}
+        }
+        void mergeExecutions()throws Exception{
+            String q="MERGE INTO "+prefix+"TASK_EXECUTION t USING (SELECT CAST(? AS VARCHAR) SOURCE_SYSTEM,ID EXECUTION_ID,ENV_ID ENVIRONMENT_ID,WS_ID WORKSPACE_ID,PAYLOAD,CAST(? AS VARCHAR) COLLECTION_ID FROM "+prefix+"TMP_TMC_COLLECTOR WHERE KIND='EXECUTION') s ON t.SOURCE_SYSTEM=s.SOURCE_SYSTEM AND t.EXECUTION_ID=s.EXECUTION_ID WHEN MATCHED THEN UPDATE SET ENVIRONMENT_ID=s.ENVIRONMENT_ID,WORKSPACE_ID=s.WORKSPACE_ID,PAYLOAD=s.PAYLOAD,COLLECTED_AT=CURRENT_TIMESTAMP(),COLLECTION_ID=s.COLLECTION_ID WHEN NOT MATCHED THEN INSERT (SOURCE_SYSTEM,EXECUTION_ID,ENVIRONMENT_ID,WORKSPACE_ID,PAYLOAD,FIRST_COLLECTED_AT,COLLECTED_AT,COLLECTION_ID) VALUES(s.SOURCE_SYSTEM,s.EXECUTION_ID,s.ENVIRONMENT_ID,s.WORKSPACE_ID,s.PAYLOAD,CURRENT_TIMESTAMP(),CURRENT_TIMESTAMP(),s.COLLECTION_ID)";
+            try(PreparedStatement s=prepare(q)){s.setString(1,source);s.setString(2,runId);s.executeUpdate();}
+        }
+        void fail(String message){
+            failed=true;
+            if(db!=null){
+                try{if(!db.getAutoCommit())db.rollback();db.setAutoCommit(true);
+                    if(auditCreated)try(PreparedStatement s=prepare("UPDATE "+prefix+"COLLECTION_RUN SET STATUS='FAILED',FINISHED_AT=CURRENT_TIMESTAMP(),ERROR_MESSAGE=? WHERE SOURCE_SYSTEM=? AND COLLECTION_ID=?")){
+                        s.setString(1,message);s.setString(2,source);s.setString(3,runId);s.executeUpdate();
+                    }
+                }catch(Exception ignored){System.err.println("TMC collection audit could not be finalized; inspect RUNNING collection "+runId);}
+            }
+            closeResources();
+        }
+        public void close(){
+            if(!done && !failed && db!=null){fail("Collector stopped before publication");return;}closeResources();
+        }
+        void closeResources(){
+            if(lock!=null){try{lock.release();}catch(IOException ignored){}lock=null;}
+            if(lockChannel!=null){try{lockChannel.close();}catch(IOException ignored){}lockChannel=null;}
+            if(db!=null){try{db.close();}catch(Exception ignored){System.err.println("Snowflake close failed");}db=null;}
+            if(driverLoader!=null){try{driverLoader.close();}catch(IOException ignored){}driverLoader=null;}
+        }
+    }
+}

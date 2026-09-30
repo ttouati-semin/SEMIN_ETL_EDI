@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="QAT" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="PROD">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_2TIYgLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_2TIYgbhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_2TIYgrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_2TIYg7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_2TIYhLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_2TIYhbhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_2TIYhrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_2TIYh7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_2TIYiLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_2TIYibhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Context_Properties_File" prompt="Context_Properties_File?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/config/tmc_monitoring_DEV.properties" internalId="_2TIYirhBEfGLgO69PygzlQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_2TIYi7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_2TIYjLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_2TIYjbhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_2TIYjrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_2TIYj7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_2TIYkLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_2TIYkbhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_2TIYkrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_2TIYk7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_2TIYlLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Context_Properties_File" prompt="Context_Properties_File?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/config/tmc_monitoring_DEV.properties" internalId="_2TIYlbhBEfGLgO69PygzlQ"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="QAT">
+    <contextParameter comment="" name="File_Context" prompt="File_Context?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_EDI.properties" internalId="_2TIYlrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Context_VF" prompt="File_Context_VF?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI/Configurations/Contextes_DWH.properties" internalId="_2TIYl7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Logs_Bronze" prompt="File_Logs_Bronze?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs/Operations_EDI.log" internalId="_2TIYmLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="File_Logs_Exec" prompt="File_Logs_Exec?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Logs_EDI/Suivi_Exec_EDI.log" internalId="_2TIYmbhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Rejets" prompt="Folder_Rejets?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Rejets_EDI/" internalId="_2TIYmrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Root_PRJ" prompt="Folder_Root_PRJ?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="C:/Talend/Projet_BI" internalId="_2TIYm7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Schema" prompt="Folder_Schema?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Schemas_/EDI" internalId="_2TIYnLhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Folder_Tests" prompt="Folder_Tests?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_String" value="/Tests_EDI/" internalId="_2TIYnbhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Param_Context_File_G" prompt="Param_Context_File_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_2TIYnrhBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Param_Display_G" prompt="Param_Display_G?" promptNeeded="false" repositoryContextId="_1jaCgLiREe-W-dL5fDhv3g" type="id_Boolean" value="true" internalId="_2TIYn7hBEfGLgO69PygzlQ"/>
+    <contextParameter comment="" name="Context_Properties_File" prompt="Context_Properties_File?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/config/tmc_monitoring_DEV.properties" internalId="_2TIYoLhBEfGLgO69PygzlQ"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:zTHKIDpb7UcSjKk72+Iq7vqB9umeLh3R2XehnIOc" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace_AOM/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wW4ufdvd0mL/oiHt2ca7nJ3bF9AHXGhy5F+oJbAE" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_cbfac647f56755eeac9c5d3947c694bd" name="TmcMonitoring"/>
+    <routinesParameter id="_5a7980c4e69b5ca0aaf5dc99de818f72" name="TmcConfig"/>
+    <routinesParameter id="_9be79893f5955f218356d085b0db8e47" name="TmcJson"/>
+    <routinesParameter id="_t_VHkLhHEfGLgO69PygzlQ" name="TmcMail"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code complet a coller dans les parametres simples du composant tJava.&#xD;&#xA;//Contexte Studio requis : Context_Properties_File (String).&#xD;&#xA;//Le fichier properties est prioritaire sur les valeurs ci-dessous.&#xD;&#xA;java.util.Properties tmcDefaults = new java.util.Properties();&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Source&quot;, &quot;SEMIN&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Api_Base_Url&quot;, &quot;https://api.eu.cloud.talend.com&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Access_Token&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Environment_Names&quot;, &quot;DEVELOPPEMENT&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Tasks_Path&quot;, &quot;/orchestration/executables/tasks&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Lookback_Hours&quot;, &quot;48&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Page_Size&quot;, &quot;100&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Request_Timeout_Seconds&quot;, &quot;60&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Max_Retries&quot;, &quot;3&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Window_Hours&quot;, &quot;6&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_End_Lag_Seconds&quot;, &quot;60&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Max_Recovery_Days&quot;, &quot;30&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_From_UTC&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_To_UTC&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_Account&quot;, &quot;QMKZKFX-HG22197&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_User&quot;, &quot;S_TALEND_DEV&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_Warehouse_Bronze&quot;, &quot;COMPUTE_ETL_DEV&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_BDD&quot;, &quot;DB_RAW_DATA_DEV&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_Schema_TMC&quot;, &quot;TMC_MONITORING&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_Role&quot;, &quot;R_DB_RAW_DATA_DEV_OW&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_Driver&quot;, &quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Snowflake_JDBC_Jar&quot;, &quot;C:/Talend/lib/snowflake-jdbc.jar&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Keystore_path&quot;, &quot;C:/Talend/snowflake_keystore.p12&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Keystore_password&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Keystore_Alias&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Keystore_Key_Password&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;Folder_Root_PRJ&quot;, &quot;D:/Talend_Bulk_Exchange_Folder/WORK&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_SMTP_Host&quot;, &quot;smtp.semin.fr&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_SMTP_Port&quot;, &quot;25&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Email_From&quot;, &quot;&quot;);&#xD;&#xA;tmcDefaults.setProperty(&quot;TMC_Email_To&quot;, &quot;&quot;);&#xD;&#xA;&#xD;&#xA;java.util.Properties tmcConfig = routines.TmcConfig.load(&#xD;&#xA; context.Context_Properties_File,&#xD;&#xA; tmcDefaults&#xD;&#xA;);&#xD;&#xA;&#xD;&#xA;//Ce premier montage est destine aux tables deja creees en DEV.&#xD;&#xA;if (!&quot;DB_RAW_DATA_DEV&quot;.equalsIgnoreCase(&#xD;&#xA;     tmcConfig.getProperty(&quot;Snowflake_BDD&quot;, &quot;&quot;).trim())) {&#xD;&#xA; throw new IllegalArgumentException(&#xD;&#xA;     &quot;Ce lancement doit cibler DB_RAW_DATA_DEV. Corriger Snowflake_BDD dans le fichier properties.&quot;&#xD;&#xA; );&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Verifications avant tout appel HTTP ou JDBC. Aucun secret n'est affiche.&#xD;&#xA;String[] tmcRequiredKeys = {&#xD;&#xA; &quot;TMC_Source&quot;, &quot;TMC_Api_Base_Url&quot;, &quot;TMC_Access_Token&quot;, &quot;TMC_Environment_Names&quot;,&#xD;&#xA; &quot;Snowflake_Account&quot;, &quot;Snowflake_User&quot;, &quot;Snowflake_Warehouse_Bronze&quot;,&#xD;&#xA; &quot;Snowflake_BDD&quot;, &quot;Snowflake_Schema_TMC&quot;, &quot;Snowflake_Role&quot;,&#xD;&#xA; &quot;Snowflake_Driver&quot;, &quot;Keystore_path&quot;, &quot;Keystore_password&quot;, &quot;Folder_Root_PRJ&quot;,&#xD;&#xA; &quot;TMC_SMTP_Host&quot;, &quot;TMC_SMTP_Port&quot;, &quot;TMC_Email_From&quot;, &quot;TMC_Email_To&quot;&#xD;&#xA;};&#xD;&#xA;for (String tmcKey : tmcRequiredKeys) {&#xD;&#xA; routines.TmcConfig.req(tmcConfig, tmcKey);&#xD;&#xA;}&#xD;&#xA;routines.TmcMail.validateConfig(&#xD;&#xA; tmcConfig.getProperty(&quot;TMC_SMTP_Host&quot;),&#xD;&#xA; routines.TmcConfig.integer(tmcConfig, &quot;TMC_SMTP_Port&quot;, 1, 65535),&#xD;&#xA; tmcConfig.getProperty(&quot;TMC_Email_From&quot;),&#xD;&#xA; tmcConfig.getProperty(&quot;TMC_Email_To&quot;)&#xD;&#xA;);&#xD;&#xA;&#xD;&#xA;routines.TmcMonitoring.Session tmcSession = new routines.TmcMonitoring.Session(tmcConfig);&#xD;&#xA;try {&#xD;&#xA; String[] tmcPhases = { &quot;connect&quot;, &quot;inventory&quot;, &quot;tasks&quot;, &quot;executions&quot;, &quot;publish&quot; };&#xD;&#xA; for (String tmcPhase : tmcPhases) {&#xD;&#xA;     System.out.println(&quot;[TMC] Phase : &quot; + tmcPhase);&#xD;&#xA;     tmcSession.phase(tmcPhase);&#xD;&#xA; }&#xD;&#xA; System.out.println(&quot;[TMC] Collecte terminee et publication validee dans DB_RAW_DATA_DEV.&quot;);&#xD;&#xA; System.out.println(&quot;[TMC] Envoi du rapport HTML J-1 par SMTP...&quot;);&#xD;&#xA; tmcSession.sendDailyEmail();&#xD;&#xA;} finally {&#xD;&#xA; tmcSession.close();&#xD;&#xA;}&#xD;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import routines.TmcConfig;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>

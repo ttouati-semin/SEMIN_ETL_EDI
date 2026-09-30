@@ -1,0 +1,235 @@
+package routines;
+
+import java.io.*;
+import java.math.BigDecimal;
+import java.net.*;
+import java.nio.charset.StandardCharsets;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+/** Builds a self-contained HTML report and delivers it through an unauthenticated SMTP relay. */
+public final class TmcMail {
+    private TmcMail() { }
+
+    public static final class Execution {
+        public final String environment,workspace,task,executionId,apiStatus,statusGroup,triggerType;
+        public final String startedAt,endedAt,triggeredBy,error;
+        public final BigDecimal duration;
+        public final Object processed,rejected;
+        public final int reportHourParis;
+        public Execution(String environment,String workspace,String task,String executionId,String apiStatus,
+                String statusGroup,String triggerType,String startedAt,String endedAt,BigDecimal duration,
+                Object processed,Object rejected,String triggeredBy,String error,int reportHourParis) {
+            this.environment=environment;this.workspace=workspace;this.task=task;this.executionId=executionId;
+            this.apiStatus=apiStatus;this.statusGroup=statusGroup;this.triggerType=triggerType;
+            this.startedAt=startedAt;this.endedAt=endedAt;this.duration=duration;
+            this.processed=processed;this.rejected=rejected;this.triggeredBy=triggeredBy;this.error=error;
+            this.reportHourParis=reportHourParis;
+        }
+    }
+
+    public static String buildHtml(String periodStart,String periodEnd,List<Execution> rows) {
+        int ok=0,failed=0,active=0,other=0;Set<String> envs=new TreeSet<String>();long processed=0,rejected=0;
+        int processedKnown=0,rejectedKnown=0;
+        int[] hours=new int[24];long totalSeconds=0,maxSeconds=0;int durations=0;
+        for(Execution e:rows){
+            String s=e.statusGroup==null?"UNKNOWN":e.statusGroup.toUpperCase(Locale.ROOT);
+            if("SUCCESS".equals(s))ok++;
+            else if("FAILED".equals(s)||"REJECTED".equals(s)||"TERMINATED".equals(s)||"MISFIRED".equals(s))failed++;
+            else if("IN_PROGRESS".equals(s))active++;
+            else other++;
+            if(e.environment!=null)envs.add(e.environment);
+            if(hasValue(e.processed)){processed+=number(e.processed);processedKnown++;}
+            if(hasValue(e.rejected)){rejected+=number(e.rejected);rejectedKnown++;}
+            if(e.reportHourParis>=0&&e.reportHourParis<24)hours[e.reportHourParis]++;
+            if(e.duration!=null){long sec=Math.max(0,e.duration.longValue());totalSeconds+=sec;maxSeconds=Math.max(maxSeconds,sec);durations++;}
+        }
+        double rate=(ok+failed)==0?0.0:100.0*ok/(ok+failed);
+        long avgSeconds=durations==0?0:Math.round((double)totalSeconds/durations);
+        String processedLabel=countLabel(processed,processedKnown,rows.size());
+        String rejectedLabel=countLabel(rejected,rejectedKnown,rows.size());
+        StringBuilder h=new StringBuilder(3200+rows.size()*500);
+        h.append("<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"></head>")
+         .append("<body style=\"margin:0;padding:0;background-color:#eef2f7;font-family:Arial,Helvetica,sans-serif;color:#172b4d\">")
+         .append("<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"#eef2f7\"><tr><td align=\"center\" style=\"padding:22px 10px\">")
+         .append("<table role=\"presentation\" width=\"960\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"center\" style=\"width:960px;max-width:100%;background-color:#ffffff;border:1px solid #dce3ec\">")
+         .append("<tr><td bgcolor=\"#12345a\" style=\"background-color:#12345a;padding:22px 26px;color:#ffffff\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr>")
+         .append("<td><div style=\"font-size:11px;letter-spacing:1.4px;color:#b9d3f2\">SEMIN&nbsp;&nbsp;|&nbsp;&nbsp;SUPERVISION TMC</div>")
+         .append("<div style=\"font-size:25px;line-height:30px;font-weight:bold;padding-top:5px\">Rapport des traitements</div>")
+         .append("<div style=\"font-size:13px;color:#d6e4f4;padding-top:4px\">Période : du ")
+         .append(esc(periodStart)).append(" à 08:00 au ").append(esc(periodEnd)).append(" à 08:00&nbsp;&nbsp;·&nbsp;&nbsp;Europe/Paris</div></td>")
+         .append("<td align=\"right\" valign=\"middle\" style=\"font-size:12px;color:#d6e4f4\">RAPPORT QUOTIDIEN</td></tr></table></td></tr>")
+         .append("<tr><td style=\"padding:17px 22px 5px\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr>")
+         .append("<td style=\"font-size:12px;color:#64748b\">ENVIRONNEMENT(S)</td><td align=\"right\" style=\"font-size:13px;font-weight:bold;color:#203b5c\">")
+         .append(esc(envs.isEmpty()?"Aucun":join(envs,", "))).append("</td></tr></table></td></tr>")
+         .append("<tr><td style=\"padding:10px 14px 3px\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr>");
+        h.append(card("EXÉCUTIONS",String.valueOf(rows.size()),"#eef4ff","#155eef"));
+        h.append(card("RÉUSSIES",String.valueOf(ok),"#edf8f1","#16834a"));
+        h.append(card("ÉCHECS / ARRÊTS",String.valueOf(failed),"#fff0ef","#c9372c"));
+        h.append(card("EN COURS / AUTRES",String.valueOf(active+other),"#fff7e8","#a15c00"));
+        h.append("</tr></table></td></tr>")
+         .append("<tr><td style=\"padding:10px 22px 4px\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"#f7f9fc\" style=\"background-color:#f7f9fc;border:1px solid #e7edf4\"><tr>")
+         .append(metric("TAUX DE RÉUSSITE",String.format(Locale.ROOT,"%.2f%%",rate)))
+         .append(metric("DURÉE CUMULÉE",duration(BigDecimal.valueOf(totalSeconds))))
+         .append(metric("DURÉE MOYENNE",duration(BigDecimal.valueOf(avgSeconds))))
+         .append(metric("DURÉE MAX",duration(BigDecimal.valueOf(maxSeconds))))
+         .append("</tr><tr>")
+         .append(metric("LIGNES TRAITÉES",processedLabel))
+         .append(metric("LIGNES REJETÉES",rejectedLabel))
+         .append(metric("EN ÉCHEC / ARRÊT",String.valueOf(failed)))
+         .append(metric("ENVIRONNEMENTS",String.valueOf(envs.size())))
+         .append("</tr></table></td></tr>");
+        h.append("<tr><td style=\"padding:18px 22px 4px\"><div style=\"font-size:15px;font-weight:bold;color:#203b5c;padding-bottom:3px\">Répartition des lancements</div>")
+         .append("<div style=\"font-size:11px;color:#748398;padding-bottom:10px\">Nombre d’exécutions par tranche de 3 heures, selon l’heure de Paris</div>")
+         .append(hourChart(hours)).append("</td></tr>");
+        if(rows.isEmpty()){
+            h.append("<tr><td style=\"padding:14px 22px 20px\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td align=\"center\" bgcolor=\"#f7f9fc\" style=\"padding:18px;color:#52657d\">Aucune exécution TMC enregistrée sur cette période.</td></tr></table></td></tr>");
+        } else {
+            h.append("<tr><td style=\"padding:17px 22px 5px\"><div style=\"font-size:15px;font-weight:bold;color:#203b5c;padding-bottom:9px\">Détail des exécutions</div>")
+             .append("<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;border-collapse:collapse;font-size:11px\"><tr bgcolor=\"#eaf0f7\" style=\"background-color:#eaf0f7;text-align:left\">")
+             .append(th("Traitement / espace", "25%")).append(th("Statut", "11%")).append(th("Déclencheur", "10%"))
+             .append(th("Début", "9%")).append(th("Durée", "8%")).append(th("Traité / rejeté", "12%"))
+             .append(th("Déclenché par", "11%")).append(th("Erreur", "14%")).append("</tr>");
+            boolean alt=false;
+            for(Execution e:rows){
+                alt=!alt;String group=e.statusGroup==null?"UNKNOWN":e.statusGroup.toUpperCase(Locale.ROOT);
+                String color="SUCCESS".equals(group)?"#16834a":("FAILED".equals(group)||"REJECTED".equals(group)||"TERMINATED".equals(group)||"MISFIRED".equals(group)?"#c9372c":"#a15c00");
+                h.append("<tr bgcolor=\"").append(alt?"#ffffff":"#f7f9fc").append("\" style=\"background-color:").append(alt?"#ffffff":"#f7f9fc").append(";vertical-align:top\">")
+                 .append(td("<b>"+esc(empty(e.task,"(sans nom)"))+"</b><br><span style=\"color:#78879a;font-size:10px\">"+esc(empty(e.workspace,"—"))+"</span>"))
+                 .append(td("<b style=\"color:"+color+"\">"+esc(statusLabel(group))+"</b><br><span style=\"color:#78879a;font-size:10px\">"+esc(apiStatusLabel(e.apiStatus))+"</span>"))
+                 .append(td(esc(triggerLabel(e.triggerType))))
+                 .append(td(esc(time(e.startedAt))))
+                 .append(td(esc(duration(e.duration))))
+                 .append(td(esc(countValue(e.processed))+" / "+countValue(e.rejected)))
+                 .append(td(esc(empty(e.triggeredBy,"—"))))
+                 .append(td(esc(truncate(empty(e.error,"—"),180))))
+                 .append("</tr>");
+            }
+            h.append("</table></td></tr>");
+        }
+        h.append("<tr><td bgcolor=\"#f7f9fc\" style=\"background-color:#f7f9fc;border-top:1px solid #e5ebf2;padding:13px 22px;color:#7b8798;font-size:10px\">Rapport automatique Talend&nbsp;&nbsp;·&nbsp;&nbsp;Source : Talend Management Console</td></tr>")
+         .append("</table></td></tr></table></body></html>");
+        return h.toString();
+    }
+
+    private static String card(String label,String value,String bg,String color){
+        return "<td width=\"25%\" bgcolor=\""+bg+"\" style=\"width:25%;background-color:"+bg+";border:1px solid #e2e8f0;padding:11px 13px\"><div style=\"font-size:9px;color:#68788d;letter-spacing:.4px\">"+label+"</div><div style=\"font-size:23px;line-height:27px;font-weight:bold;color:"+color+";padding-top:3px\">"+value+"</div></td>";
+    }
+    private static String metric(String label,String value){return "<td width=\"25%\" style=\"width:25%;padding:9px 11px;border-bottom:1px solid #e7edf4\"><div style=\"font-size:9px;color:#748398\">"+label+"</div><div style=\"font-size:13px;font-weight:bold;color:#203b5c;padding-top:3px\">"+value+"</div></td>";}
+    private static String th(String s,String width){return "<th width=\""+width+"\" align=\"left\" style=\"width:"+width+";padding:9px 7px;border-bottom:2px solid #d5dfeb;color:#344b66;font-size:10px\">"+s+"</th>";}
+    private static String td(String s){return "<td style=\"padding:8px 7px;border-bottom:1px solid #e6ebf1;color:#24364b;word-break:break-word\">"+s+"</td>";}
+    private static String hourChart(int[] hours){
+        int[] bins=new int[8];int max=0;
+        for(int i=0;i<24;i++){bins[i/3]+=hours[i];max=Math.max(max,bins[i/3]);}
+        StringBuilder b=new StringBuilder("<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:10px\">");
+        for(int i=0;i<8;i++){
+            int width=max==0?0:(int)Math.round(100.0*bins[i]/max);
+            String from=String.format(Locale.ROOT,"%02d",i*3),to=String.format(Locale.ROOT,"%02d",i*3+2);
+            b.append("<tr><td width=\"62\" style=\"width:62px;padding:3px 8px 3px 0;color:#596b80;white-space:nowrap\">").append(from).append("–").append(to)
+             .append("</td><td style=\"padding:3px 0\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td bgcolor=\"#edf2f8\" style=\"background-color:#edf2f8\"><table role=\"presentation\" width=\"").append(width)
+             .append("%\" cellpadding=\"0\" cellspacing=\"0\"><tr><td bgcolor=\"#3478c8\" height=\"9\" style=\"height:9px;background-color:#3478c8;font-size:1px;line-height:1px\">&nbsp;</td></tr></table></td><td width=\"35\" align=\"right\" style=\"width:35px;padding-left:8px;color:#334b67;font-weight:bold\">")
+             .append(bins[i]).append("</td></tr></table></td></tr>");
+        }
+        return b.append("</table>").toString();
+    }
+    private static String esc(String s){if(s==null)return "";return s.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;").replace("\"","&quot;").replace("'","&#39;");}
+    private static String empty(String s,String fallback){return s==null||s.trim().isEmpty()?fallback:s;}
+    private static String value(Object x){return x==null?null:x.toString();}
+    private static long number(Object x){if(x instanceof Number)return ((Number)x).longValue();try{return x==null?0:Long.parseLong(x.toString());}catch(Exception e){return 0;}}
+    private static boolean hasValue(Object x){return x!=null&&!x.toString().trim().isEmpty();}
+    private static String countValue(Object x){return hasValue(x)?value(x):"N/D";}
+    private static String countLabel(long total,int known,int executions){
+        if(executions==0)return "0";
+        if(known==0)return "N/D";
+        return String.valueOf(total)+(known<executions?" (partiel)":"");
+    }
+    private static String join(Collection<String> xs,String delimiter){StringBuilder b=new StringBuilder();for(String x:xs){if(b.length()>0)b.append(delimiter);b.append(x);}return b.toString();}
+    private static String time(String s){if(s==null)return "—";String v=s.replace('T',' ');int sp=v.indexOf(' ');if(sp>=0)v=v.substring(sp+1);int dot=v.indexOf('.');if(dot>=0)v=v.substring(0,dot);int zone=v.indexOf(' ');if(zone>=0)v=v.substring(0,zone);return v;}
+    private static String statusLabel(String s){if("SUCCESS".equals(s))return "Réussi";if("FAILED".equals(s))return "Échec";if("REJECTED".equals(s))return "Rejeté";if("TERMINATED".equals(s))return "Arrêté";if("MISFIRED".equals(s))return "Manqué";if("IN_PROGRESS".equals(s))return "En cours";return "Inconnu";}
+    private static String triggerLabel(String s){
+        if(s==null||s.trim().isEmpty())return "—";
+        String v=s.trim().toUpperCase(Locale.ROOT);
+        if("SCHEDULED".equals(v))return "Planifié";
+        if("PLAN".equals(v))return "Plan";
+        if("MANUAL".equals(v))return "Manuel";
+        if("API".equals(v))return "Appel API";
+        if("WEBHOOK".equals(v))return "Webhook";
+        return "Autre type";
+    }
+    private static String apiStatusLabel(String s){
+        if(s==null||s.trim().isEmpty())return "";
+        String v=s.trim().toLowerCase(Locale.ROOT);
+        if("execution_successful".equals(v))return "Exécution réussie";
+        if("execution_failed".equals(v))return "Échec d’exécution";
+        if("execution_rejected".equals(v))return "Exécution rejetée";
+        if("deploy_failed".equals(v))return "Échec du déploiement";
+        if("terminated".equals(v))return "Interrompue";
+        if("terminated_timeout".equals(v))return "Arrêt pour dépassement du délai";
+        if("terminated_shutdown".equals(v))return "Arrêt du moteur";
+        if("dispatching".equals(v))return "En attente de lancement";
+        if("executing".equals(v))return "Exécution en cours";
+        return "Autre statut TMC";
+    }
+    private static String duration(BigDecimal n){if(n==null)return "—";long sec=Math.max(0,n.longValue());return String.format(Locale.ROOT,"%02d:%02d:%02d",sec/3600,(sec%3600)/60,sec%60);}
+    private static String truncate(String s,int max){return s.length()<=max?s:s.substring(0,max)+"…";}
+
+    private static List<String> addresses(String raw,String key){
+        List<String> out=new ArrayList<String>();
+        for(String part:raw.split("[,;]")){
+            String a=part.trim();
+            if(a.isEmpty())continue;
+            if(a.indexOf('\r')>=0||a.indexOf('\n')>=0||!a.matches("[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?(?:\\.[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?)+"))
+                throw new IllegalArgumentException("Invalid email address in "+key);
+            out.add(a);
+        }
+        if(out.isEmpty())throw new IllegalArgumentException("Missing email address in "+key);
+        return out;
+    }
+
+    public static void validateConfig(String host,int port,String from,String to){
+        if(host==null||!host.matches("[A-Za-z0-9.-]+"))throw new IllegalArgumentException("Invalid TMC_SMTP_Host");
+        if(port<1||port>65535)throw new IllegalArgumentException("Invalid TMC_SMTP_Port");
+        addresses(from,"TMC_Email_From");addresses(to,"TMC_Email_To");
+    }
+
+    public static void sendHtml(String host,int port,String from,String to,String subject,String html)throws IOException{
+        validateConfig(host,port,from,to);
+        List<String> recipients=addresses(to,"TMC_Email_To");String sender=addresses(from,"TMC_Email_From").get(0);
+        int timeout=30000;
+        try(Socket socket=new Socket()){
+            socket.connect(new InetSocketAddress(host,port),timeout);socket.setSoTimeout(timeout);
+            InputStream in=socket.getInputStream();OutputStream out=socket.getOutputStream();
+            expect(in,220);
+            command(out,"HELO localhost");expect(in,250);
+            command(out,"MAIL FROM:<"+sender+">");expect(in,250);
+            for(String recipient:recipients){command(out,"RCPT TO:<"+recipient+">");expectEither(in,250,251);}
+            command(out,"DATA");expect(in,354);
+            String encodedSubject=Base64.getEncoder().encodeToString(subject.getBytes(StandardCharsets.UTF_8));
+            String date=DateTimeFormatter.RFC_1123_DATE_TIME.format(ZonedDateTime.now(ZoneOffset.UTC));
+            String body=Base64.getMimeEncoder(76,"\r\n".getBytes(StandardCharsets.US_ASCII)).encodeToString(html.getBytes(StandardCharsets.UTF_8));
+            String message="Date: "+date+"\r\nFrom: <"+sender+">\r\nTo: "+join(recipients,", ")+"\r\n"
+                +"Subject: =?UTF-8?B?"+encodedSubject+"?=\r\nMIME-Version: 1.0\r\n"
+                +"Content-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n"
+                +"Message-ID: <"+UUID.randomUUID().toString()+"@semin.fr>\r\n\r\n"+body+"\r\n.\r\n";
+            out.write(message.getBytes(StandardCharsets.UTF_8));out.flush();expect(in,250);
+            command(out,"QUIT");expect(in,221);
+        }
+    }
+    private static void command(OutputStream out,String value)throws IOException{out.write((value+"\r\n").getBytes(StandardCharsets.US_ASCII));out.flush();}
+    private static String response(InputStream in)throws IOException{
+        ByteArrayOutputStream b=new ByteArrayOutputStream();int code=-1;boolean more;
+        do{
+            b.reset();int c;
+            while((c=in.read())!=-1&&c!='\n'){if(c!='\r')b.write(c);if(b.size()>8192)throw new IOException("SMTP response line too long");}
+            if(c==-1)throw new EOFException("SMTP closed the connection");
+            String line=new String(b.toByteArray(),StandardCharsets.US_ASCII);
+            if(line.length()<3||!Character.isDigit(line.charAt(0))||!Character.isDigit(line.charAt(1))||!Character.isDigit(line.charAt(2)))throw new IOException("Malformed SMTP response");
+            int next=Integer.parseInt(line.substring(0,3));if(code<0)code=next;else if(next!=code)throw new IOException("Inconsistent SMTP multiline response");
+            more=line.length()>3&&line.charAt(3)=='-';
+        }while(more);
+        return Integer.toString(code);
+    }
+    private static void expect(InputStream in,int expected)throws IOException{String got=response(in);if(!Integer.toString(expected).equals(got))throw new IOException("SMTP expected "+expected+", received "+got);}
+    private static void expectEither(InputStream in,int first,int second)throws IOException{String got=response(in);if(!Integer.toString(first).equals(got)&&!Integer.toString(second).equals(got))throw new IOException("SMTP expected "+first+" or "+second+", received "+got);}
+}

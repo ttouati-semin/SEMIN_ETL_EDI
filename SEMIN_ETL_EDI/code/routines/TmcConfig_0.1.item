@@ -1,0 +1,36 @@
+package routines;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.util.*;
+
+/** Reads the user's literal key = value dialect, including Windows backslashes. */
+public final class TmcConfig {
+    private TmcConfig() { }
+    public static Properties load(String path, Properties defaults) throws IOException {
+        Properties p = new Properties(); p.putAll(defaults);
+        if(path == null || path.trim().isEmpty())throw new IOException("Context_Properties_File is required");
+        Set<String> seen=new HashSet<String>();int lineNumber=0;
+        try(BufferedReader r=Files.newBufferedReader(Paths.get(path),StandardCharsets.UTF_8)){
+            String line;
+            while((line=r.readLine())!=null){
+                lineNumber++;if(lineNumber==1 && line.startsWith("\uFEFF"))line=line.substring(1);
+                line=line.trim();if(line.isEmpty() || line.startsWith("#") || line.startsWith("!"))continue;
+                int eq=line.indexOf('=');if(eq<1)throw new IOException("Missing = on properties line "+lineNumber);
+                String k=line.substring(0,eq).trim();
+                // Unknown keys belong to the other jobs sharing this file.
+                if(!defaults.containsKey(k))continue;
+                if(!seen.add(k))throw new IOException("Duplicate context key: "+k);
+                p.setProperty(k,line.substring(eq+1).trim());
+            }
+        }
+        return p;
+    }
+    public static String req(Properties p,String k){String v=p.getProperty(k,"").trim();if(v.isEmpty())throw new IllegalArgumentException("Missing context: "+k);return v;}
+    public static int integer(Properties p,String k,int min,int max){
+        int n;try{n=Integer.parseInt(req(p,k));}catch(NumberFormatException e){throw new IllegalArgumentException("Invalid integer context: "+k);}
+        if(n<min || n>max)throw new IllegalArgumentException("Context outside ["+min+","+max+"]: "+k);return n;
+    }
+    public static String identifier(String v){if(!v.matches("[A-Za-z_][A-Za-z0-9_$]*"))throw new IllegalArgumentException("Invalid Snowflake identifier");return v.toUpperCase(Locale.ROOT);}
+}

@@ -1,0 +1,106 @@
+{
+  "itemId" : "_YTNBELhBEfGLgO69PygzlQ",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_m9d_QZDzEfG1frUedQy77g",
+      "name" : "File_Context_VF"
+    }, {
+      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_cBrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_m9d_QJDzEfG1frUedQy77g",
+      "name" : "File_Context_VF"
+    }, {
+      "id" : "_zNCEMW0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EG1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCENG0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCEMG0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIHE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIG1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEMm0_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEM20_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "QAT",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_m9d_QpDzEfG1frUedQy77g",
+      "name" : "File_Context_VF"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    } ]
+  } ]
+}
