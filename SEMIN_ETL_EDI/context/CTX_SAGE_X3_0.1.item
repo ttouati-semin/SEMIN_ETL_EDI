@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_wH-qwNgzEfGyhMOTRmkKng" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_wH-qwdgzEfGyhMOTRmkKng" comment="" name="X3_HOST" prompt="X3_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qwtgzEfGyhMOTRmkKng" comment="" name="X3_PORT" prompt="X3_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qw9gzEfGyhMOTRmkKng" comment="" name="X3_DATABASE" prompt="X3_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qxNgzEfGyhMOTRmkKng" comment="" name="X3_SCHEMA" prompt="X3_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qxdgzEfGyhMOTRmkKng" comment="" name="X3_USER" prompt="X3_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qxtgzEfGyhMOTRmkKng" comment="" name="X3_PASSWORD" prompt="X3_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qx9gzEfGyhMOTRmkKng" comment="" name="LOCAL_OUT_DIR" prompt="LOCAL_OUT_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qyNgzEfGyhMOTRmkKng" comment="" name="SFTP_HOST" prompt="SFTP_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qydgzEfGyhMOTRmkKng" comment="" name="SFTP_PORT" prompt="SFTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qytgzEfGyhMOTRmkKng" comment="" name="SFTP_USER" prompt="SFTP_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qy9gzEfGyhMOTRmkKng" comment="" name="SFTP_PASSWORD" prompt="SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qzNgzEfGyhMOTRmkKng" comment="" name="SFTP_REMOTE_DIR" prompt="SFTP_REMOTE_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-qzdgzEfGyhMOTRmkKng" comment="" name="ENABLE_SFTP" prompt="ENABLE_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wH-qztgzEfGyhMOTRmkKng" confirmationNeeded="false" hide="false" name="DEVELOPPEMENT">
+    <contextParameter xmi:id="_wH-qz9gzEfGyhMOTRmkKng" comment="" name="X3_HOST" prompt="X3_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q0NgzEfGyhMOTRmkKng" comment="" name="X3_PORT" prompt="X3_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_wH-q0dgzEfGyhMOTRmkKng" comment="" name="X3_DATABASE" prompt="X3_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q0tgzEfGyhMOTRmkKng" comment="" name="X3_SCHEMA" prompt="X3_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q09gzEfGyhMOTRmkKng" comment="" name="X3_USER" prompt="X3_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q1NgzEfGyhMOTRmkKng" comment="" name="X3_PASSWORD" prompt="X3_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q1dgzEfGyhMOTRmkKng" comment="" name="LOCAL_OUT_DIR" prompt="LOCAL_OUT_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:\Exports"/>
+    <contextParameter xmi:id="_wH-q1tgzEfGyhMOTRmkKng" comment="" name="SFTP_HOST" prompt="SFTP_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q19gzEfGyhMOTRmkKng" comment="" name="SFTP_PORT" prompt="SFTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q2NgzEfGyhMOTRmkKng" comment="" name="SFTP_USER" prompt="SFTP_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q2dgzEfGyhMOTRmkKng" comment="" name="SFTP_PASSWORD" prompt="SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q2tgzEfGyhMOTRmkKng" comment="" name="SFTP_REMOTE_DIR" prompt="SFTP_REMOTE_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q29gzEfGyhMOTRmkKng" comment="" name="ENABLE_SFTP" prompt="ENABLE_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wH-q3NgzEfGyhMOTRmkKng" confirmationNeeded="false" hide="false" name="PRODUCTION">
+    <contextParameter xmi:id="_wH-q3dgzEfGyhMOTRmkKng" comment="" name="X3_HOST" prompt="X3_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.169.192.199"/>
+    <contextParameter xmi:id="_wH-q3tgzEfGyhMOTRmkKng" comment="" name="X3_PORT" prompt="X3_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_wH-q39gzEfGyhMOTRmkKng" comment="" name="X3_DATABASE" prompt="X3_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="x3prd"/>
+    <contextParameter xmi:id="_wH-q4NgzEfGyhMOTRmkKng" comment="" name="X3_SCHEMA" prompt="X3_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="CLSEMIN"/>
+    <contextParameter xmi:id="_wH-q4dgzEfGyhMOTRmkKng" comment="" name="X3_USER" prompt="X3_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SEMIN_IT"/>
+    <contextParameter xmi:id="_wH-q4tgzEfGyhMOTRmkKng" comment="" name="X3_PASSWORD" prompt="X3_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="u!m0KCHYU5Y8z!#9eX"/>
+    <contextParameter xmi:id="_wH-q49gzEfGyhMOTRmkKng" comment="" name="LOCAL_OUT_DIR" prompt="LOCAL_OUT_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:\Exports"/>
+    <contextParameter xmi:id="_wH-q5NgzEfGyhMOTRmkKng" comment="" name="SFTP_HOST" prompt="SFTP_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#x9;sftp2020.opatrace.com"/>
+    <contextParameter xmi:id="_wH-q5dgzEfGyhMOTRmkKng" comment="" name="SFTP_PORT" prompt="SFTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="33022"/>
+    <contextParameter xmi:id="_wH-q5tgzEfGyhMOTRmkKng" comment="" name="SFTP_USER" prompt="SFTP_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="semin"/>
+    <contextParameter xmi:id="_wH-q59gzEfGyhMOTRmkKng" comment="" name="SFTP_PASSWORD" prompt="SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="X99216wb"/>
+    <contextParameter xmi:id="_wH-q6NgzEfGyhMOTRmkKng" comment="" name="SFTP_REMOTE_DIR" prompt="SFTP_REMOTE_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/home/semin/Test"/>
+    <contextParameter xmi:id="_wH-q6dgzEfGyhMOTRmkKng" comment="" name="ENABLE_SFTP" prompt="ENABLE_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="true"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wH-q6tgzEfGyhMOTRmkKng" confirmationNeeded="false" hide="false" name="RECETTE">
+    <contextParameter xmi:id="_wH-q69gzEfGyhMOTRmkKng" comment="" name="X3_HOST" prompt="X3_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.169.192.199"/>
+    <contextParameter xmi:id="_wH-q7NgzEfGyhMOTRmkKng" comment="" name="X3_PORT" prompt="X3_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_wH-q7dgzEfGyhMOTRmkKng" comment="" name="X3_DATABASE" prompt="X3_DATABASE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q7tgzEfGyhMOTRmkKng" comment="" name="X3_SCHEMA" prompt="X3_SCHEMA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q79gzEfGyhMOTRmkKng" comment="" name="X3_USER" prompt="X3_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q8NgzEfGyhMOTRmkKng" comment="" name="X3_PASSWORD" prompt="X3_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wH-q8dgzEfGyhMOTRmkKng" comment="" name="LOCAL_OUT_DIR" prompt="LOCAL_OUT_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:\Exports"/>
+    <contextParameter xmi:id="_wH-q8tgzEfGyhMOTRmkKng" comment="" name="SFTP_HOST" prompt="SFTP_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&#x9;sftp2020.opatrace.com"/>
+    <contextParameter xmi:id="_wH-q89gzEfGyhMOTRmkKng" comment="" name="SFTP_PORT" prompt="SFTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="33022"/>
+    <contextParameter xmi:id="_wH-q9NgzEfGyhMOTRmkKng" comment="" name="SFTP_USER" prompt="SFTP_USER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="semin"/>
+    <contextParameter xmi:id="_wH-q9dgzEfGyhMOTRmkKng" comment="" name="SFTP_PASSWORD" prompt="SFTP_PASSWORD?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="X99216wb"/>
+    <contextParameter xmi:id="_wH-q9tgzEfGyhMOTRmkKng" comment="" name="SFTP_REMOTE_DIR" prompt="SFTP_REMOTE_DIR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/home/semin/Test"/>
+    <contextParameter xmi:id="_wH-q99gzEfGyhMOTRmkKng" comment="" name="ENABLE_SFTP" prompt="ENABLE_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="true"/>
+  </talendfile:ContextType>
+</xmi:XMI>

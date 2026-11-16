@@ -1,0 +1,522 @@
+{
+  "itemId" : "_NoneINg0EfGyhMOTRmkKng",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-qzdgzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-qx9gzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-qyNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-qy9gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-qydgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-qzNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-qytgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-qw9gzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-qwdgzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-qxtgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-qwtgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-qxNgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-qxdgzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_chrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_zNCENm0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EW1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCEOW0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCENW0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIXE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIW1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEN20_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEOG0_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-qzdgzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-qx9gzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-qyNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-qy9gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-qydgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-qzNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-qytgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-qw9gzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-qwdgzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-qxtgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-qwtgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-qxNgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-qxdgzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_rX9_cBrMEfCjtsB6USVc1g",
+      "name" : "File_Context"
+    }, {
+      "id" : "_zNCEMW0_EfChkvInqLRHZA",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_T1e8EG1LEfChkvInqLRHZA",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_zNCENG0_EfChkvInqLRHZA",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_zNCEMG0_EfChkvInqLRHZA",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "__PzgIHE9EfC7B4UAtUnYhQ",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_DJ7sIG1IEfChkvInqLRHZA",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_zNCEMm0_EfChkvInqLRHZA",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_zNCEM20_EfChkvInqLRHZA",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-qzdgzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-qx9gzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-qyNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-qy9gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-qydgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-qzNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-qytgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-qw9gzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-qwdgzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-qxtgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-qwtgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-qxNgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-qxdgzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "QAT",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-qzdgzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-qx9gzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-qyNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-qy9gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-qydgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-qzNgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-qytgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-qw9gzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-qwdgzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-qxtgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-qwtgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-qxNgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-qxdgzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "QAT",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "DEVELOPPEMENT",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-q29gzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-q1dgzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-q1tgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-q2dgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-q19gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-q2tgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-q2NgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-q0dgzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-qz9gzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-q1NgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-q0NgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-q0tgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-q09gzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "DEVELOPPEMENT",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "RECETTE",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-q99gzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-q8dgzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-q8tgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-q9dgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-q89gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-q9tgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-q9NgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-q7dgzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-q69gzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-q8NgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-q7NgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-q7tgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-q79gzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "RECETTE",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    } ]
+  }, {
+    "contextName" : "PRODUCTION",
+    "repoId" : "_wHSuQNgzEfGyhMOTRmkKng",
+    "parameterList" : [ {
+      "id" : "_wH-q6dgzEfGyhMOTRmkKng",
+      "name" : "ENABLE_SFTP"
+    }, {
+      "id" : "_wH-q49gzEfGyhMOTRmkKng",
+      "name" : "LOCAL_OUT_DIR"
+    }, {
+      "id" : "_wH-q5NgzEfGyhMOTRmkKng",
+      "name" : "SFTP_HOST"
+    }, {
+      "id" : "_wH-q59gzEfGyhMOTRmkKng",
+      "name" : "SFTP_PASSWORD"
+    }, {
+      "id" : "_wH-q5dgzEfGyhMOTRmkKng",
+      "name" : "SFTP_PORT"
+    }, {
+      "id" : "_wH-q6NgzEfGyhMOTRmkKng",
+      "name" : "SFTP_REMOTE_DIR"
+    }, {
+      "id" : "_wH-q5tgzEfGyhMOTRmkKng",
+      "name" : "SFTP_USER"
+    }, {
+      "id" : "_wH-q39gzEfGyhMOTRmkKng",
+      "name" : "X3_DATABASE"
+    }, {
+      "id" : "_wH-q3dgzEfGyhMOTRmkKng",
+      "name" : "X3_HOST"
+    }, {
+      "id" : "_wH-q4tgzEfGyhMOTRmkKng",
+      "name" : "X3_PASSWORD"
+    }, {
+      "id" : "_wH-q3tgzEfGyhMOTRmkKng",
+      "name" : "X3_PORT"
+    }, {
+      "id" : "_wH-q4NgzEfGyhMOTRmkKng",
+      "name" : "X3_SCHEMA"
+    }, {
+      "id" : "_wH-q4dgzEfGyhMOTRmkKng",
+      "name" : "X3_USER"
+    } ]
+  }, {
+    "contextName" : "PRODUCTION",
+    "repoId" : "_1jaCgLiREe-W-dL5fDhv3g",
+    "parameterList" : [ {
+      "id" : "_4UcVwW5PEfGXt_OZXnDBUg",
+      "name" : "File_Context"
+    }, {
+      "id" : "_4UcVw25PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Bronze"
+    }, {
+      "id" : "_4UcVyG5PEfGXt_OZXnDBUg",
+      "name" : "File_Logs_Exec"
+    }, {
+      "id" : "_4UcVxm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Rejets"
+    }, {
+      "id" : "_4UcVwm5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Root_PRJ"
+    }, {
+      "id" : "_4UcVyW5PEfGXt_OZXnDBUg",
+      "name" : "Folder_Schema"
+    }, {
+      "id" : "_4UcVx25PEfGXt_OZXnDBUg",
+      "name" : "Folder_Tests"
+    }, {
+      "id" : "_4UcVxG5PEfGXt_OZXnDBUg",
+      "name" : "Param_Context_File_G"
+    }, {
+      "id" : "_4UcVxW5PEfGXt_OZXnDBUg",
+      "name" : "Param_Display_G"
+    } ]
+  } ]
+}
