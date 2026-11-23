@@ -66,6 +66,53 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_-zMTwOMwEfG6NZPKkeea2w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_RCjwwIQGEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_1n1hAIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_CxHEYIQGEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:__I_uMIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_lMqvEIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_oIm7wIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_qeNhMIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_syq3IIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_vVFwkIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "SEMIN_ETL_EDI:_zEEjwIQFEfGO_6zcRT-Rfg",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_0ZrVQDP3EfGtlKlqqEy94w",
     "version" : "0.1",
     "type" : "job"
@@ -1125,7 +1172,7 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_gwdMYHqXEfGfVuv8LkJ7vQ",
+    "id" : "_RCjwwIQGEfGO_6zcRT-Rfg",
     "version" : "Latest",
     "type" : "context"
   }, {

@@ -31,7 +31,7 @@
     <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_sYo7uoQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_ID" prompt="BC_CLIENT_ID?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="f132a44a-2ecc-4726-b0f2-52d6db69b525" internalId="_sYo7u4QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G" internalId="_sYo7vIQHEfGO_6zcRT-Rfg"/>
-    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUG%2C%20s.r.o." internalId="_sYo7vYQHEfGO_6zcRT-Rfg"/>
+    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUGSEMIN" internalId="_sYo7vYQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_ENVIRONMENT" prompt="BC_ENVIRONMENT?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="Production" internalId="_sYo7voQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="client_credentials" internalId="_sYo7v4QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="https://api.businesscentral.dynamics.com/.default" internalId="_sYo7wIQHEfGO_6zcRT-Rfg"/>
@@ -68,7 +68,7 @@
     <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_PROD" internalId="_sYo73IQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_ID" prompt="BC_CLIENT_ID?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="f132a44a-2ecc-4726-b0f2-52d6db69b525" internalId="_sYo73YQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G" internalId="_sYo73oQHEfGO_6zcRT-Rfg"/>
-    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUG%2C%20s.r.o." internalId="_sYo734QHEfGO_6zcRT-Rfg"/>
+    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUGSEMIN" internalId="_sYo734QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_ENVIRONMENT" prompt="BC_ENVIRONMENT?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="Production" internalId="_sYo74IQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="client_credentials" internalId="_sYo74YQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="https://api.businesscentral.dynamics.com/.default" internalId="_sYo74oQHEfGO_6zcRT-Rfg"/>
@@ -105,7 +105,7 @@
     <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_sYo7_oQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_ID" prompt="BC_CLIENT_ID?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="f132a44a-2ecc-4726-b0f2-52d6db69b525" internalId="_sYo7_4QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G" internalId="_sYo8AIQHEfGO_6zcRT-Rfg"/>
-    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUG%2C%20s.r.o." internalId="_sYo8AYQHEfGO_6zcRT-Rfg"/>
+    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUGSEMIN" internalId="_sYo8AYQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_ENVIRONMENT" prompt="BC_ENVIRONMENT?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="Production" internalId="_sYpisIQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="client_credentials" internalId="_sYpisYQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="https://api.businesscentral.dynamics.com/.default" internalId="_sYpisoQHEfGO_6zcRT-Rfg"/>
@@ -142,7 +142,7 @@
     <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_sYpizoQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_ID" prompt="BC_CLIENT_ID?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="f132a44a-2ecc-4726-b0f2-52d6db69b525" internalId="_sYpiz4QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G" internalId="_sYpi0IQHEfGO_6zcRT-Rfg"/>
-    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUG%2C%20s.r.o." internalId="_sYpi0YQHEfGO_6zcRT-Rfg"/>
+    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUGSEMIN" internalId="_sYpi0YQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_ENVIRONMENT" prompt="BC_ENVIRONMENT?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="Production" internalId="_sYpi0oQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="client_credentials" internalId="_sYpi04QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="https://api.businesscentral.dynamics.com/.default" internalId="_sYpi1IQHEfGO_6zcRT-Rfg"/>
@@ -179,7 +179,7 @@
     <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_DEV" internalId="_sYpi8IQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_ID" prompt="BC_CLIENT_ID?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="f132a44a-2ecc-4726-b0f2-52d6db69b525" internalId="_sYpi8YQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G" internalId="_sYpi8oQHEfGO_6zcRT-Rfg"/>
-    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUG%2C%20s.r.o." internalId="_sYpi84QHEfGO_6zcRT-Rfg"/>
+    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUGSEMIN" internalId="_sYpi84QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_ENVIRONMENT" prompt="BC_ENVIRONMENT?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="Production" internalId="_sYpi9IQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="client_credentials" internalId="_sYpi9YQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="https://api.businesscentral.dynamics.com/.default" internalId="_sYpi9oQHEfGO_6zcRT-Rfg"/>
@@ -216,7 +216,7 @@
     <contextParameter comment="" name="Snowflake_Warehouse_RUG_CZ" prompt="Snowflake_Warehouse_RUG_CZ?" promptNeeded="false" repositoryContextId="_NZqn0Hv0EfCCZ8EYmrLolQ" type="id_String" value="COMPUTE_ETL_QAT" internalId="_sYpjEoQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_ID" prompt="BC_CLIENT_ID?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="f132a44a-2ecc-4726-b0f2-52d6db69b525" internalId="_sYpjE4QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G" internalId="_sYpjFIQHEfGO_6zcRT-Rfg"/>
-    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUG%2C%20s.r.o." internalId="_sYpjFYQHEfGO_6zcRT-Rfg"/>
+    <contextParameter comment="" name="BC_COMPANY" prompt="BC_COMPANY?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="RUGSEMIN" internalId="_sYpjFYQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_ENVIRONMENT" prompt="BC_ENVIRONMENT?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="Production" internalId="_sYpjFoQHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="client_credentials" internalId="_sYpjF4QHEfGO_6zcRT-Rfg"/>
     <contextParameter comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="_RCjwwIQGEfGO_6zcRT-Rfg" type="id_String" value="https://api.businesscentral.dynamics.com/.default" internalId="_sYpjGIQHEfGO_6zcRT-Rfg"/>
@@ -1463,7 +1463,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -1494,7 +1494,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
