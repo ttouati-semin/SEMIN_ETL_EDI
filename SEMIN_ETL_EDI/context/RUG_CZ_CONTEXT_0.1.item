@@ -8,6 +8,7 @@
     <contextParameter xmi:id="_gxXLVXqXEfGfVuv8LkJ7vQ" comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://api.businesscentral.dynamics.com/.default"/>
     <contextParameter xmi:id="_gxXLVnqXEfGfVuv8LkJ7vQ" comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_credentials"/>
     <contextParameter xmi:id="_vo_7sHqcEfGfVuv8LkJ7vQ" comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G"/>
+    <contextParameter xmi:id="_7BouwOm0EfGMIuzOmXPPyQ" comment="" name="BC_COMPANY_ID" prompt="BC_COMPANY_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="eec231bb-0732-ef11-8409-6045bd987e3c"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_gxXLV3qXEfGfVuv8LkJ7vQ" confirmationNeeded="false" hide="false" name="PROD">
     <contextParameter xmi:id="_gxXLWHqXEfGfVuv8LkJ7vQ" comment="" name="BC_TENANT" prompt="BC_TENANT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="f22574ea-5abc-4fc1-a482-3bb04e12258f"/>
@@ -17,6 +18,7 @@
     <contextParameter xmi:id="_gxXLXHqXEfGfVuv8LkJ7vQ" comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://api.businesscentral.dynamics.com/.default"/>
     <contextParameter xmi:id="_gxXLXXqXEfGfVuv8LkJ7vQ" comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_credentials"/>
     <contextParameter xmi:id="_vo_7sXqcEfGfVuv8LkJ7vQ" comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G"/>
+    <contextParameter xmi:id="_7Bouwem0EfGMIuzOmXPPyQ" comment="" name="BC_COMPANY_ID" prompt="BC_COMPANY_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="eec231bb-0732-ef11-8409-6045bd987e3c"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_gxXLXnqXEfGfVuv8LkJ7vQ" confirmationNeeded="false" hide="false" name="RECETTE">
     <contextParameter xmi:id="_gxXLX3qXEfGfVuv8LkJ7vQ" comment="" name="BC_TENANT" prompt="BC_TENANT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="f22574ea-5abc-4fc1-a482-3bb04e12258f"/>
@@ -26,5 +28,6 @@
     <contextParameter xmi:id="_gxXLY3qXEfGfVuv8LkJ7vQ" comment="" name="BC_SCOPE" prompt="BC_SCOPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://api.businesscentral.dynamics.com/.default"/>
     <contextParameter xmi:id="_gxXLZHqXEfGfVuv8LkJ7vQ" comment="" name="BC_GRANT_TYPE" prompt="BC_GRANT_TYPE?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_credentials"/>
     <contextParameter xmi:id="_vo_7snqcEfGfVuv8LkJ7vQ" comment="" name="BC_CLIENT_SECRET" prompt="BC_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="jJt8Q~WQKV5UzO8WXcbg6y~8C3biHV.OFriL3b3G"/>
+    <contextParameter xmi:id="_7Bouwum0EfGMIuzOmXPPyQ" comment="" name="BC_COMPANY_ID" prompt="BC_COMPANY_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="eec231bb-0732-ef11-8409-6045bd987e3c"/>
   </talendfile:ContextType>
 </xmi:XMI>
